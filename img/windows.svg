@@ -1,1 +1,7 @@
-<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Windows icon</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000 } 
+	</style>
+	<path id="Layer" class="shp0" d="M20 86.11L206.88 60.25L206.88 241.39L20 241.39M229.86 57.36L480 20L480 238.5L229.86 238.5M20 261.5L206.88 261.5L206.88 442.64L20 416.73M229.86 261.5L480 261.5L480 480L232.75 445.48" />
+</svg>
