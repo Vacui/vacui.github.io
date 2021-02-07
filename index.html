@@ -15,6 +15,17 @@
 			.project-image{
 				border: 1px solid rgba(0,0,0,0.16);
 			}
+			p{
+				margin: 0px 0px 10px 0px;
+			}
+			.light { display: initial; }
+			.dark { display: none; }
+
+			/* Styling for Dark mode */
+			@media (prefers-color-scheme: dark) {
+			  .light { display: none; }
+			  .dark { display: initial; }
+			}
 		</style>
 	</head>
 	<body>
@@ -39,7 +50,8 @@
 										<a class="uk-text-middle" href="mailto:graizzaromatteo@gmail.com" target="_blank"><span>graizzaromatteo@gmail.com</span></a>
 									</div>
 									<div class="uk-margin-remove">
-										<img data-src="img/icons/phone.png" width="20" height="20" alt="" uk-img>
+										<img class="dark" data-src="img/icons/phone-light.svg" width="20" height="20" alt="" uk-img>
+										<img class="light" data-src="img/icons/phone-dark.svg" width="20" height="20" alt="" uk-img>
 										<span class="uk-text-middle">+39 3939684029</span>
 									</div>
 									<div class="uk-margin-remove">
@@ -55,8 +67,8 @@
 				<main class="uk-text-left uk-grid-medium uk-child-width-1-1" uk-grid>
 					<div>
 						<h2 class="uk-heading-divider">About me</h2>
-						Game Programmer graduated in Computer Science and experienced in designing and developing videogames. Developer of two mobile games and author of several publications on Gamasutra. Dedicated, professional, and detail-oriented.<br>
-						Looking to leverage the knowledge and skills gained from solo development and education in a successful career.
+						<p>Game Programmer graduated in Computer Science and experienced in designing and developing videogames. Developer of two mobile games and author of several publications on Gamasutra. Dedicated, professional, and detail-oriented.<br>
+						Looking to leverage the knowledge and skills gained from solo development and education in a successful career.</p>
 					</div>
 					<div>
 						<h2 class="uk-heading-divider"><span>Skills</span></h2>
