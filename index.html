@@ -8,23 +8,11 @@
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
 		<style>
-			.skill-title{
-				border-bottom: 1px solid #000;
-				padding-bottom: 3px
-			}
 			.project-image{
 				border: 1px solid rgba(0,0,0,0.16);
 			}
 			p{
 				margin: 0px 0px 10px 0px;
-			}
-			.light { display: initial; }
-			.dark { display: none; }
-
-			/* Styling for Dark mode */
-			@media (prefers-color-scheme: dark) {
-			  .light { display: none; }
-			  .dark { display: initial; }
 			}
 		</style>
 	</head>
@@ -46,16 +34,15 @@
 								</div>
 								<div class="uk-flex-center uk-child-width-auto uk-child-width-1-1@m uk-grid-small uk-grid-collapse@m uk-margin-remove" uk-grid>
 									<div class="uk-margin-remove">
-										<img data-src="img/icons/at.png" width="20" height="20" alt="" uk-img>
+										<span class="uk-icon" uk-icon="icon: email; ratio: 1"></span>
 										<a class="uk-text-middle" href="mailto:graizzaromatteo@gmail.com" target="_blank"><span>graizzaromatteo@gmail.com</span></a>
 									</div>
 									<div class="uk-margin-remove">
-										<img class="dark" data-src="img/icons/phone-light.svg" width="20" height="20" alt="" uk-img>
-										<img class="light" data-src="img/icons/phone-dark.svg" width="20" height="20" alt="" uk-img>
+										<span class="uk-icon" uk-icon="icon: phone; ratio: 1"></span>
 										<span class="uk-text-middle">+39 3939684029</span>
 									</div>
 									<div class="uk-margin-remove">
-										<img data-src="img/icons/linkedin.png" width="20" height="20" alt="" uk-img>
+										<span class="uk-icon" uk-icon="icon: linkedin-alt; ratio: 1"></span>
 										<a class="uk-text-middle" href="https://www.linkedin.com/in/matteo-graizzaro/" target="_blank"><span>/in/matteo-graizzaro</span></a>
 									</div>
 								</div>
@@ -74,70 +61,58 @@
 						<h2 class="uk-heading-divider"><span>Skills</span></h2>
 						<div class="uk-grid-divider uk-flex-center uk-grid-column-small uk-grid-raw-large uk-grid-row-collapse@s uk-text-center uk-child-width-1-2 uk-child-width-expand@s" uk-grid="masonry: true">
 							<div>
-								<h4 class="uk-text-uppercase"><span class="skill-title">Languages</span></h4>
-								<div class="uk-grid-small" uk-grid>
-									<div>
-										<img class="uk-margin-small-bottom" data-src="img/icons/c-sharp.png" width="500" height="500" alt="" style="max-width: 20%;" uk-img>
-										<span style="display: block">C#</span>
+								<h4 class="uk-heading-line uk-text-uppercase"><span>Languages</span></h4>
+								<div class="uk-grid-small uk-child-width-1-1" uk-grid>
+									<div class="uk-child-width-1-1">
+										<span class="uk-margin-small-bottom" uk-icon="icon: csharp; ratio: 1.75"></span>
+										<span>C#</span>
 									</div>
-									<div>
-										<img class="uk-margin-small-bottom" data-src="img/icons/mysql.png" width="500" height="500" alt="" style="max-width: 20%;" uk-img>
-										<span style="display: block">MySQL</span>
+									<div class="uk-child-width-1-1">
+										<span class="uk-margin-small-bottom" uk-icon="icon: mysql; ratio: 1.75"></span>
+										<span>MySQL</span>
 									</div>
-									<div>
-										<img class="uk-margin-small-bottom" data-src="img/icons/php.png" width="500" height="500" alt="" style="max-width: 20%;" uk-img>
-										<span style="display: block">PHP</span>
-									</div>
-									<div>
-										<img class="uk-margin-small-bottom" data-src="img/icons/html5.png" width="500" height="500" alt="" style="max-width: 20%;" uk-img>
-										<span style="display: block">Html5</span>
-									</div>
-									<div>
-										<img class="uk-margin-small-bottom" data-src="img/icons/css3.png" width="500" height="500" alt="" style="max-width: 20%;" uk-img>
-										<span style="display: block">CSS3</span>
+									<div class="uk-child-width-1-1">
+										<span class="uk-margin-small-bottom" uk-icon="icon: php; ratio: 1.75"></span>
+										<span>PHP</span>
 									</div>
 								</div>
 							</div>
 							<div>
-								<h4 class="uk-text-uppercase"><span class="skill-title">Platforms</span></h4>
-								<div class="uk-grid-small" uk-grid>
-									<div>
-										<img class="uk-margin-small-bottom" data-src="img/icons/android.png" width="500" height="500" alt="" style="max-width: 20%;" uk-img>
-										<span style="display: block">Android</span>
+								<h4 class="uk-heading-line uk-text-uppercase"><span>Platforms</span></h4>
+								<div class="uk-grid-small uk-child-width-1-1" uk-grid>
+									<div class="uk-child-width-1-1">
+										<span class="uk-margin-small-bottom" uk-icon="icon: android; ratio: 1.75"></span>
+										<span>Android</span>
 									</div>
-									<div>
-										<img class="uk-margin-small-bottom" data-src="img/icons/windows.png" width="500" height="500" alt="" style="max-width: 20%;" uk-img>
-										<span style="display: block">Windows</span>
-									</div>
-								</div>
-							</div>
-							<div>
-								<h4 class="uk-text-uppercase"><span class="skill-title">Engines</span></h4>
-								<div class="uk-grid-small" uk-grid>
-									<div>
-										<img class="uk-margin-small-bottom" data-src="img/icons/unity.png" width="500" height="500" alt="" style="max-width: 20%;" uk-img>
-										<span style="display: block">Unity</span>
+									<div class="uk-child-width-1-1">
+										<span class="uk-margin-small-bottom" uk-icon="icon: windows; ratio: 1.75"></span>
+										<span>Windows</span>
 									</div>
 								</div>
 							</div>
 							<div>
-								<h4 class="uk-text-uppercase"><span class="skill-title">Tools</span></h4>
-								<div class="uk-grid-small" uk-grid>
-									<div>
-										<img class="uk-margin-small-bottom" data-src="img/icons/trello.png" width="500" height="500" alt="" style="max-width: 20%;" uk-img>
-										<span style="display: block">Trello</span>
+								<h4 class="uk-heading-line uk-text-uppercase"><span>Engines</span></h4>
+								<div class="uk-grid-small uk-child-width-1-1" uk-grid>
+									<div class="uk-child-width-1-1">
+										<span class="uk-margin-small-bottom" uk-icon="icon: unity; ratio: 1.75"></span>
+										<span>Unity</span>
 									</div>
-									<div>
-										<img class="uk-margin-small-bottom" data-src="img/icons/notion.png" width="500" height="500" alt="" style="max-width: 20%;" uk-img>
-										<span style="display: block">Notion</span>
+								</div>
+							</div>
+							<div>
+								<h4 class="uk-heading-line uk-text-uppercase"><span>Tools</span></h4>
+								<div class="uk-grid-small uk-child-width-1-1" uk-grid>
+									<div class="uk-child-width-1-1">
+										<span class="uk-margin-small-bottom" uk-icon="icon: trello; ratio: 1.75"></span>
+										<span>Trello</span>
 									</div>
-									<div>
-										<img class="uk-margin-small-bottom" data-src="img/icons/github.png" width="500" height="500" alt="" style="max-width: 20%;" uk-img>
-										<span style="display: block">Github</span>
+									<div class="uk-child-width-1-1">
+										<span class="uk-margin-small-bottom" uk-icon="icon: notion; ratio: 1.75"></span>
+										<span>Notion</span>
 									</div>
-									<div>
-										<img class="uk-margin-small-bottom" data-src="img/icons/sourcetree.png" width="500" height="500" alt="" style="max-width: 20%;" uk-img>
-										<span style="display: block">Sourcetree</span>
+									<div class="uk-child-width-1-1">
+										<span class="uk-margin-small-bottom" uk-icon="icon: github; ratio: 1.75"></span>
+										<span>Github</span>
 									</div>
 								</div>
 							</div>
@@ -150,15 +125,15 @@
 								<div class="uk-margin-medium-left uk-width-expand@m"><h3 class="uk-heading-bullet"><span>Ploppem - Solo Game Developer</span></h3></div>
 								<div class="uk-width-auto@m uk-text-right@m uk-child-width-auto uk-grid-small" uk-grid>
 									<div>
-										<img data-src="img/icons/googleplay.png" width="20" height="20" alt="" uk-img>
+										<span uk-icon="icon: googleplay; ratio: 1"></span>
 										<a class="uk-text-middle" href="https://play.google.com/store/apps/details?id=com.vacui.ploppem" target="_blank"><span>Google Play</span></a>
 									</div>
 									<div>
-										<img data-src="img/icons/itch-dot-io.png" width="20" height="20" alt="" uk-img>
+										<span uk-icon="icon: itch-dot-io; ratio: 1"></span>
 										<a class="uk-text-middle" href="https://matteo-graizzaro.itch.io/ploppem" target="_blank"><span>Itch.io</span></a>
 									</div>
 									<div>
-										<img data-src="img/icons/github.png" width="20" height="20" alt="" uk-img>
+										<span uk-icon="icon: github; ratio: 1"></span>
 										<a class="uk-text-middle" href="https://github.com/Vacui/Ploppem" target="_blank"><span>GitHub</span></a>
 									</div>
 								</div>
@@ -209,11 +184,11 @@
 								<div class="uk-margin-medium-left uk-width-expand@m"><h3 class="uk-heading-bullet"><span>Nodib - Solo Game Developer</span></h3></div>
 								<div class="uk-width-auto@m uk-text-right@m uk-child-width-auto uk-grid-small" uk-grid>
 									<div>
-										<img data-src="img/icons/itch-dot-io.png" width="20" height="20" alt="" uk-img>
+										<span uk-icon="icon: itch-dot-io; ratio: 1"></span>
 										<a class="uk-text-middle" href="https://matteo-graizzaro.itch.io/nodib" target="_blank"><span>Itch.io</span></a>
 									</div>
 									<div>
-										<img data-src="img/icons/github.png" width="20" height="20" alt="" uk-img>
+										<span uk-icon="icon: github; ratio: 1"></span>
 										<a class="uk-text-middle" href="https://github.com/Vacui/Nodib" target="_blank"><span>GitHub</span></a>
 									</div>
 								</div>
@@ -242,7 +217,7 @@
 												<div>
 													<img class="project-image uk-margin-small-bottom uk-align-right uk-margin-remove-adjacent" data-src="img/projects/nodib/puzzles.png" width="200" height="200" alt="" uk-img>
 													<h3 class="uk-margin-small-bottom">Development</h3>
-													<p class="uk-margin-remove-top">While I look at Nodib as a temporary break, I still tried to use it to improve my skills by challenging myself on creating a puzzle game, and also its level system. But on top of technical problems I had to overcome, I also addressed a problem that was hurting my other project Ploppem.<br>The lack of feedback.<br>This time I decided to increase my social presence and I started publishing game concepts, pulls, and other messages on Twitter. The reaction has not been noticeable, but I still managed to gather opinions on my work that helped polish the game and avoid some dangerous errors along the way.p>
+													<p class="uk-margin-remove-top">While I look at Nodib as a temporary break, I still tried to use it to improve my skills by challenging myself on creating a puzzle game, and also its level system. But on top of technical problems I had to overcome, I also addressed a problem that was hurting my other project Ploppem.<br>The lack of feedback.<br>This time I decided to increase my social presence and I started publishing game concepts, pulls, and other messages on Twitter. The reaction has not been noticeable, but I still managed to gather opinions on my work that helped polish the game and avoid some dangerous errors along the way.</p>
 												</div>
 												<div>
 													<p>In the end, developing Nodib has reached the desired objective, and I was able to return to Ploppem recharged and with even more ideas than before.<br>A happy ending after all.</p>
@@ -256,7 +231,7 @@
 								<div class="uk-margin-medium-left uk-width-expand@m"><h3 class="uk-heading-bullet"><span>Oath - Game Producer</span></h3></div>
 								<div class="uk-width-auto@m uk-text-right@m uk-child-width-auto uk-grid-small" uk-grid>
 									<div>
-										<img data-src="img/icons/itch-dot-io.png" width="20" height="20" alt="" uk-img>
+										<span uk-icon="icon: itch-dot-io; ratio: 1"></span>
 										<a class="uk-text-middle" href="https://eventhorizonschool.itch.io/oath" target="_blank"><span>Itch.io</span></a>
 									</div>
 								</div>
@@ -298,10 +273,11 @@
 								<div class="uk-margin-medium-left uk-width-expand@m"><h3 class="uk-heading-bullet"><span>What Steam will look like in 3 years</span></h3></div>
 								<div class="uk-width-auto@m uk-text-right@m uk-child-width-auto uk-grid-small" uk-grid>
 									<div>
+										<span uk-icon="icon: gamasutra; ratio: 1"></span>
 										<a class="uk-text-middle" href="https://www.gamasutra.com/blogs/MatteoGraizzaro/20201211/374136/What_Steam_will_look_like_in_3_years.php" target="_blank"><span>Gamasutra</span></a>
 									</div>
 									<div>
-										<img data-src="img/icons/medium.png" width="20" height="20" alt="" uk-img>
+										<span uk-icon="icon: medium; ratio: 1"></span>
 										<a class="uk-text-middle" href="https://matteograizzaro.medium.com/what-steam-will-look-like-in-3-years-40b496b48a9" target="_blank"><span>Medium</span></a>
 									</div>
 								</div>
@@ -312,10 +288,11 @@
 								<div class="uk-margin-medium-left uk-width-expand@m"><h3 class="uk-heading-bullet"><span>Going deep in the Steam reviews</span></h3></div>
 								<div class="uk-width-auto@m uk-text-right@m uk-child-width-auto uk-grid-small" uk-grid>
 									<div>
+										<span uk-icon="icon: gamasutra; ratio: 1"></span>
 										<a class="uk-text-middle" href="https://www.gamasutra.com/blogs/MatteoGraizzaro/20200629/365397/Going_deep_in_the_Steam_reviews.php" target="_blank"><span>Gamasutra</span></a>
 									</div>
 									<div>
-										<img data-src="img/icons/medium.png" width="20" height="20" alt="" uk-img>
+										<span uk-icon="icon: medium; ratio: 1"></span>
 										<a class="uk-text-middle" href="https://matteograizzaro.medium.com/going-deep-in-the-steam-reviews-2b663a152179" target="_blank"><span>Medium</span></a>
 									</div>
 								</div>
@@ -328,31 +305,27 @@
 						<h2 class="uk-heading-divider"><span>Interests</span></h2>
 						<div class="uk-grid-divider uk-flex-center uk-grid-small" uk-grid>
 							<div>
-								<img data-src="img/icons/device-gamepad.png" width="25" height="25" alt="" uk-img>
+								<span class="uk-icon" uk-icon="icon: console-game; ratio: 1"></span>
 								<span class="uk-text-middle">Videogames</span>
 							</div>
 							<div>
-								<img data-src="img/icons/device-tv.png" width="25" height="25" alt="" uk-img>
+								<span class="uk-icon" uk-icon="icon: monitor; ratio: 1"></span>
 								<span class="uk-text-middle">Anime</span>
 							</div>
 							<div>
-								<img data-src="img/icons/book.png" width="25" height="25" alt="" uk-img>
+								<span class="uk-icon" uk-icon="icon: book-open; ratio: 1"></span>
 								<span class="uk-text-middle">Books</span>
 							</div>
 							<div>
-								<img data-src="img/icons/pencil.png" width="25" height="25" alt="" uk-img>
+								<span class="uk-icon" uk-icon="icon: writing; ratio: 1"></span>
 								<span class="uk-text-middle">Writing</span>
-							</div>
-							<div>
-								<img data-src="img/icons/walk.png" width="25" height="25" alt="" uk-img>
-								<span class="uk-text-middle">Walking</span>
 							</div>
 						</div>
 					</div>
 				</main>
 				<footer class="uk-margin-large-top uk-padding-small">
 					<div class="uk-grid-small uk-gid-collapse@s uk-text-central" uk-grid>
-						<div class="uk-width-1-1 uk-width-expand@s uk-text-left@s"><span>Icons by <a href="https://simpleicons.org/" target="_blank">Simple Icons</a> & <a href="https://tablericons.com/" target="_blank">Tabler Icons</a><br>© 2021 by Graizzaro Matteo</span></div>
+						<div class="uk-width-1-1 uk-width-expand@s uk-text-left@s"><span>Icons by <a href="https://simpleicons.org/" target="_blank">Simple Icons</a> & <a href="https://neuicons.com/" target="_blank">Neu Icons</a><br>© 2021 by Graizzaro Matteo</span></div>
 						<div class="uk-width-1-1 uk-width-auto@s">
 							<a class="uk-icon-button" href="https://twitter.com/matteograizzaro" target="_blank" uk-icon="twitter"></a>
 							<a class="uk-icon-button" href="mailto:graizzaromatteo@gmail.com" target="_blank" uk-icon="google"></a>
