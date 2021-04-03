@@ -47,7 +47,7 @@ p{
     width: 200px;
 }
 
-h3.uk-section-title>a{
+h3.uk-section-title>a, a.hide-link{
 	color: inherit;
     text-decoration: none;
 }
@@ -58,4 +58,32 @@ h3.uk-section-title>a:before {
 	width: 25px;
 	margin-left: -25px;
 	color: #999;
+}
+
+.uk-overlay-default{
+	background: rgb(50 50 50 / 64%);
+}
+
+.uk-width-3xlarge {
+  width: 980px;
+}
+@media (min-width: 640px) {
+	.uk-width-3xlarge\@s {
+	  width: 980px;
+	}
+}
+@media (min-width: 960px) {
+	.uk-width-3xlarge\@m {
+	  width: 980px;
+	}
+}
+@media (min-width: 1200px) {
+	.uk-width-3xlarge\@l {
+	  width: 980px;
+	}
+}
+@media (min-width: 1600px) {
+	.uk-width-3xlarge\@xl {
+	  width: 980px;
+	}
 }
