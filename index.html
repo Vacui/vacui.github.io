@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Matteo Graizzaro | Game Programmer Portfolio</title>
+		<title>Matteo Graizzaro Portfolio</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/uikit.min.css" />
+		<link rel="stylesheet" href="css/styles.css" />
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
-		<style>
-			.project-image{
-				border: 1px solid rgba(0,0,0,0.16);
-			}
-			p{
-				margin: 0px 0px 10px 0px;
-			}
-		</style>
+		<script>
+		// source: https://raw.githubusercontent.com/SethClydesdale/sethclydesdale.github.io/master/resources/javascript.js
+		
+		// # MODIFICATIONS FOR ALL PAGES #
+(function (window, document) {
+  'use strict';
+  
+  // # OFFLINE LINK MODIFICATIONS #
+  // appends index.html to links if this project is hosted on the local file system
+  if (window.location.protocol == 'file:') {
+    for (var a = document.getElementsByTagName('A'), i = 0, j = a.length; i < j; i++) {
+      if (!/http/.test(a[i].href)) {
+        if (/\/$/.test(a[i].href)) {
+          a[i].href += 'index.html';
+        } else if (/\/#(.*?)$/.test(a[i].href)) {
+          a[i].href = a[i].href.replace(/(#.*?)$/, 'index.html$1');
+        }
+      }
+    }
+  }
+
+  
+  // # SECTION ANCHORS #
+  // adds an anchor link to headings
+  for (var h = document.getElementById('content').querySelectorAll('h1, h2, h3, h4, h5, h6'), i = 0, j = h.length; i < j; i++) {
+    if (h[i].id) {
+      h[i].insertAdjacentHTML('afterbegin', '<a href="#' + h[i].id + '" class="anchor"><span class="anchor-icon">&#xf0c1;</span></a>');
+    }
+  }
+  
+}(window, document));
+		</script>
 	</head>
 	<body>
 		<div class="uk-margin-medium-top uk-margin-large-left uk-margin-large-right" align="center">
@@ -144,46 +169,7 @@
 									<p>Ploppem is a minimal endless runner I developed to strengthen my skills and improve my portfolio as a game programmer.</p>
 									<p>Initially, it would have included various game modes and a more cartoonish art style, but after encountering several difficulties on the road, I decided to focus my time on polishing what I had already realized, and therefore reducing the project scope.</p>
 								</div>
-								<div><a href="#modal-ploppem-overflow" class="uk-button uk-button-text uk-text-bolder" uk-toggle>Read more...</a></div>
-								<div id="modal-ploppem-overflow" uk-modal>
-									<div class="uk-modal-dialog uk-width-2xlarge@m">
-										<button class="uk-modal-close-default" type="button" uk-close></button>
-										<div class="uk-modal-header">
-											<h2 class="uk-modal-title">Ploppem</h2>
-										</div>
-										<div class="uk-modal-body " uk-overflow-auto>
-											<div class="uk-child-width-1-1 uk-grid-small" uk-grid>
-												<div>
-													<p class="uk-margin-remove-top">Ploppem is a minimal endless runner I developed to strengthen my skills and improve my portfolio as a game programmer.</p>
-													<p>Initially, it would have included various game modes and a more cartoonish art style, but after encountering several difficulties on the road, I decided to focus my time on polishing what I had already realized, and therefore reducing the project scope.</p>
-												</div>
-												<div>
-													<img class="project-image uk-margin-small-bottom uk-align-left uk-margin-remove-adjacent" data-src="img/projects/ploppem/Gameplay.gif" width="200" height="200" alt="" uk-img>
-													<h3 class="uk-margin-small-bottom">Gameplay</h3>
-													<p class="uk-margin-remove-top">In its current state, the game offers an endless mode against enemies that are guided by a rough AI, that tells them to constantly move and change direction, while also trying to avoid collision with other entities.</p>
-													<p>A gradient-colored clock tells the player their individual lifetime, at the end of which they disappear adding an error to the top-right counter. Reached 5 errors the game is over.</p>
-													<p>The player's only interaction is by earning points as a result of touching over an enemy, an action that makes them also disappear.</p>
-												</div>
-												<div>
-													<img class="project-image uk-margin-small-bottom uk-align-right uk-margin-remove-adjacent" data-src="img/projects/ploppem/Screen3.jpg" width="200" height="200" alt="" uk-img>
-													<h3 class="uk-margin-small-bottom">Game systems</h3>
-													<p class="uk-margin-remove-top">After some testing, I decided to increase the game difficulty using some animated curves that control the speed, lifetime, and other stats of the enemies, based on the player score.</p>
-													<p>The spawning process is controlled by the GameManager script, a class that manages almost every vital system, an exception is the User Interface. After an enemy is eliminated by the player, or by running out of time, the GameManager queue another spawn, and when the time comes it makes sure to find a clear spot to generate the new foe, or else enqueuing again the spawn.</p>
-												</div>
-												<div>
-													<img class="project-image uk-margin-small-bottom uk-align-left uk-margin-remove-adjacent" data-src="img/projects/ploppem/Screen2.jpg" width="200" height="200" alt="" uk-img>
-													<h3 class="uk-margin-small-bottom">Customization</h3>
-													<p class="uk-margin-remove-top">To improve the player experience and gain something from the game life I designed a customization system that gives the player the opportunity to change the game background, enemies' gradient palette, and UI's color scheme.</p>
-													<p>In theory, some customizations would be free to use, and some others locked behind a paywall, but I wasn't able to polish the system enough to justify charge people to use it, and I decided to include it in the game completely free to use.</p>
-												</div>
-												<div>
-													<p>In the end, developing Ploppem teach me a lot of things, and even with all the problems it has, I'm proud of the result.<br>
-													I hope you will give it a chance and enjoy playing it.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+								<div><a href="ploppem.html" class="uk-button uk-button-text uk-text-bolder" uk-toggle>Read more...</a></div>
 							</div>
 							<div class="uk-grid-small uk-child-width-1-1" uk-grid>
 								<div class="uk-margin-medium-left uk-width-expand@m"><h3 class="uk-heading-bullet"><span>Nodib - Solo Game Developer</span></h3></div>

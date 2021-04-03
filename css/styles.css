@@ -1,0 +1,45 @@
+.project-image{
+	border: 1px solid rgba(0,0,0,0.16);
+}
+p{
+	margin: 0px 0px 10px 0px;
+}
+
+.uk-position-top-right-out{
+	left: 100%;
+	width: max-content;
+}
+
+.uk-nav>li.uk-active>a:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -25px;
+    width: 15px;
+    border-top: 1px solid #1e87f0;
+}
+.uk-nav>li.uk-active>a {
+    position: relative;
+}
+
+.uk-sidebar-right {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 0px);
+    width: 200px;
+}
+
+.uk-card-title>a{
+	color: inherit;
+    text-decoration: none;
+}
+
+@media (min-width: 640px){
+	h3.uk-card-title>a:before {
+		content: "#";
+		position: absolute;
+		width: 25px;
+		margin-left: -25px;
+		color: #999;
+	}
+}
