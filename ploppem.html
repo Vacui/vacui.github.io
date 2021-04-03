@@ -1,82 +1,32 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Matteo Graizzaro Portfolio | Ploppem</title>
+		<title>Matteo Graizzaro Portfolio | Contacts & Resume</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/uikit.min.css" />
 		<link rel="stylesheet" href="css/styles.css" />
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
-		<script>
-		// source: https://raw.githubusercontent.com/SethClydesdale/sethclydesdale.github.io/master/resources/javascript.js
-		
-		// # MODIFICATIONS FOR ALL PAGES #
-(function (window, document) {
-  'use strict';
-  
-  // # OFFLINE LINK MODIFICATIONS #
-  // appends index.html to links if this project is hosted on the local file system
-  if (window.location.protocol == 'file:') {
-    for (var a = document.getElementsByTagName('A'), i = 0, j = a.length; i < j; i++) {
-      if (!/http/.test(a[i].href)) {
-        if (/\/$/.test(a[i].href)) {
-          a[i].href += 'index.html';
-        } else if (/\/#(.*?)$/.test(a[i].href)) {
-          a[i].href = a[i].href.replace(/(#.*?)$/, 'index.html$1');
-        }
-      }
-    }
-  }
-
-  
-  // # SECTION ANCHORS #
-  // adds an anchor link to headings
-  for (var h = document.getElementById('content').querySelectorAll('h1, h2, h3, h4, h5, h6'), i = 0, j = h.length; i < j; i++) {
-    if (h[i].id) {
-      h[i].insertAdjacentHTML('afterbegin', '<a href="#' + h[i].id + '" class="anchor"><span class="anchor-icon">&#xf0c1;</span></a>');
-    }
-  }
-  
-}(window, document));
-		</script>
 	</head>
 	<body>
-		<div class="uk-margin-medium-top uk-margin-large-left uk-margin-large-right" align="center">
+		<div class="uk-margin-small-top uk-margin-large-left uk-margin-large-right" align="center">
 			<div class="uk-width-1-1 uk-width-2xlarge@s uk-position-relative">
-				<header>
-					<div class="uk-grid-small uk-grid-collapse@m uk-margin-remove uk-child-width-1-1" uk-grid>
-						<div class="uk-width-1-2@m uk-text-center uk-text-left@m uk-padding-remove-left">
-							<div class="uk-grid-collapse uk-child-width-1-1 uk-text-middle" uk-grid>
-								<h1>Graizzaro Matteo</h1>
-								<h2>Junior Game Programmer</h2>
-							</div>
-						</div>
-						<div class="uk-width-1-2@m uk-padding-remove">
-							<div class="uk-align-center uk-align-right@m uk-text-center uk-text-right@m uk-grid-small uk-child-width-1-1" uk-grid>
-								<div class="uk-margin-remove">
-									<h4 class="uk-text-uppercase">CONTACTS</h4>
-								</div>
-								<div class="uk-flex-center uk-child-width-auto uk-child-width-1-1@m uk-grid-small uk-grid-collapse@m uk-margin-remove" uk-grid>
-									<div class="uk-margin-remove">
-										<span class="uk-icon" uk-icon="icon: email; ratio: 1"></span>
-										<a class="uk-text-middle" href="mailto:graizzaromatteo@gmail.com" target="_blank"><span>graizzaromatteo@gmail.com</span></a>
-									</div>
-									<div class="uk-margin-remove">
-										<span class="uk-icon" uk-icon="icon: phone; ratio: 1"></span>
-										<span class="uk-text-middle">+39 3939684029</span>
-									</div>
-									<div class="uk-margin-remove">
-										<span class="uk-icon" uk-icon="icon: linkedin-alt; ratio: 1"></span>
-										<a class="uk-text-middle" href="https://www.linkedin.com/in/matteo-graizzaro/" target="_blank"><span>/in/matteo-graizzaro</span></a>
-									</div>
-								</div>
-							</div>
+				<header class="uk-padding-small-top uk-grid-small uk-grid-collapse@m uk-child-width-1-1" uk-grid>
+					<h1>Graizzaro Matteo</h1>
+					<h4>Junior Game Programmer</h4>
+				</header>
+				<hr class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom">
+				<nav class="uk-navbar-container uk-navbar-transparent uk-margin-medium-bottom" uk-navbar>
+					<div class="uk-navbar-center">
+						<div class="uk-navbar-center">
+							<ul class="uk-navbar-nav">
+								<li class="uk-padding-small"><a href="index.html">Projects</a></li>
+								<li class="uk-padding-small"><a href="contact.html">Contacts & Resume</a></li>
+							</ul>
 						</div>
 					</div>
-				</header>
-				<hr class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-small-bottom">
-				
+				</nav>
 				<div class="uk-margin-large-left uk-text-left uk-sidebar-right uk-visible@l">
 						<div uk-sticky="offset: 160" class="">
 							<ul uk-scrollspy-nav="closest: li; scroll: true; offset: 100" class="uk-nav uk-nav-default">
