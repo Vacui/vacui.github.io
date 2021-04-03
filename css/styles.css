@@ -4,6 +4,12 @@
 p{
 	margin: 0px 0px 10px 0px;
 }
+.uk-navbar-nav>li>a{
+	min-height: 0px;
+}
+.uk-padding-small-top{
+	padding-top: 15px;
+}
 
 .uk-position-top-right-out{
 	left: 100%;
