@@ -57,6 +57,11 @@ h3.uk-section-title>a, a.hide-link{
     text-decoration: none;
 }
 
+footer a, main a{
+	color: inherit;
+	text-decoration: underline;
+}
+
 h3.uk-section-title>a:before {
 	content: "#";
 	position: absolute;
