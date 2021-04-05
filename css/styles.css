@@ -20,29 +20,31 @@ p{
 	width: max-content;
 }
 
-.uk-nav>li.uk-active>a:before {
+.uk-nav-sub>li.uk-active>a:before{
+	top: 14px;
+}
+
+.uk-nav>li.uk-active>a:before{
+	top: 18px;
+}
+
+.uk-nav>li.uk-active>a:before, .uk-nav-sub>li.uk-active>a:before {
     content: "";
     position: absolute;
-    top: 18px;
     left: -25px;
     width: 15px;
     border-top: 1px solid #1e87f0;
 }
-.uk-nav>li.uk-active>a {
+.uk-nav>li.uk-active>a, .uk-nav-sub>li.uk-active>a {
     position: relative;
 }
 
-.uk-nav-default{
+.uk-nav{
 	font-size: 16px;
 }
 
-.uk-nav-default>li.uk-active>a {
-    color: #1e87f0;
-}
-
-footer a{
-	color: inherit;
-	text-decoration: underline;
+.uk-nav>li.uk-active>a, .uk-nav-sub>li.uk-active>a {
+    color: #1e87f0 !important;
 }
 
 .uk-sidebar-right {

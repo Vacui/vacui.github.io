@@ -10,7 +10,7 @@
         <script src="../js/uikit-icons.min.js"></script>
 	</head>
 	<body>
-		<div align="center">
+		<div class="uk-position-relative" align="center">
 			<div class="uk-padding-small-top uk-padding-small-bottom uk-section-muted uk-margin-medium-bottom uk-position-relative">
 				<div class="uk-width-1-1 uk-width-2xlarge@s" style="padding: 0 15px;">
 					<header class="uk-padding-small-top uk-grid-small uk-grid-collapse@m uk-child-width-1-1" uk-grid>
@@ -31,27 +31,27 @@
 						</div>
 					</nav>
 				</div>
-				
-				<div class="uk-width-1-1 uk-width-2xlarge@s uk-margin-remove uk-position-relative">
-					<div class="uk-margin-large-left uk-text-left uk-sidebar-right uk-visible@l">
-						<div uk-sticky="offset: 240" style="z-index: 980;">
-							<ul uk-scrollspy-nav="closest: li; scroll: true; offset: 70; overflow: false" class="uk-nav uk-nav-default">
-								<li>
-									<a href="#">
-										<span uk-icon="chevron-up" class="uk-margin-small-right uk-icon"></span>
-										<span class="uk-text-middle">To top</span>
-									</a>
-								</li>
-								<li class="uk-nav-divider"></li>
-								<li><a href="#summary">Summary</a></li>
-								<li><a href="#production">Production</a></li>
-							</ul>
-						</div>
+			</div>
+			
+			<div class="uk-width-1-1 uk-width-2xlarge@s uk-margin-remove uk-position-relative" style="z-index: 10;">
+				<div class="uk-margin-large-left uk-text-left uk-sidebar-right uk-visible@l">
+					<div uk-sticky="offset: 50">
+						<ul uk-scrollspy-nav="closest: li; scroll: true; offset: 100; overflow: false" class="uk-nav uk-nav-default">
+							<li>
+								<a href="#">
+									<span uk-icon="chevron-up" class="uk-margin-small-right uk-icon"></span>
+									<span class="uk-text-middle">To top</span>
+								</a>
+							</li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="#summary">Summary</a></li>
+							<li><a href="#production">Production</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
 			
-			<main class="uk-position-relative uk-text-left">
+			<main class="uk-position-relative uk-text-left" style="z-index: 1;">
 				<section class="uk-section uk-padding-remove-vertical uk-margin-medium-bottom">
 					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
 						<h2 class="uk-text-center uk-text-uppercase">Oath</h2>	
