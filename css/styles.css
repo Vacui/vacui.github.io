@@ -40,6 +40,11 @@ p{
     color: #1e87f0;
 }
 
+footer a{
+	color: inherit;
+	text-decoration: underline;
+}
+
 .uk-sidebar-right {
     position: absolute;
     top: 0;
@@ -70,6 +75,9 @@ h3.uk-section-title>a:before {
 @media (min-width: 640px) {
 	.uk-width-3xlarge\@s {
 	  width: 980px;
+	}
+	.uk-grid-medium\@s > * {
+	  padding-left: 30px;
 	}
 }
 @media (min-width: 960px) {
