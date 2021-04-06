@@ -15,6 +15,16 @@ p{
 	padding-bottom: 15px;
 }
 
+.uk-position-center-bottom-out{
+	top: 100%;
+	height: max-content;
+	left: 50%;
+	transform: translateX(-50%);
+	/* 1 */
+	width: max-content;
+	max-width: 100%;
+	box-sizing: border-box;
+}
 .uk-position-top-right-out{
 	left: 100%;
 	width: max-content;
@@ -54,7 +64,7 @@ p{
     width: 200px;
 }
 
-h3.uk-section-title>a, a.hide-link{
+h2.uk-section-title>a, a.hide-link{
 	color: inherit;
     text-decoration: none;
 }
@@ -64,7 +74,7 @@ footer a, main a{
 	text-decoration: underline;
 }
 
-h3.uk-section-title>a:before {
+h2.uk-section-title>a:before {
 	content: "#";
 	position: absolute;
 	width: 25px;

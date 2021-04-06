@@ -8937,7 +8937,7 @@ iframe.uk-cover {
 }
 /* Horizontal */
 .uk-position-top-center,
-.uk-position-bottom-center {
+.uk-position-bottom-center{
   left: 50%;
   transform: translateX(-50%);
   /* 1 */
