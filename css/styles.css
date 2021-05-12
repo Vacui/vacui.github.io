@@ -1,3 +1,7 @@
+.uk-background-width-1-1, .uk-background-height-1-1{
+	background-size: 100%;
+}
+
 .project-image{
 	border: 1px solid rgba(0,0,0,0.16);
 }
@@ -96,19 +100,43 @@ h2.uk-section-title>a:before {
 	.uk-grid-medium\@s > * {
 	  padding-left: 30px;
 	}
+	.uk-padding-small-top\@s {
+		padding-top: 15px;
+	}
+	.uk-padding-small-bottom\@s {
+		padding-bottom: 15px;
+	}
 }
 @media (min-width: 960px) {
 	.uk-width-3xlarge\@m {
 	  width: 980px;
+	}
+	.uk-padding-small-top\@m {
+		padding-top: 15px;
+	}
+	.uk-padding-small-bottom\@m {
+		padding-bottom: 15px;
 	}
 }
 @media (min-width: 1200px) {
 	.uk-width-3xlarge\@l {
 	  width: 980px;
 	}
+	.uk-padding-small-top\@l {
+		padding-top: 15px;
+	}
+	.uk-padding-small-bottom\@l {
+		padding-bottom: 15px;
+	}
 }
 @media (min-width: 1600px) {
 	.uk-width-3xlarge\@xl {
 	  width: 980px;
+	}
+	.uk-padding-small-top\@xl {
+		padding-top: 15px;
+	}
+	.uk-padding-small-bottom\@xl {
+		padding-bottom: 15px;
 	}
 }
