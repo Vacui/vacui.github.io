@@ -1,3 +1,16 @@
+*.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+
+   /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
+}
+
 .uk-background-width-1-1, .uk-background-height-1-1{
 	background-size: 100%;
 }
@@ -68,7 +81,7 @@ p{
     width: 200px;
 }
 
-h2.uk-section-title>a, a.hide-link{
+h2.title-link>a, a.hide-link{
 	color: inherit;
     text-decoration: none;
 }
@@ -78,7 +91,7 @@ footer a, main a{
 	text-decoration: underline;
 }
 
-h2.uk-section-title>a:before {
+h2.title-link>a:before {
 	content: "#";
 	position: absolute;
 	width: 25px;

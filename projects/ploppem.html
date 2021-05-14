@@ -21,11 +21,22 @@
 					<hr class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom">
 				</div>
 				
-				<div class="uk-navbar-container" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-inactive: uk-navbar-transparent;"  uk-navbar>
+				<div class="uk-navbar-container" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;"  uk-navbar>
 					<nav class="uk-width-2xlarge@s uk-margin-auto">
 						<div class="uk-width-1-1">
 							<ul class="uk-navbar-nav uk-child-width-1-2">
 								<li class="uk-padding-small"><a href="../index.html">Home</a></li>
+								<li class="uk-padding-small">
+									<a href="../index.html#projects">Projects</a>
+									<div class="uk-navbar-dropdown uk-text-left">
+										<ul class="uk-margin-small-left uk-nav uk-navbar-dropdown-nav">
+											<li><a href="tunnel.html">Tunnel</a></li>
+											<li class="uk-active"><a href="ploppem.html">Ploppem</a></li>
+											<li><a href="nodib.html">Nodib</a></li>
+											<li><a href="oath.html">Oath</a></li>
+										</ul>
+									</div>
+								</li>
 								<li class="uk-padding-small"><a href="../contact.html">Contacts & Resume</a></li>
 							</ul>
 						</div>
@@ -61,14 +72,14 @@
 				</section>		
 				<section class="uk-section uk-section-small">
 					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 id="summary" class="uk-text-center uk-section-title uk-heading-divider"><a href="#summary">Summary</a></h2>
+						<h2 id="summary" class="uk-text-center title-link uk-heading-divider"><a href="#summary">Summary</a></h2>
 						<p>Ploppem is a minimal endless runner I developed to strengthen my skills and improve my portfolio as a game programmer.</p>
 						<p>Initially, it would have included various game modes and a more cartoonish art style, but after encountering several difficulties on the road, I decided to focus my time on polishing what I had already realized, and therefore reducing the project scope.</p>
 					</div>
 				</section>
 				<section class="uk-section uk-section-small">
 					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 id="gameplay" class="uk-text-center uk-section-title uk-heading-divider"><a href="#gameplay">Gameplay</a></h2>
+						<h2 id="gameplay" class="uk-text-center title-link uk-heading-divider"><a href="#gameplay">Gameplay</a></h2>
 						<div class="uk-grid-column-medium" uk-grid>
 							<div class="uk-width-auto">
 								<img src="../img/projects/ploppem/Gameplay.gif" width="200" height="356" alt="" class="project-image">
@@ -83,7 +94,7 @@
 				</section>
 				<section class="uk-section uk-section-small">
 					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 id="game-systems" class="uk-text-center uk-section-title uk-heading-divider"><a href="#game-systems">Game Systems</a></h2>
+						<h2 id="game-systems" class="uk-text-center title-link uk-heading-divider"><a href="#game-systems">Game Systems</a></h2>
 						<div class="uk-grid-column-medium" uk-grid>
 							<div class="uk-width-expand">
 								<p>After some testing, I decided to increase the game difficulty using some animated curves that control the speed, lifetime, and other stats of the enemies, based on the player score.</p>
@@ -97,7 +108,7 @@
 				</section>
 				<section class="uk-section uk-section-small">
 					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 id="customization" class="uk-text-center uk-section-title uk-heading-divider"><a href="#customization">Customization</a></h2>
+						<h2 id="customization" class="uk-text-center title-link uk-heading-divider"><a href="#customization">Customization</a></h2>
 						<div class="uk-grid-column-medium" uk-grid>
 							<div class="uk-flex-last uk-width-expand">
 								<p>To improve the player experience and gain something from the game life I designed a customization system that gives the player the opportunity to change the game background, enemies' gradient palette, and UI's color scheme.</p>
