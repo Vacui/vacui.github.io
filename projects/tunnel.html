@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Matteo Graizzaro Portfolio | Ploppem</title>
+		<title>Matteo Graizzaro Portfolio | Tunnel</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/uikit.min.css" />
 		<link rel="stylesheet" href="../css/styles.css" />
+		<link rel="stylesheet" href="../css/slider.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
         <script src="../js/uikit.min.js"></script>
         <script src="../js/uikit-icons.min.js"></script>
+		<script src="../js/slider.js"></script>
 	</head>
 	<body>
 		<div align="center">
@@ -21,11 +24,22 @@
 					<hr class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom">
 				</div>
 				
-				<div class="uk-navbar-container" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-inactive: uk-navbar-transparent;"  uk-navbar>
+				<div class="uk-navbar-container" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;"  uk-navbar>
 					<nav class="uk-width-2xlarge@s uk-margin-auto">
 						<div class="uk-width-1-1">
 							<ul class="uk-navbar-nav uk-child-width-1-2">
 								<li class="uk-padding-small"><a href="../index.html">Home</a></li>
+								<li class="uk-padding-small">
+									<a href="../index.html#projects">Projects</a>
+									<div class="uk-navbar-dropdown uk-text-left">
+										<ul class="uk-margin-small-left uk-nav uk-navbar-dropdown-nav">
+											<li class="uk-active"><a href="tunnel.html">Tunnel</a></li>
+											<li><a href="ploppem.html">Ploppem</a></li>
+											<li><a href="nodib.html">Nodib</a></li>
+											<li><a href="oath.html">Oath</a></li>
+										</ul>
+									</div>
+								</li>
 								<li class="uk-padding-small"><a href="../contact.html">Contacts & Resume</a></li>
 							</ul>
 						</div>
@@ -44,6 +58,12 @@
 								</li>
 								<li class="uk-nav-divider"></li>
 								<li><a href="#summary">Summary</a></li>
+								<li><a href="#game-design">Game design</a></li>
+								<li><a href="#level-generation">Level generation</a></li>
+								<li><a href="#player">The player</a></li>
+								<li><a href="#art">Simple and effective art</a></li>
+								<li><a href="#ui-code">Reusable UI code</a></li>
+								<li><a href="#final-thoughts">Final thoughts</a></li>
 							</ul>
 						</div>
 					</div>
@@ -53,17 +73,167 @@
 			<main class="uk-position-relative uk-text-left">
 				<section class="uk-section uk-padding-remove-vertical uk-margin-medium-bottom">
 					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 class="uk-text-center uk-text-uppercase">Tunnel</h2>
+						<div class="uk-background-cover uk-height-medium" style="background-image: url(../img/projects/tunnel/logo-small.png);"></div>
 					</div>
 				</section>
 				<section class="uk-section uk-section-small">
 					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h3 id="summary" class="uk-text-center uk-section-title uk-heading-divider"><a href="#summary">Summary</a></h3>
-						<p>...</p>
+						<h2 id="summary" class="uk-text-center title-link uk-heading-divider"><a href="#summary">Summary</a></h2>
+						<div class="uk-child-width-1-1 uk-grid-row-medium" uk-grid>
+							<div>
+								<p><b><u>Small summary about the game.</u></b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
+							</div>
+							<div class="uk-child-width-1-2 uk-grid-row-small" uk-grid>
+								<h3 class="uk-heading-bullet uk-width-1-1"><span>Goals</span></h3>
+								<ul class="uk-list uk-list-circle">
+									<li>Goal 1</u></b><br></li>
+									<li>Goal 2</li>
+								</ul>
+								<ul class="uk-list uk-list-circle">
+									<li>Goal 3</li>
+									<li>Goal x</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="uk-section uk-section-small">
+					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+						<h2 id="game-design" class="uk-text-center title-link uk-heading-divider"><a href="#game-design">Game design</a></h2>
+						<div class="uk-child-width-1-1 uk-grid-row-medium" uk-grid>
+							<div>
+								<p><b><u>Initial idea and how it changed during the development.</u></b><br>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
+							</div>
+							<div class="uk-child-width-1-1">
+								<h3 class="uk-heading-bullet"><span>Reach the end</span></h3>
+								<div class="uk-child-width-1-1 uk-margin-remove-adjacent uk-align-left" style="width: 40%;">
+									<img src="../img/projects/tunnel/temp/end-pointer.jpg" alt="" class="project-image">
+									<div class="uk-margin-small-top uk-text-center uk-text-italic">Description.</div>
+								</div>
+								<div>
+									<p><b><u>How the end pointer works, both visual and technical side.</u></b><br>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="uk-section uk-section-small">
+					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+						<h2 id="level-generation" class="uk-text-center title-link uk-heading-divider"><a href="#level-generation">Level generation</a></h2>
+						<div class="uk-child-width-1-1">
+							<div class="uk-child-width-1-1 uk-margin-remove-adjacent uk-align-right" style="width: 40%;">
+								<img src="../img/projects/tunnel/temp/lvl-settings.jpg" width="250" height="300" alt="" class="project-image">
+								<div class="uk-margin-small-top uk-text-center uk-text-italic">Description.</div>
+							</div>
+							<div class="uk-grid-column-medium uk-display-block" uk-grid>
+								<div>
+									<p><b><u>How the level generation works.</u></b><br>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
+								</div>
+								<div>
+									<h3 class="uk-heading-bullet"><span>Level generation phases</span></h3>
+									<ul class="uk-list uk-list-circle">
+										<li>Phase 1</li>
+										<li>Phase 2</li>
+										<li>Phase x</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="uk-section uk-section-small">
+					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+						<h2 id="player" class="uk-text-center title-link uk-heading-divider"><a href="#player">The Player</a></h2>
+						<div class="uk-child-width-1-1 uk-margin-remove-adjacent uk-align-left" style="width: 40%;">
+							<img src="../img/projects/tunnel/temp/player-move.jpg" alt="" class="project-image">
+							<div class="uk-margin-small-top uk-text-center uk-text-italic">Description.</div>
+						</div>
+						<div>
+							<p><b><u>How the player moves.</u></b><br>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
+						</div>
+					</div>
+				</section>
+				<section class="uk-section uk-section-small uk-section-secondary">
+					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+						<h2 id="art" class="uk-text-center title-link uk-heading-divider"><a href="#art">Simple and effective art</a></h2>
+						<div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
+						</div>
+						<div class="uk-child-width-1-1 uk-margin-medium-top" uk-grid>
+							<div>
+								<h2 class="uk-heading-bullet"><span>The level</span></h2>
+							</div>
+							<div>
+								<img src="../img/projects/tunnel/elements.png" alt="">
+								<div class="uk-margin-small-top uk-text-center uk-text-italic">The sprites that compose a level.</div>
+							</div>
+							<div class="uk-child-width-1-1 uk-child-width-1-2@m" uk-grid>
+								<div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
+								</div>
+								<div>
+									<div class="wrapper uk-height-medium uk-position-relative" style="padding-top: 75%;">
+										<div class="bottom unselectable" unselectable="on">
+											<img src="../img/projects/tunnel/Level-2ECC71.jpg" draggable="false"/>
+										</div>
+										<div class="middle unselectable" unselectable="on">
+											<img src="../img/projects/tunnel/Level-3498DB.jpg" draggable="false"/>
+										</div>
+										<div class="scroller scroller-middle">
+											<svg class="scroller__thumb uk-light" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><polygon points="0 50 37 68 37 32 0 50"/><polygon points="100 50 64 32 64 68 100 50"/></svg>
+										</div>
+										<div class="top unselectable" unselectable="on">
+											<img src="../img/projects/tunnel/Level-B659B5.jpg" draggable="false"/>
+										</div>
+										<div class="scroller scroller-top">
+											<svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><polygon points="0 50 37 68 37 32 0 50"/><polygon points="100 50 64 32 64 68 100 50"/></svg>
+										</div>
+									</div>
+									<div class="uk-margin-small-top uk-text-center uk-text-italic" uk-height-viewport="expand: true">Various palette colors.</div>
+								</div>
+							</div>
+						</div>
+						<div class="uk-margin-medium-top uk-child-width-1-1" uk-grid>
+							<div class="uk-width-1-1">
+								<h2 class="uk-heading-bullet"><span>The fog</span></h2>
+							</div>
+							<div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
+							</div>
+							<div>
+								<img src="../img/projects/tunnel/temp/fog-action.png" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="uk-section uk-section-small">
+					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+						<h2 id="ui-code" class="uk-text-center title-link uk-heading-divider"><a href="#ui-code">Reusable UI code</a></h2>
+						<div class="uk-child-width-1-1">
+							<div class="uk-child-width-1-1 uk-margin-remove-adjacent uk-align-left" style="width: 40%;">
+								<img src="../img/projects/tunnel/temp/ui-code.jpg" alt="" class="project-image">
+								<div class="uk-margin-small-top uk-text-center uk-text-italic">Description.</div>
+							</div>
+							<div>
+								<p><b><u>How the UI framework works.</u></b><br>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="uk-section uk-section-small">
+					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+						<h2 id="final-thoughts" class="uk-text-center title-link uk-heading-divider"><a href="#final-thoughts">Final thoughts</a></h2>
+						<div class="uk-child-width-1-1">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
+						</div>
 					</div>
 				</section>
 			</main>
-			
 			<div class="uk-width-1-1 uk-width-3xlarge@s">
 				<footer class="uk-margin-large-top uk-padding-small">
 					<div class="uk-text-central uk-child-width-1-1" uk-grid>
