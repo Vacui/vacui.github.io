@@ -60,7 +60,7 @@ function domReady() {
 	function scrollIt(x){
 	  var wrapperWidth = document.querySelector('.wrapper').offsetWidth;
 	  // Calculate our transform
-	  let transform = toPercentage(x, wrapperWidth);
+	  let transform = toPercentage(x, wrapperWidth, false);
 	  // we show all our bottom image but how much of our middle and top,
 	  // that'll depend on what we're dragging
 	  // if we're dragging the middle slider
@@ -85,8 +85,12 @@ function domReady() {
 	  }
 	}
 	
-	function toPercentage(x, max){
-		x = Math.min(Math.max(x,-25),max-27);
+	function toPercentage(x, max, useBorder = true){
+		if(useBorder===true){
+			x = Math.min(Math.max(x,-24),max-25);
+		}else{
+			x = Math.min(x,max);
+		}
 		return (x*100)/max;
 	}
 	
