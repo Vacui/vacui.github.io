@@ -13,9 +13,9 @@
 		<script src="../js/slider.js"></script>
 	</head>
 	<body>
-		<div align="center">
-			<div class="uk-padding-small-top uk-padding-small-bottom uk-section-muted uk-margin-medium-bottom uk-position-relative">
-				<div class="uk-width-1-1 uk-width-2xlarge@s" style="padding: 0 15px;">
+		<div class="uk-position-relative" align="center">		
+			<div class="uk-padding-small-top uk-padding-small-bottom uk-section-muted uk-margin-medium-bottom">
+				<div class="uk-width-1-1 uk-width-3xlarge@s" style="padding: 0 15px;">
 					<header class="uk-padding-small-top uk-grid-small uk-grid-collapse@m uk-child-width-1-1" uk-grid>
 						<h1>Graizzaro Matteo</h1>
 						<h3 class="uk-text-large uk-text-light">Junior Game Programmer</h3>
@@ -45,123 +45,204 @@
 						</div>
 					</nav>
 				</div>
-				
-				<div class="uk-width-1-1 uk-width-2xlarge@s uk-margin-remove uk-position-relative">
-					<div class="uk-margin-large-left uk-text-left uk-sidebar-right uk-visible@l">
-						<div uk-sticky="offset: 240" style="z-index: 980;">
-							<ul uk-scrollspy-nav="closest: li; scroll: true; offset: 70; overflow: false" class="uk-nav uk-nav-default">
-								<li>
-									<a href="#">
-										<span uk-icon="chevron-up" class="uk-margin-small-right uk-icon"></span>
-										<span class="uk-text-middle">To top</span>
-									</a>
-								</li>
-								<li class="uk-nav-divider"></li>
-								<li><a href="#summary">Summary</a></li>
-								<li><a href="#game-design">Game design</a></li>
-								<li><a href="#level-generation">Level generation</a></li>
-								<li><a href="#player">The player</a></li>
-								<li><a href="#art">Simple and effective art</a></li>
-								<li><a href="#ui-code">Reusable UI code</a></li>
-								<li><a href="#final-thoughts">Final thoughts</a></li>
-							</ul>
-						</div>
+			</div>
+			
+			<div class="uk-width-1-1 uk-width-3xlarge@s uk-margin-remove uk-position-relative" style="z-index: 10;">
+				<div id="#sidebar" class="uk-text-left uk-sidebar-right uk-visible@l" style="width: 150px;">
+					<div uk-sticky="offset: 50; width-element: #sidebar;">
+						<ul uk-scrollspy-nav="closest: li; scroll: true; offset: 80; overflow: false" class="uk-nav-default uk-nav">
+							<li>
+								<a href="#">
+									<span uk-icon="chevron-up" class="uk-margin-small-right uk-icon"></span>
+									<span class="uk-text-middle">To top</span>
+								</a>
+							</li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="#summary">Summary</a></li>
+							<li><a href="#game-design">Game design</a></li>
+							<li><a href="#level-generation">Level generation</a></li>
+							<li><a href="#player">The player</a></li>
+							<li><a href="#art">Simple and effective art</a></li>
+							<li><a href="#closing-thoughts">Closing thoughts</a></li>
+							<li class="uk-nav-divider"></li>
+							<li>
+								<a href="https://github.com/Vacui/Tunnel">
+									<span uk-icon="github" class="uk-margin-small-right"></span>
+									<span class="uk-text-middle">GitHub</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://matteo-graizzaro.itch.io/tunnel-wip">
+									<span uk-icon="itch-dot-io" class="uk-margin-small-right"></span>
+									<span class="uk-text-middle">Itch.io</span>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-				
+			
 			<main class="uk-position-relative uk-text-left">
 				<section class="uk-section uk-padding-remove-vertical uk-margin-medium-bottom">
 					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
 						<div class="uk-background-cover uk-height-medium" style="background-image: url(../img/projects/tunnel/logo-small.png);"></div>
 					</div>
 				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 id="summary" class="uk-text-center title-link uk-heading-divider"><a href="#summary">Summary</a></h2>
-						<div class="uk-child-width-1-1 uk-grid-row-medium" uk-grid>
-							<div>
-								<p><b><u>Small summary about the game.</u></b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <span class="uk-text-bold uk-text-primary">dolore magna aliqua</span>.Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
-							</div>
-							<div class="uk-child-width-1-2 uk-grid-row-small" uk-grid>
-								<h3 class="uk-heading-bullet uk-width-1-1"><span>Goals</span></h3>
-								<ul class="uk-list uk-list-circle">
-									<li>Goal 1</u></b><br></li>
-									<li>Goal 2</li>
-								</ul>
-								<ul class="uk-list uk-list-circle">
-									<li>Goal 3</li>
-									<li>Goal x</li>
-								</ul>
-							</div>
+				<section class="uk-hidden@l">
+					<div class="uk-text-large uk-flex-center uk-grid-column-medium uk-margin-medium-top uk-grid-divider" uk-grid>
+						<div class="uk-article-meta">
+							<a href="https://github.com/Vacui/Tunnel" class="uk-logo">
+								<span uk-icon="icon: github; ratio: 2" class="uk-margin-small-right"></span>
+								<span class="uk-text-middle">GitHub</span>
+							</a>
+						</div>
+						<div class="uk-article-meta">
+							<a href="https://matteo-graizzaro.itch.io/tunnel-wip" class="uk-logo">
+								<span uk-icon="icon: itch-dot-io; ratio: 2" class="uk-margin-small-right"></span>
+								<span class="uk-text-middle">Itch.io</span>
+							</a>
 						</div>
 					</div>
 				</section>
 				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 id="game-design" class="uk-text-center title-link uk-heading-divider"><a href="#game-design">Game design</a></h2>
-						<div class="uk-child-width-1-1 uk-grid-row-medium" uk-grid>
+					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+						<h2 id="summary" class="uk-text-center title-link uk-heading-divider"><a href="#summary">Summary</a></h2>
+						<div class="uk-child-width-1-1 uk-child-width-1-2@m" uk-grid="masonry: true;" style="margin-top: 30px;">
 							<div>
-								<p><b><u>Initial idea and how it changed during the development.</u></b><br>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
+								<p>This project was an effective proving ground to improve my workflow and overcome my limitations. The extensive use of GitHub and designing the code to maximize its flexibility are two factors that have helped me greatly during development.</p>
 							</div>
 							<div class="uk-child-width-1-1">
-								<h3 class="uk-heading-bullet"><span>Reach the end</span></h3>
-								<div class="uk-child-width-1-1 uk-margin-remove-adjacent uk-align-left" style="width: 40%;">
-									<img src="../img/projects/tunnel/temp/end-pointer.jpg" alt="" class="project-image">
-									<div class="uk-margin-small-top uk-text-center uk-text-italic">Description.</div>
-								</div>
-								<div>
-									<p><b><u>How the end pointer works, both visual and technical side.</u></b><br>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
-								</div>
+								<h3 class="uk-heading-bullet uk-width-1-1"><span>Specifications</span></h3>
+								<ul class="uk-list uk-list-circle">
+									<li>2.5 months half time (4h/day)</li>
+									<li>Developed in Unity</li>
+									<li>Puzzle game</li>
+									<li>Sprites made in <a href="https://www.photopea.com/">Photopea</a></li>
+									<li>UI icons from <a href="https://materialdesignicons.com/">Material Design Icons</a></li>
+									<li>Plugins used: TextMesh Pro, <a href="https://assetstore.unity.com/packages/tools/animation/leantween-3595">LeanTween</a>, <a href="https://github.com/arimger/Unity-Editor-Toolbox/tree/master/Assets/Editor%20Toolbox">Unity Editor Toolbox</a>, <a href="https://assetstore.unity.com/packages/tools/gui/ultevents-111307">Ult Events</a> and <a href="https://www.febucci.com/2020/10/custom-hierarchy-for-unity/">Custom Hierarchy</a></li>
+								</ul>
+							</div>
+							<div class="uk-child-width-1-1">
+								<h3 class="uk-heading-bullet uk-width-1-1"><span>Project goals</span></h3>
+								<ul class="uk-list uk-list-circle">
+									<li>Building a PC game with simple and effective design and a complex technical structure under the surface</li>
+									<li>Relying more on GitHub to organize the development and preserve its history</li>
+									<li>Developing a modular UI framework reusable in future projects</li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</section>
 				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 id="level-generation" class="uk-text-center title-link uk-heading-divider"><a href="#level-generation">Level generation</a></h2>
+					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+						<h2 id="game-design" class="uk-text-center title-link uk-heading-divider"><a href="#game-design">Game design</a></h2>
+						<div>
+							<p>As usual I took one of the many ideas I drafted during my educational years. It was something like this:</p>
+							<blockquote cite="#">
+								<p class="uk-margin-small-bottom">
+									The player is in a maze of square tiles with a <span class="uk-text-bold uk-text-primary">direction</span> that forces its movement.<br>
+									Some tiles, called <span class="uk-text-bold uk-text-primary">nodes</span>, allow the player to regain control.<br>
+									Multiple tiles connected by their directions compose a <span class="uk-text-bold uk-text-primary">tunnel</span>.
+								</p>
+								<footer>Initial idea</footer>
+							</blockquote>
+							<p>During the pre-production, after sketching some levels, I encountered 2 unwanted occurrences:</p>
+							<ul class="uk-list uk-list-decimal">
+								<li>Reaching a dead end means game-over, as backtracking is impossible.</li>
+								<li>A split into a tunnel generates an unsolvable situation since I can't determine the right direction to go.</li>
+							</ul>
+							<p>I solved both issues by managing the generation of levels via a script instead of making them myself. Something that allowed me to experience the use of <span class="uk-text-bold uk-text-primary">random generation</span> while also keeping the game design open to later changes and reducing to the minimum the insurgence of human error.</p>
+						</div>
 						<div class="uk-child-width-1-1">
+							<h3 class="uk-heading-bullet uk-margin-medium-top"><span>Reach the end</span></h3>
 							<div class="uk-child-width-1-1 uk-margin-remove-adjacent uk-align-right" style="width: 40%;">
-								<img src="../img/projects/tunnel/temp/lvl-settings.jpg" width="250" height="300" alt="" class="project-image">
-								<div class="uk-margin-small-top uk-text-center uk-text-italic">Description.</div>
+								<img src="../img/projects/tunnel/pointer.gif" alt="" class="project-image">
+								<div class="uk-margin-small-top uk-text-center uk-text-italic">The end pointer behaviour</div>
 							</div>
-							<div class="uk-grid-column-medium uk-display-block" uk-grid>
-								<div>
-									<p><b><u>How the level generation works.</u></b><br>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
-								</div>
-								<div>
-									<h3 class="uk-heading-bullet"><span>Level generation phases</span></h3>
-									<ul class="uk-list uk-list-circle">
-										<li>Phase 1</li>
-										<li>Phase 2</li>
-										<li>Phase x</li>
-									</ul>
-								</div>
+							<div>
+								<p>The main and only objective for the player is to <span class="uk-text-bold uk-text-primary">reach the end</span>, but its position was originally, making the exploration frustrating, even more since there was no pattern in the generation of the levels.</p>
+								<p>To solve the issue I showed the end and its entrances from the start, I then later implemented a pathfinding system to tell the player the distance from it, and an arrow to point its position.</p>
+								<p>All of these systems allow the player to know where the end is. But reaching it is still no easy task since every tunnel can either reduce or increase the distance.</p>
+								<p><span class="uk-text-bold uk-text-primary">Exploration</span> and <span class="uk-text-bold uk-text-primary">patience</span> are the <span class="uk-text-bold uk-text-primary">keys</span> to victory.</p>
 							</div>
 						</div>
 					</div>
 				</section>
 				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 id="player" class="uk-text-center title-link uk-heading-divider"><a href="#player">The Player</a></h2>
+					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+						<h2 id="level-generation" class="uk-text-center title-link uk-heading-divider"><a href="#level-generation">Level generation</a></h2>
 						<div class="uk-child-width-1-1 uk-margin-remove-adjacent uk-align-left" style="width: 40%;">
-							<img src="../img/projects/tunnel/temp/player-move.jpg" alt="" class="project-image">
-							<div class="uk-margin-small-top uk-text-center uk-text-italic">Description.</div>
+							<div uk-slideshow="ratio: 9:16">
+								<div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+									<ul class="uk-slideshow-items">
+										<li><img src="../img/projects/tunnel/levels/1.jpg" alt="" uk-cover></li>
+										<li><img src="../img/projects/tunnel/levels/2.jpg" alt="" uk-cover></li>
+										<li><img src="../img/projects/tunnel/levels/3.jpg" alt="" uk-cover></li>
+										<li><img src="../img/projects/tunnel/levels/4.jpg" alt="" uk-cover></li>
+									</ul>
+									<a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+									<a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+								</div>
+								<ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+							</div>
+							<div class="uk-margin-small-top uk-text-center uk-text-italic">Examples of randomly generated levels</div>
+						</div>
+						<div class="uk-child-width-1-1 uk-display-block">
+							<div>
+								<p>To retain flexibility in the game design, I decided early on to manage the game levels through a random generation algorithm, that will be later implement based on the <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* search algorithm</a>, appropriately customized to fit with the other systems.</p>
+								<p>The player can customize the level width, height, and percentage of nodes, and it can also stop the generation process at any time since it is executed in <span class="uk-text-bold uk-text-primary">parallel</span> with the main thread to not freeze the game.</p>
+								<p>The system is designed in phases, each of them must necessarily end successfully, otherwise, the generation is considered failed and is aborted. The player is notified of this and asked to try again. To further reduce the occurrence of this case, I gave each phase some extra attempts equal to about 50% of the cycles it must perform to complete.</p>
+							</div>
+							<div>
+								<h3 class="uk-heading-bullet uk-margin-medium-top"><span>Phase 1: Nodes</span></h3>
+								<p>Chose random tiles and turn them into nodes. There must be at least two for the phase to be a success.</p>
+							</div>
+							<div>
+								<h3 class="uk-heading-bullet uk-margin-medium-top"><span>Phase 2: Tunnels</span></h3>
+								<p>Start looping through all the nodes and connect each of them with the next in the list using the A* algorithm to find a suitable path, if it is not possible try to connect the same starting node with the one after the previous attempt. If less than half of the nodes are being connected this phase is considered failed.</p>
+							</div>
+							<div>
+								<h3 class="uk-heading-bullet uk-margin-medium-top"><span>Phase 3: Final touches</span></h3>
+								<p>Each node that is not connected with another is deleted, then the first is turned into the level start, and the last into the end. Reaching this phase marks the completion of the generation and the new level is then processed by other systems to produce the visuals, spawn the player, etc ...</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="uk-section uk-section-small">
+					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+						<h2 id="player" class="uk-text-center title-link uk-heading-divider"><a href="#player">The Player</a></h2>
+						<div class="uk-child-width-1-1 uk-margin-remove-adjacent uk-align-right" style="width: 40%;">
+							<img src="../img/projects/tunnel/player.gif" alt="" class="project-image">
+							<div class="uk-margin-small-top uk-text-center uk-text-italic">How the character moves</div>
 						</div>
 						<div>
-							<p><b><u>How the player moves.</u></b><br>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
+							<p>To only way the player can reach the goal is by moving its character (the physical body in the game). Its possibilities are ruled by the tile it standing on. As I previously explained each tile has a direction, represented by an enum field, whose values can be: null, all, up, right, down, left.<br>
+							For a player to fully complete a movement, both of these conditions must be true:<br>
+							<ul class="uk-list uk-list-circle">
+								<li><span class="uk-text-bold">Exit condition</span>: The direction is the same as the one of its current tile</li>
+								<li><span class="uk-text-bold">Enter condition</span>: The direction is not opposed to that of the tile in which it wants to move</li>
+							</ul>
+							<span class="uk-text-italic">Since Nodes have the "All" direction, they returns true in all cases.</span></p>
+							<p>If the movement is completed and the player enters a new tile, a new check is raised:
+							<ul class="uk-list uk-list-circle">
+								<li><span class="uk-text-bold">Safe condition</span>: The current tile is a Node</li>
+							</ul>
+							If it is correct, the player regain control over the character, if not, it means the character is in a tunnel and it is <span class="uk-text-bold uk-text-primary">forced</span> to move in the direction of its new current tile, restarting the whole process, until a safe tile is reached. Sometimes can happen that this movement points to a tile that doesn't exist (such in a curve), in that case the game tries all other possible directions (clockwise) until one is valid or none of them are, in the second case the current tile is considered "safe" and the game reports an error. Thanks to the automatic generation of levels this game-breaking case is nearly impossible.</p>
+						</div>
+						<div>
+							<h3 class="uk-heading-bullet uk-margin-medium-top"><span>A bit of juice</span></h3>
+							<p>While zapping on the internet I stumbled across a nice puzzle game called <a href="https://store.steampowered.com/app/1471960/Room_to_Grow/">Room to Grow</a> by <span class="uk-text-bold">Mischka Kamener</span>, and I found its UX fantastic, so I decided to take inspiration from it and I implemented a little bounce that shows the player when a direction is not valid.<br>
+							To make this possible I made the distance the player travels to go to a node (which is usually equal to the distance from the current node to the next), an editable variable. If the direction is not valid I perform the movement anyway, but only for a fraction of it (about a third), and when it is completed I return the player to its original position, therefore generating a bounce-like animation via code. It will not trigger if the player is in a tunnel.</p>
 						</div>
 					</div>
 				</section>
 				<section class="uk-section uk-section-small uk-section-secondary">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
 						<h2 id="art" class="uk-text-center title-link uk-heading-divider"><a href="#art">Simple and effective art</a></h2>
 						<div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
+							<p>During the game development, I tested various art styles, such as pixel art for example, but I settled to doing easy-to-read sprites made with vector graphic.<br>
+							Initially, the tiles had an arrow showing their direction, but I soon discovered that it overwhelmed the player with too much information, such as in a straight section.<br>
+							Then I found out the marvelous game <a href="https://store.steampowered.com/app/1127500/Mini_Motorways/?curator_clanid=32940098">Mini Motorways</a> by Dinosaur Polo Club, and its use of shadows to highlight the high ground. I then just repurposed the trick to intead shows to the player in which directions it <u>can't</u> go.</p>
 						</div>
 						<div class="uk-child-width-1-1 uk-margin-medium-top" uk-grid>
 							<div>
@@ -169,11 +250,12 @@
 							</div>
 							<div>
 								<img src="../img/projects/tunnel/elements.png" alt="">
-								<div class="uk-margin-small-top uk-text-center uk-text-italic">The sprites that compose a level.</div>
+								<div class="uk-margin-small-top uk-text-center uk-text-italic">The sprites that compose a level. To cover every possible case they are mirrored and rotated.</div>
 							</div>
 							<div class="uk-child-width-1-1 uk-child-width-1-2@m" uk-grid>
 								<div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
+									<p>The level is built using 2 Tilemaps, one for the visuals and the other for the fog-of-war, the first composed of <span class="uk-text-bold uk-text-primary">custom</span> <a href="https://github.com/Vacui/Tunnel/blob/main/Assets/Scripts/Level/ElementRuleTile.cs">RuleTiles</a> that I programmed to communicate directly with the level manager. I concluded that the Tilemap was the best tool after numerous attempts to develop a similar but more simplified version called <a href="https://github.com/Vacui/Tunnel/blob/main/Assets/Scripts/Level/GridXY.cs">GridXY</a> which I then <span class="uk-text-bold uk-text-primary">reused</span> to store the data of a level.</p>
+									<p>To add variety to the player experience, I've added an auxiliary system that changes the game's palette every time the main menu is visited.</p>
 								</div>
 								<div>
 									<div class="wrapper uk-height-medium uk-position-relative" style="padding-top: 75%;">
@@ -202,39 +284,30 @@
 								<h2 class="uk-heading-bullet"><span>The fog</span></h2>
 							</div>
 							<div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
+								<p>One of the main mechanics of the game, fog-of-war hasn't gone through many changes. Each tile can be <span class="uk-text-italic">visible</span> or <span class="uk-text-italic">hidden</span>, and towards the end of development also <span class="uk-text-italic">ready to visible</span>, a middle state I had to implement to allow the discovery of a group of empty tiles once all the tunnels surrounding it are visible. Following some feedback, I also added a small animation to improve the effect and to increase the player's <span class="uk-text-bold uk-text-primary">reward</span> for <span class="uk-text-bold uk-text-primary">exploration</span>.<br>
+								On a technical level, it was challenging to make the level visuals to communicate with the fog, but apart from that, the use of the default RuleTile together with standard sprites allowed me to support all the possible variants, as you can see from the GIF below.</p>
 							</div>
 							<div>
-								<img src="../img/projects/tunnel/temp/fog-action.png" alt="">
+								<img src="../img/projects/tunnel/fog.gif" alt="">
 							</div>
 						</div>
 					</div>
 				</section>
 				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 id="ui-code" class="uk-text-center title-link uk-heading-divider"><a href="#ui-code">Reusable UI code</a></h2>
+					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+						<h2 id="closing-thoughts" class="uk-text-center title-link uk-heading-divider"><a href="#closing-thoughts">Closing thoughts</a></h2>
 						<div class="uk-child-width-1-1">
-							<div class="uk-child-width-1-1 uk-margin-remove-adjacent uk-align-left" style="width: 40%;">
-								<img src="../img/projects/tunnel/temp/ui-code.jpg" alt="" class="project-image">
-								<div class="uk-margin-small-top uk-text-center uk-text-italic">Description.</div>
-							</div>
-							<div>
-								<p><b><u>How the UI framework works.</u></b><br>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 id="final-thoughts" class="uk-text-center title-link uk-heading-divider"><a href="#final-thoughts">Final thoughts</a></h2>
-						<div class="uk-child-width-1-1">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus. Feugiat vivamus at augue eget arcu dictum varius duis at. Nulla malesuada pellentesque elit eget gravida. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Sollicitudin nibh sit amet commodo nulla.</p>
+							<p>This project has been a considerable challenge and I learned a lot while trying to fulfill its scope, which grew larger each day. Despite this, I am satisfied to have completed it and to have discovered new strategies and features to use in my next works. However, if I could go back in time I would</p>
+							<ul class="uk-list uk-list-circle">
+								<li>Design my code with performance in mind from the beginning. Once you go deeper it's hard to restructure a project, and the slowness in my level generation shows how much it can effect the end user.</li>
+								<li>Iterate more often in order to spot problems quickly, because producing a demo every 3-4 weeks is not frequent enough.</li>
+								<li>Avoid trying to rediscover the wheel by developing my own solutions to problems that have already been solved, and instead spend more time adding all those simple details that go a long way in improving the player experience.</li>
+							</ul>
 						</div>
 					</div>
 				</section>
 			</main>
-			<div class="uk-width-1-1 uk-width-2xlarge@s">
+			<div class="uk-width-1-1 uk-width-3xlarge@s">
 				<footer class="uk-margin-large-top uk-padding-small">
 					<div class="uk-text-central uk-child-width-1-1" uk-grid>
 						<div class="uk-child-width-1-1 uk-flex-center uk-child-width-auto@s uk-grid-collapse uk-grid-medium@s" uk-grid>
