@@ -24,6 +24,9 @@ p{
 .uk-navbar-nav>li>a{
 	min-height: 0px;
 }
+.uk-nav>li>a{
+	padding-left: 10px!important;
+}
 .uk-padding-small-top{
 	padding-top: 15px;
 }
