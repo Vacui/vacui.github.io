@@ -74,7 +74,7 @@ p{
 .uk-nav>li.uk-active>a:before, .uk-nav-sub>li.uk-active>a:before {
     content: "";
     position: absolute;
-    left: -25px;
+    left: -10px;
     width: 15px;
     border-top: 1px solid #1e87f0;
 }
@@ -141,6 +141,8 @@ div.uk-filter a{
 .uk-width-3xlarge {
   width: 980px;
 }
+
+
 @media (min-width: 640px) {
 	.uk-width-3xlarge\@s {
 	  width: 980px;
@@ -175,6 +177,12 @@ div.uk-filter a{
 	}
 	.uk-padding-small-bottom\@l {
 		padding-bottom: 15px;
+	}
+	.uk-align-right, .uk-align-right\@l, .uk-align-right\@m, .uk-align-right\@s{
+		margin-left: 30px;
+	}
+	.uk-align-left, .uk-align-left\@l, .uk-align-left\@m, .uk-align-left\@s{
+		margin-right: 30px;
 	}
 }
 @media (min-width: 1600px) {
