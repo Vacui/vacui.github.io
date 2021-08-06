@@ -130,20 +130,14 @@ div.uk-filter a{
 	text-decoration: none;
 }
 
-.platform-links>div{
-	z-index: 2;
-	padding-left: 5px !important;
-}
-.platform-links>div.uk-grid-margin{
-	margin-top: 5px !important;
-}
-
 .uk-width-3xlarge {
   width: 980px;
 }
 
-
 @media (min-width: 640px) {
+	.width-contacts{
+		width: 330px;
+	}
 	.uk-width-3xlarge\@s {
 	  width: 980px;
 	}
@@ -158,6 +152,7 @@ div.uk-filter a{
 	}
 }
 @media (min-width: 960px) {
+	
 	.uk-width-3xlarge\@m {
 	  width: 980px;
 	}
