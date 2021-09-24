@@ -15,9 +15,10 @@
 	background-size: 100%;
 }
 
-.project-image{
-	border: 1px solid rgba(0,0,0,0.16);
+.project-image-hover{
+	opacity: .6;
 }
+
 p{
 	margin: 0px 0px 10px 0px;
 }
@@ -26,25 +27,6 @@ p{
 }
 .uk-nav>li>a{
 	padding-left: 10px!important;
-}
-.uk-padding-small-top{
-	padding-top: 15px;
-}
-
-.uk-padding-medium-top{
-	padding-top: 30px;
-}
-
-.uk-padding-small-bottom{
-	padding-bottom: 15px;
-}
-
-.uk-padding-medium-bottom{
-	padding-bottom: 30px;
-}
-
-.uk-padding-large-bottom{
-	padding-bottom: 70px;
 }
 
 .uk-position-center-bottom-out{
@@ -61,6 +43,10 @@ p{
 	top: 0px;
 	left: 100%;
 	width: max-content;
+}
+
+.uk-iconnav>*>span {
+    display: block;
 }
 
 .uk-nav-sub>li.uk-active>a:before{
@@ -97,6 +83,10 @@ p{
     width: 200px;
 }
 
+.uk-text-bottom{
+	vertical-align: text-bottom !important;
+}
+
 h2.title-link>a, a.hide-link{
 	color: inherit;
     text-decoration: none;
@@ -118,10 +108,6 @@ h2:not(.uk-text-center).title-link>a{
 	margin-left: 20px;
 }
 
-.uk-overlay-default{
-	background: rgb(50 50 50 / 64%);
-}
-
 ul.js-filter>li {
   margin-top: 0px !important;
 }
@@ -132,6 +118,38 @@ div.uk-filter a{
 
 .uk-width-3xlarge {
   width: 980px;
+}
+
+.uk-padding-small-top{
+	padding-top: 15px;
+}
+
+.uk-padding-small-bottom{
+	padding-bottom: 15px;
+}
+
+.uk-padding-small-right{
+	padding-right: 15px;
+}
+
+.uk-padding-small-left{
+	padding-left: 15px;
+}
+
+.uk-padding-large-top{
+	padding-top: 30px;
+}
+
+.uk-padding-large-bottom{
+	padding-bottom: 30px;
+}
+
+.uk-padding-large-right {
+	padding-right: 30px;
+}
+
+.uk-padding-large-left {
+	padding-left: 30px;
 }
 
 @media (min-width: 640px) {
@@ -150,6 +168,24 @@ div.uk-filter a{
 	.uk-padding-small-bottom\@s {
 		padding-bottom: 15px;
 	}
+	.uk-padding-small-right\@s {
+		padding-right: 15px;
+	}
+	.uk-padding-small-left\@s {
+		padding-left: 15px;
+	}
+	.uk-padding-large-top\@s {
+		padding-top: 30px;
+	}
+	.uk-padding-large-bottom\@s {
+		padding-bottom: 30px;
+	}
+	.uk-padding-large-right\@s {
+		padding-right: 30px;
+	}
+	.uk-padding-large-left\@s {
+		padding-left: 30px;
+	}
 }
 @media (min-width: 960px) {
 	
@@ -162,6 +198,12 @@ div.uk-filter a{
 	.uk-padding-small-bottom\@m {
 		padding-bottom: 15px;
 	}
+	.uk-padding-small-right\@m {
+		padding-right: 15px;
+	}
+	.uk-padding-small-left\@m {
+		padding-left: 15px;
+	}
 }
 @media (min-width: 1200px) {
 	.uk-width-3xlarge\@l {
@@ -172,6 +214,12 @@ div.uk-filter a{
 	}
 	.uk-padding-small-bottom\@l {
 		padding-bottom: 15px;
+	}
+	.uk-padding-small-right\@l {
+		padding-right: 15px;
+	}
+	.uk-padding-small-left\@l {
+		padding-left: 15px;
 	}
 	.uk-align-right, .uk-align-right\@l, .uk-align-right\@m, .uk-align-right\@s{
 		margin-left: 30px;
@@ -189,5 +237,11 @@ div.uk-filter a{
 	}
 	.uk-padding-small-bottom\@xl {
 		padding-bottom: 15px;
+	}
+	.uk-padding-small-right\@xl {
+		padding-right: 15px;
+	}
+	.uk-padding-small-left\@xl {
+		padding-left: 15px;
 	}
 }

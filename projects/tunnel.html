@@ -24,27 +24,29 @@
 					<hr class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom">
 				</div>
 				
-				<div class="uk-navbar-container" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;"  uk-navbar>
-					<nav class="uk-width-2xlarge@s uk-margin-auto">
-						<div class="uk-width-1-1">
-							<ul class="uk-navbar-nav uk-child-width-1-2">
-								<li class="uk-padding-small"><a href="../index.html">Home</a></li>
-								<li class="uk-padding-small">
-									<a>Projects</a>
-									<div class="uk-navbar-dropdown uk-text-left">
-										<ul class="uk-nav uk-navbar-dropdown-nav">
+				<nav class="uk-navbar-container" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;" uk-navbar>
+					<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav uk-child-width-1-2">
+							<li class="uk-padding-small"><a href="../">Home</a></li>
+							<li class="uk-padding-small">
+								<a>Projects</a>
+								<div class="uk-navbar-dropdown uk-text-left" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify; offset: 0">
+									<div class="uk-navbar-dropdown-grid uk-child-width-expand uk-margin-remove-left" uk-grid>
+									   <ul class="uk-subnav uk-subnav-pill uk-flex-center uk-flex-left@m" uk-margin>
+											<li><a href="library.html">Whitches Library</a></li>
+											<li><a href="solitaire.html">Solitaire</a></li>
 											<li><a href="ploppem2.html">Ploppem 2</a></li> 
 											<li class="uk-active"><a href="tunnel.html">Tunnel</a></li>
 											<li><a href="ploppem.html">Ploppem</a></li>
 											<li><a href="nodib.html">Nodib</a></li>
 											<li><a href="oath.html">Oath</a></li>
 										</ul>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</nav>
-				</div>
+								   </div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
 			</div>
 			
 			<div class="uk-width-1-1 uk-width-3xlarge@s uk-margin-remove uk-position-relative" style="z-index: 10;">
@@ -85,7 +87,7 @@
 			<main class="uk-position-relative uk-text-left">
 				<section class="uk-section uk-padding-remove-vertical uk-margin-medium-bottom">
 					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<div class="uk-background-cover uk-height-medium" style="background-image: url(../img/projects/tunnel/logo-small.png);"></div>
+						<div class="uk-background-cover uk-height-medium uk-border-rounded" style="background-image: url(../img/projects/tunnel/logo-small.png);"></div>
 					</div>
 				</section>
 				<section class="uk-hidden@l">
@@ -155,7 +157,7 @@
 						</div>
 						<div class="uk-child-width-1-1">
 							<h3 class="uk-heading-bullet uk-margin-medium-top"><span>Reach the end</span></h3>
-							<div class="uk-child-width-1-1 uk-margin-remove-adjacent uk-align-right" style="width: 40%;">
+							<div class="uk-child-width-1-1 uk-margin-remove-adjacent uk-align-right uk-width-1-3">
 								<img src="../img/projects/tunnel/pointer.gif" alt="" class="project-image">
 								<div class="uk-margin-small-top uk-text-center uk-text-italic">The end pointer behaviour</div>
 							</div>
@@ -171,7 +173,7 @@
 				<section class="uk-section uk-section-small">
 					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
 						<h2 id="level-generation" class="uk-text-center title-link uk-heading-divider"><a href="#level-generation">Level generation</a></h2>
-						<div class="uk-child-width-1-1 uk-margin-remove-adjacent uk-align-left" style="width: 40%;">
+						<div class="uk-child-width-1-1 uk-margin-remove-adjacent uk-align-left uk-width-1-3">
 							<div uk-slideshow="ratio: 9:16">
 								<div class="uk-position-relative uk-visible-toggle" tabindex="-1">
 									<ul class="uk-slideshow-items">
@@ -211,7 +213,7 @@
 				<section class="uk-section uk-section-small">
 					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
 						<h2 id="player" class="uk-text-center title-link uk-heading-divider"><a href="#player">The Player</a></h2>
-						<div class="uk-child-width-1-1 uk-margin-remove-adjacent uk-align-right" style="width: 40%;">
+						<div class="uk-child-width-1-1 uk-margin-remove-adjacent uk-align-right uk-width-1-3">
 							<img src="../img/projects/tunnel/player.gif" alt="" class="project-image">
 							<div class="uk-margin-small-top uk-text-center uk-text-italic">How the character moves</div>
 						</div>

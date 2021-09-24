@@ -33,27 +33,29 @@
 					<hr class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom">
 				</div>
 				
-				<div class="uk-navbar-container" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;"  uk-navbar>
-					<nav class="uk-width-2xlarge@s uk-margin-auto">
-						<div class="uk-width-1-1">
-							<ul class="uk-navbar-nav uk-child-width-1-2">
-								<li class="uk-padding-small"><a href="index.html">Home</a></li>
-								<li class="uk-padding-small">
-									<a>Projects</a>
-									<div class="uk-navbar-dropdown uk-text-left">
-										<ul class="uk-nav uk-navbar-dropdown-nav">
+				<nav class="uk-navbar-container" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;" uk-navbar>
+					<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav uk-child-width-1-2">
+							<li class="uk-padding-small"><a href="../">Home</a></li>
+							<li class="uk-padding-small">
+								<a>Projects</a>
+								<div class="uk-navbar-dropdown uk-text-left" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify; offset: 0">
+									<div class="uk-navbar-dropdown-grid uk-child-width-expand uk-margin-remove-left" uk-grid>
+									   <ul class="uk-subnav uk-subnav-pill uk-flex-center uk-flex-left@m" uk-margin>
+											<li><a href="projects/library.html">Whitches Library</a></li>
+											<li><a href="projects/solitaire.html">Solitaire</a></li>
 											<li><a href="projects/ploppem2.html">Ploppem 2</a></li> 
 											<li><a href="projects/tunnel.html">Tunnel</a></li>
 											<li><a href="projects/ploppem.html">Ploppem</a></li>
 											<li><a href="projects/nodib.html">Nodib</a></li>
 											<li><a href="projects/oath.html">Oath</a></li>
 										</ul>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</nav>
-				</div>
+								   </div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
 			</div>
 				
 			<main class="uk-width-1-1 uk-width-3xlarge@s uk-text-left uk-grid-large uk-child-width-1-1" uk-grid>
@@ -128,6 +130,10 @@
 								<div class="uk-child-width-1-2 uk-grid-collapse" uk-grid>
 									<div><span class="uk-margin-small-bottom" uk-icon="icon: unity; ratio: 1.75"></span></div>
 									<div><span class="uk-text-middle">Unity</span></div>
+								</div>
+								<div class="uk-child-width-1-2 uk-grid-collapse" uk-grid>
+									<div><span class="uk-margin-small-bottom" uk-icon="icon: unreal; ratio: 1.75"></span></div>
+									<div><span class="uk-text-middle">Unreal</span></div>
 								</div>
 							</div>
 						</div>
@@ -232,18 +238,104 @@
 							</div>
 						</div>
 						<ul class="js-filter uk-child-width-1-1" uk-grid>
+							<li data-type="game" data-date="2021-09-13">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: windows; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>Jul 2021 - Sep 2021</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
+											<li><a href="https://ighibi.itch.io/witch-library" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
+											<li><a href="https://www.artstation.com/artwork/aYA90R" uk-icon="icon: artstation; ratio: 1.25"></a></li>
+										</ul>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span class="uk-position-relative">
+																	<a href="projects/library.html" target="_blank">Witches Library</a>
+																	<span class="uk-text-middle" uk-icon="icon: unreal; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
+															</h3>
+														</div>
+														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
+															<li><a href="https://ighibi.itch.io/witch-library" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
+															<li><a href="https://www.artstation.com/artwork/aYA90R" uk-icon="icon: artstation; ratio: 1.25"></a></li>
+														</ul>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Blueprints</h4></div>
+													<div class="uk-margin-small-top">
+														Assisted an artist in polishing a 3D environment made in Unreal Engine 4, by adding small blueprints to the solution.
+													</div>
+													<div class="uk-margin-small-top uk-text-left">
+														<a href="projects/library.html" class="uk-button uk-button-text" target="_blank">Read more ...</a>
+													</div>
+												</div>
+											</div>
+											<div><img data-src="./img/projects/library/capsule.jpg" alt="" uk-img class="uk-width-medium uk-height-auto uk-visible@m"></div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li data-type="game" data-date="2021-09-08">
+								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
+										<div><span uk-icon="icon: windows; ratio: 1.5"></span></div>
+										<div class="uk-margin-small-top uk-text-break"><h4>Aug 2021 - Sep 2021</h4></div>
+										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
+										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
+											<li><a href="https://matteo-graizzaro.itch.io/solitaire" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
+											<li><a href="https://github.com/Vacui/Solitaire" uk-icon="icon: github; ratio: 1.25"></a></li>
+										</ul>
+									</div>
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
+										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
+											<div class="uk-width-expand uk-padding-remove-left">
+												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
+													<div class="uk-grid-collapse" uk-grid>
+														<div class="uk-width-expand">
+															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
+																<span class="uk-position-relative">
+																	<a href="projects/solitaire.html" target="_blank">Solitaire</a>
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
+															</h3>
+														</div>
+														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
+															<li><a href="https://matteo-graizzaro.itch.io/solitaire" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
+															<li><a href="https://github.com/Vacui/Solitaire" uk-icon="icon: github; ratio: 1.25"></a></li>
+														</ul>
+													</div>
+													<div><h4 class="uk-text-capitalize uk-text-italic">Minimal klondike solitaire</h4></div>
+													<div class="uk-margin-small-top">
+														Polished version of prototype furing a tech test for a job application.
+													</div>
+													<div class="uk-margin-small-top uk-text-left">
+														<a href="projects/solitaire.html" class="uk-button uk-button-text" target="_blank">Read more ...</a>
+													</div>
+												</div>
+											</div>
+											<div><img data-src="./img/projects/solitaire/logo.jpg" alt="" uk-img class="uk-width-medium uk-height-auto uk-visible@m"></div>
+										</div>
+									</div>
+								</div>
+							</li>
 							<li data-type="game" data-date="2050-01-01">
 								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
-									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-medium-bottom" style="width: 110px;">
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
 										<div><span uk-icon="icon: google-translate; ratio: 1.5"></span></div>
 										<div class="uk-margin-small-top uk-text-break"><h4>Feb 2021 - Current</h4></div>
 										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
 										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
-											<li><a href="https://store.steampowered.com/app/1432850/Farewell_North/" target="_blank" uk-icon="icon: steam; ratio: 1.25"></a></li>
-											<li><a href="https://www.localizor.com/farewell-north" target="_blank" uk-icon="icon: localizor; ratio: 1.25"></a></li>
+											<li><a href="https://store.steampowered.com/app/1432850/Farewell_North/" uk-icon="icon: steam; ratio: 1.25"></a></li>
+											<li><a href="https://www.localizor.com/farewell-north" uk-icon="icon: localizor; ratio: 1.25"></a></li>
 										</ul>
 									</div>
-									<div class="uk-width-expand uk-child-width-1-1 uk-padding-medium-bottom">
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
 										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
 											<div class="uk-width-expand uk-padding-remove-left">
 												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
@@ -254,8 +346,8 @@
 															</h3>
 														</div>
 														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
-															<li><a href="https://store.steampowered.com/app/1432850/Farewell_North/" target="_blank" uk-icon="icon: steam; ratio: 1.25"></a></li>
-															<li><a href="https://www.localizor.com/farewell-north" target="_blank" uk-icon="icon: localizor; ratio: 1.25"></a></li>
+															<li><a href="https://store.steampowered.com/app/1432850/Farewell_North/" uk-icon="icon: steam; ratio: 1.25"></a></li>
+															<li><a href="https://www.localizor.com/farewell-north" uk-icon="icon: localizor; ratio: 1.25"></a></li>
 														</ul>
 													</div>
 													<div><h4 class="uk-text-capitalize uk-text-italic">Italian translation</h4></div>
@@ -264,35 +356,38 @@
 													</div>
 												</div>
 											</div>
-											<div><img data-src="./img/projects/farewell-north/logo.gif" alt="" uk-img class="project-image uk-width-medium uk-height-auto uk-visible@m"></div>
+											<div><img data-src="./img/projects/farewell-north/logo.gif" alt="" uk-img class="uk-width-medium uk-height-auto uk-visible@m"></div>
 										</div>
 									</div>
 								</div>
 							</li>
 							<li data-type="game" data-date="2021-07-12">
 								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
-									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-medium-bottom" style="width: 110px;">
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
 										<div><span uk-icon="icon: android; ratio: 1.5"></span></div>
 										<div class="uk-margin-small-top uk-text-break"><h4>May 2021 - Jul 2021</h4></div>
 										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
 										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
-											<li><a href="https://matteo-graizzaro.itch.io/ploppem-2" target="_blank" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
-											<li><a href="https://github.com/Vacui/Ploppem-2" target="_blank" uk-icon="icon: github; ratio: 1.25"></a></li>
+											<li><a href="https://matteo-graizzaro.itch.io/ploppem-2" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
+											<li><a href="https://github.com/Vacui/Ploppem-2" uk-icon="icon: github; ratio: 1.25"></a></li>
 										</ul>
 									</div>
-									<div class="uk-width-expand uk-child-width-1-1 uk-padding-medium-bottom">
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
 										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
 											<div class="uk-width-expand uk-padding-remove-left">
 												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
 													<div class="uk-grid-collapse" uk-grid>
 														<div class="uk-width-expand">
 															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
-																<span>Ploppem 2</span>
+																<span>
+																	<a href="projects/ploppem-2.html" target="_blank">Ploppem 2</a>
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
 															</h3>
 														</div>
 														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
-															<li><a href="https://matteo-graizzaro.itch.io/ploppem-2" target="_blank" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
-															<li><a href="https://github.com/Vacui/Ploppem-2" target="_blank" uk-icon="icon: github; ratio: 1.25"></a></li>
+															<li><a href="https://matteo-graizzaro.itch.io/ploppem-2" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
+															<li><a href="https://github.com/Vacui/Ploppem-2" uk-icon="icon: github; ratio: 1.25"></a></li>
 														</ul>
 													</div>
 													<div><h4 class="uk-text-capitalize uk-text-italic">Minimal endless runner</h4></div>
@@ -304,35 +399,38 @@
 													</div>
 												</div>
 											</div>
-											<div><img data-src="./img/projects/ploppem2/logo.jpg" alt="" uk-img class="project-image uk-width-medium uk-height-auto uk-visible@m"></div>
+											<div><img data-src="./img/projects/ploppem2/logo.jpg" alt="" uk-img class="uk-width-medium uk-height-auto uk-visible@m"></div>
 										</div>
 									</div>
 								</div>
 							</li>
 							<li data-type="game" data-date="2021-05">
 								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
-									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-medium-bottom" style="width: 110px;">
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
 										<div><span uk-icon="icon: windows; ratio: 1.5"></span></div>
 										<div class="uk-margin-small-top uk-text-break"><h4>Feb 2021 - May 2021</h4></div>
 										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
 										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
-											<li><a href="https://matteo-graizzaro.itch.io/tunnel" target="_blank" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
-											<li><a href="https://github.com/Vacui/Tunnel" target="_blank" uk-icon="icon: github; ratio: 1.25"></a></li>
+											<li><a href="https://matteo-graizzaro.itch.io/tunnel" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
+											<li><a href="https://github.com/Vacui/Tunnel" uk-icon="icon: github; ratio: 1.25"></a></li>
 										</ul>
 									</div>
-									<div class="uk-width-expand uk-child-width-1-1 uk-padding-medium-bottom">
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
 										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
 											<div class="uk-width-expand uk-padding-remove-left">
 												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
 													<div class="uk-grid-collapse" uk-grid>
 														<div class="uk-width-expand">
 															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
-																<span>Tunnel</span>
+																<span>
+																	<a href="projects/tunnel.html" target="_blank">Tunnel</a>
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
 															</h3>
 														</div>
 														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
-															<li><a href="https://matteo-graizzaro.itch.io/tunnel" target="_blank" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
-															<li><a href="https://github.com/Vacui/Tunnel" target="_blank" uk-icon="icon: github; ratio: 1.25"></a></li>
+															<li><a href="https://matteo-graizzaro.itch.io/tunnel" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
+															<li><a href="https://github.com/Vacui/Tunnel" uk-icon="icon: github; ratio: 1.25"></a></li>
 														</ul>
 													</div>
 													<div><h4 class="uk-text-capitalize uk-text-italic">Minimal maze puzzle</h4></div>
@@ -344,23 +442,23 @@
 													</div>
 												</div>
 											</div>
-											<div><img data-src="./img/projects/tunnel/logo.jpg" alt="" uk-img class="project-image uk-width-medium uk-height-auto uk-visible@m"></div>
+											<div><img data-src="./img/projects/tunnel/logo.jpg" alt="" uk-img class="uk-width-medium uk-height-auto uk-visible@m"></div>
 										</div>
 									</div>
 								</div>
 							</li>
 							<li data-type="publication" data-date="2021-01-05">
 								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
-									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-medium-bottom" style="width: 110px;">
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
 										<div><span uk-icon="icon: pencil; ratio: 1.5"></span></div>
 										<div class="uk-margin-small-top uk-text-break"><h4>Jan 2020</h4></div>
 										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
 										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
-											<li><a href="https://www.gamasutra.com/blogs/MatteoGraizzaro/20210105/375768/Ploppem_Postmortem_My_unknown_game.php" target="_blank" uk-icon="icon: gamasutra; ratio: 1.25"></a></li>
-											<li><a href="https://matteograizzaro.medium.com/ploppem-postmortem-my-unknown-game-6f3794f1e5f6" target="_blank" uk-icon="icon: medium; ratio: 1.25"></a></li>
+											<li><a href="https://www.gamasutra.com/blogs/MatteoGraizzaro/20210105/375768/Ploppem_Postmortem_My_unknown_game.php" uk-icon="icon: gamasutra; ratio: 1.25"></a></li>
+											<li><a href="https://matteograizzaro.medium.com/ploppem-postmortem-my-unknown-game-6f3794f1e5f6" uk-icon="icon: medium; ratio: 1.25"></a></li>
 										</ul>
 									</div>
-									<div class="uk-width-expand uk-child-width-1-1 uk-padding-medium-bottom">
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
 										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
 											<div class="uk-width-expand uk-padding-remove-left">
 												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
@@ -371,8 +469,8 @@
 															</h3>
 														</div>
 														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
-															<li><a href="https://www.gamasutra.com/blogs/MatteoGraizzaro/20210105/375768/Ploppem_Postmortem_My_unknown_game.php" target="_blank" uk-icon="icon: gamasutra; ratio: 1.25"></a></li>
-															<li><a href="https://matteograizzaro.medium.com/ploppem-postmortem-my-unknown-game-6f3794f1e5f6" target="_blank" uk-icon="icon: medium; ratio: 1.25"></a></li>
+															<li><a href="https://www.gamasutra.com/blogs/MatteoGraizzaro/20210105/375768/Ploppem_Postmortem_My_unknown_game.php" uk-icon="icon: gamasutra; ratio: 1.25"></a></li>
+															<li><a href="https://matteograizzaro.medium.com/ploppem-postmortem-my-unknown-game-6f3794f1e5f6" uk-icon="icon: medium; ratio: 1.25"></a></li>
 														</ul>
 													</div>
 													<div><h4 class="uk-text-capitalize uk-text-italic">Publication</h4></div>
@@ -387,30 +485,33 @@
 							</li>
 							<li data-type="game" data-date="2020-12-23">
 								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
-									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-medium-bottom" style="width: 110px;">
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
 										<div><span uk-icon="icon: android; ratio: 1.5"></span></div>
 										<div class="uk-margin-small-top uk-text-break"><h4>Jul 2020 - Jan 2021</h4></div>
 										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
 										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
-											<li><a href="https://play.google.com/store/apps/details?id=com.vacui.ploppem" target="_blank" uk-icon="icon: googleplay; ratio: 1.25"></a></li>
-											<li><a href="https://matteo-graizzaro.itch.io/ploppem?password=ploppem" target="_blank" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
-											<li><a href="https://github.com/Vacui/Ploppem" target="_blank" uk-icon="icon: github; ratio: 1.25"></a></li>
+											<li><a href="https://play.google.com/store/apps/details?id=com.vacui.ploppem" uk-icon="icon: googleplay; ratio: 1.25"></a></li>
+											<li><a href="https://matteo-graizzaro.itch.io/ploppem" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
+											<li><a href="https://github.com/Vacui/Ploppem" uk-icon="icon: github; ratio: 1.25"></a></li>
 										</ul>
 									</div>
-									<div class="uk-width-expand uk-child-width-1-1 uk-padding-medium-bottom">
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
 										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
 											<div class="uk-width-expand uk-padding-remove-left">
 												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
 													<div class="uk-grid-collapse" uk-grid>
 														<div class="uk-width-expand">
 															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
-																<span>Ploppem</span>
+																<span>
+																	<a href="projects/ploppem.html" target="_blank">Ploppem</a>
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
 															</h3>
 														</div>
 														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
-															<li><a href="https://play.google.com/store/apps/details?id=com.vacui.ploppem" target="_blank" uk-icon="icon: googleplay; ratio: 1.25"></a></li>
-															<li><a href="https://matteo-graizzaro.itch.io/ploppem?password=ploppem" target="_blank" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
-															<li><a href="https://github.com/Vacui/Ploppem" target="_blank" uk-icon="icon: github; ratio: 1.25"></a></li>
+															<li><a href="https://play.google.com/store/apps/details?id=com.vacui.ploppem" uk-icon="icon: googleplay; ratio: 1.25"></a></li>
+															<li><a href="https://matteo-graizzaro.itch.io/ploppem" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
+															<li><a href="https://github.com/Vacui/Ploppem" uk-icon="icon: github; ratio: 1.25"></a></li>
 														</ul>
 													</div>
 													<div><h4 class="uk-text-capitalize uk-text-italic">Minimal endless runner</h4></div>
@@ -428,16 +529,16 @@
 							</li>
 							<li data-type="publication" data-date="2020-12-11">
 								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
-									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-medium-bottom" style="width: 110px;">
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
 										<div><span uk-icon="icon: pencil; ratio: 1.5"></span></div>
 										<div class="uk-margin-small-top uk-text-break"><h4>Dec 2020</h4></div>
 										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
 										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
-											<li><a href="https://www.gamasutra.com/blogs/MatteoGraizzaro/20201211/374136/What_Steam_will_look_like_in_3_years.php" target="_blank" uk-icon="icon: gamasutra; ratio: 1.25"></a></li>
-											<li><a href="https://matteograizzaro.medium.com/what-steam-will-look-like-in-3-years-40b496b48a9" target="_blank" uk-icon="icon: medium; ratio: 1.25"></a></li>
+											<li><a href="https://www.gamasutra.com/blogs/MatteoGraizzaro/20201211/374136/What_Steam_will_look_like_in_3_years.php" uk-icon="icon: gamasutra; ratio: 1.25"></a></li>
+											<li><a href="https://matteograizzaro.medium.com/what-steam-will-look-like-in-3-years-40b496b48a9" uk-icon="icon: medium; ratio: 1.25"></a></li>
 										</ul>
 									</div>
-									<div class="uk-width-expand uk-child-width-1-1 uk-padding-medium-bottom">
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
 										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
 											<div class="uk-width-expand uk-padding-remove-left">
 												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
@@ -448,8 +549,8 @@
 															</h3>
 														</div>
 														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
-															<li><a href="https://www.gamasutra.com/blogs/MatteoGraizzaro/20201211/374136/What_Steam_will_look_like_in_3_years.php" target="_blank" uk-icon="icon: gamasutra; ratio: 1.25"></a></li>
-															<li><a href="https://matteograizzaro.medium.com/what-steam-will-look-like-in-3-years-40b496b48a9" target="_blank" uk-icon="icon: medium; ratio: 1.25"></a></li>
+															<li><a href="https://www.gamasutra.com/blogs/MatteoGraizzaro/20201211/374136/What_Steam_will_look_like_in_3_years.php" uk-icon="icon: gamasutra; ratio: 1.25"></a></li>
+															<li><a href="https://matteograizzaro.medium.com/what-steam-will-look-like-in-3-years-40b496b48a9" uk-icon="icon: medium; ratio: 1.25"></a></li>
 														</ul>
 													</div>
 													<div><h4 class="uk-text-capitalize uk-text-italic">Publication</h4></div>
@@ -464,16 +565,16 @@
 							</li>
 							<li data-type="publication" data-date="2020-06-29">
 								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
-									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-medium-bottom" style="width: 110px;">
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
 										<div><span uk-icon="icon: pencil; ratio: 1.5"></span></div>
 										<div class="uk-margin-small-top uk-text-break"><h4>Jun 2020</h4></div>
 										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
 										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
-											<li><a href="https://www.gamasutra.com/blogs/MatteoGraizzaro/20200629/365397/Going_deep_in_the_Steam_reviews.php" target="_blank" uk-icon="icon: gamasutra; ratio: 1.25"></a></li>
-											<li><a href="https://matteograizzaro.medium.com/going-deep-in-the-steam-reviews-2b663a152179" target="_blank" uk-icon="icon: medium; ratio: 1.25"></a></li>
+											<li><a href="https://www.gamasutra.com/blogs/MatteoGraizzaro/20200629/365397/Going_deep_in_the_Steam_reviews.php" uk-icon="icon: gamasutra; ratio: 1.25"></a></li>
+											<li><a href="https://matteograizzaro.medium.com/going-deep-in-the-steam-reviews-2b663a152179" uk-icon="icon: medium; ratio: 1.25"></a></li>
 										</ul>
 									</div>
-									<div class="uk-width-expand uk-child-width-1-1 uk-padding-medium-bottom">
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
 										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
 											<div class="uk-width-expand uk-padding-remove-left">
 												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
@@ -484,8 +585,8 @@
 															</h3>
 														</div>
 														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
-															<li><a href="https://www.gamasutra.com/blogs/MatteoGraizzaro/20200629/365397/Going_deep_in_the_Steam_reviews.php" target="_blank" uk-icon="icon: gamasutra; ratio: 1.25"></a></li>
-															<li><a href="https://matteograizzaro.medium.com/going-deep-in-the-steam-reviews-2b663a152179" target="_blank" uk-icon="icon: medium; ratio: 1.25"></a></li>
+															<li><a href="https://www.gamasutra.com/blogs/MatteoGraizzaro/20200629/365397/Going_deep_in_the_Steam_reviews.php" uk-icon="icon: gamasutra; ratio: 1.25"></a></li>
+															<li><a href="https://matteograizzaro.medium.com/going-deep-in-the-steam-reviews-2b663a152179" uk-icon="icon: medium; ratio: 1.25"></a></li>
 														</ul>
 													</div>
 													<div><h4 class="uk-text-capitalize uk-text-italic">Publication</h4></div>
@@ -500,15 +601,15 @@
 							</li>
 							<li data-type="education" data-date="2020-06">
 								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
-									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-medium-bottom" style="width: 110px;">
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
 										<div><span uk-icon="icon: school; ratio: 1.5"></span></div>
 										<div class="uk-margin-small-top uk-text-break"><h4>2017 - 2020</h4></div>
 										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
 										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
-											<li><a href="https://www.eventhorizonschool.com/" target="_blank" uk-icon="icon: link; ratio: 1.25"></a></li>
+											<li><a href="https://www.eventhorizonschool.com/" uk-icon="icon: link; ratio: 1.25"></a></li>
 										</ul>
 									</div>
-									<div class="uk-width-expand uk-child-width-1-1 uk-padding-medium-bottom">
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
 										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
 											<div class="uk-width-expand uk-padding-remove-left">
 												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
@@ -519,7 +620,7 @@
 															</h3>
 														</div>
 														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
-															<li><a href="https://www.eventhorizonschool.com/" target="_blank" uk-icon="icon: link; ratio: 1.25"></a></li>
+															<li><a href="https://www.eventhorizonschool.com/" uk-icon="icon: link; ratio: 1.25"></a></li>
 														</ul>
 													</div>
 													<div><h4 class="uk-text-capitalize uk-text-italic">Course, Game Development, Game Design and Programming</h4></div>
@@ -531,28 +632,31 @@
 							</li>
 							<li data-type="game" data-date="2020-05-14">
 								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
-									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-medium-bottom" style="width: 110px;">
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
 										<div><span uk-icon="icon: android; ratio: 1.5"></span></div>
 										<div class="uk-margin-small-top uk-text-break"><h4>Jun 2020</h4></div>
 										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
 										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
-											<li><a href="https://matteo-graizzaro.itch.io/nodib?password=nodib" target="_blank" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
-											<li><a href="https://github.com/Vacui/Nodib" target="_blank" uk-icon="icon: github; ratio: 1.25"></a></li>
+											<li><a href="https://matteo-graizzaro.itch.io/nodib" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
+											<li><a href="https://github.com/Vacui/Nodib" uk-icon="icon: github; ratio: 1.25"></a></li>
 										</ul>
 									</div>
-									<div class="uk-width-expand uk-child-width-1-1 uk-padding-medium-bottom">
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
 										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
 											<div class="uk-width-expand uk-padding-remove-left">
 												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
 													<div class="uk-grid-collapse" uk-grid>
 														<div class="uk-width-expand">
 															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
-																<span>Nodib</span>
+																<span>
+																	<a href="projects/nodib.html" target="_blank">Nodib</a>
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
 															</h3>
 														</div>
 														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
-															<li><a href="https://matteo-graizzaro.itch.io/nodib?password=nodib" target="_blank" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
-															<li><a href="https://github.com/Vacui/Nodib" target="_blank" uk-icon="icon: github; ratio: 1.25"></a></li>
+															<li><a href="https://matteo-graizzaro.itch.io/nodib" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
+															<li><a href="https://github.com/Vacui/Nodib" uk-icon="icon: github; ratio: 1.25"></a></li>
 														</ul>
 													</div>
 													<div><h4 class="uk-text-capitalize uk-text-italic">One-Finger puzzle game</h4></div>
@@ -570,26 +674,29 @@
 							</li>
 							<li data-type="game" data-date="2019-06">
 								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
-									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-medium-bottom" style="width: 110px;">
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
 										<div><span uk-icon="icon: windows; ratio: 1.5"></span></div>
 										<div class="uk-margin-small-top uk-text-break"><h4>Sep 2018 - Jul 2019</h4></div>
 										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
 										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
-											<li><a href="https://eventhorizonschool.itch.io/oath" target="_blank" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
+											<li><a href="https://eventhorizonschool.itch.io/oath" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
 										</ul>
 									</div>
-									<div class="uk-width-expand uk-child-width-1-1 uk-padding-medium-bottom">
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
 										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
 											<div class="uk-width-expand uk-padding-remove-left">
 												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
 													<div class="uk-grid-collapse" uk-grid>
 														<div class="uk-width-expand">
 															<h3 class="uk-text-bold uk-text-uppercase uk-heading-line">
-																<span>Oath</span>
+																<span>
+																	<a href="projects/oath.html" target="_blank">Oath</a>
+																	<span class="uk-text-middle" uk-icon="icon: unity; ratio: 1.25" style="padding-bottom: 4px;"></span>
+																</span>
 															</h3>
 														</div>
 														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
-															<li><a href="https://eventhorizonschool.itch.io/oath" target="_blank" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
+															<li><a href="https://eventhorizonschool.itch.io/oath" uk-icon="icon: itch-dot-io; ratio: 1.25"></a></li>
 														</ul>
 													</div>
 													<div><h4 class="uk-text-capitalize uk-text-italic">Single-player hack'n'slash</h4></div>
@@ -601,22 +708,22 @@
 													</div>
 												</div>
 											</div>
-											<div><img data-src="./img/projects/oath/logo.jpg" alt="" uk-img class="project-image uk-width-medium uk-height-auto uk-visible@m"></div>
+											<div><img data-src="./img/projects/oath/logo.jpg" alt="" uk-img class="uk-width-medium uk-height-auto uk-visible@m"></div>
 										</div>
 									</div>
 								</div>
 							</li>
 							<li data-type="education" data-date="2017-06">
 								<div class="uk-grid-divider uk-grid-column-small" uk-grid>
-									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-medium-bottom" style="width: 110px;">
+									<div class="uk-child-width-1-1 uk-text-right uk-text-italic uk-text-capitalize uk-padding-large-bottom" style="width: 110px;">
 										<div><span uk-icon="icon: school; ratio: 1.5"></span></div>
 										<div class="uk-margin-small-top uk-text-break"><h4>2012 - 2017</h4></div>
 										<span class="uk-padding-small-top uk-position-top-right-out" uk-icon="icon: circle; ratio: 0.7" style="z-index: 1; padding-top: 10px; padding-left: 9px;"></span>
 										<ul class="uk-hidden@s uk-iconnav uk-flex-right uk-margin-remove-left">
-											<li><a href="https://www.iisvaldagno.it/" target="_blank" uk-icon="icon: link; ratio: 1.25"></a></li>
+											<li><a href="https://www.iisvaldagno.it/" uk-icon="icon: link; ratio: 1.25"></a></li>
 										</ul>
 									</div>
-									<div class="uk-width-expand uk-child-width-1-1 uk-padding-medium-bottom">
+									<div class="uk-width-expand uk-child-width-1-1 uk-padding-large-bottom">
 										<div class="uk-grid-small uk-margin-remove-left" uk-grid>
 											<div class="uk-width-expand uk-padding-remove-left">
 												<div class="uk-width-expand uk-child-width-1-1 uk-grid-collapse uk-padding-remove-left" uk-grid>
@@ -627,7 +734,7 @@
 															</h3>
 														</div>
 														<ul class="uk-visible@s uk-iconnav uk-width-auto uk-margin-remove-left uk-background-default uk-flex-middle">
-															<li><a href="https://www.iisvaldagno.it/" target="_blank" uk-icon="icon: link; ratio: 1.25"></a></li>
+															<li><a href="https://www.iisvaldagno.it/" uk-icon="icon: link; ratio: 1.25"></a></li>
 														</ul>
 													</div>
 													<div><h4 class="uk-text-capitalize uk-text-italic">High School Diploma, Computer Science</h4></div>
