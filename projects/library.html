@@ -108,7 +108,7 @@
 						<h2 id="summary" class="uk-text-center title-link uk-heading-divider"><a href="#summary">Summary</a></h2>
 						<div class="uk-child-width-1-1 uk-child-width-1-2@m" uk-grid="masonry: true;" style="margin-top: 30px;">
 							<div>
-								<p>In the first UE4 project I got involved, I was tasked to help the author by implementing supportive systems to polish the user experience. I got the chance to step outside my comfort zone and try the famous blueprints of Unreal. The result has been satisfactory and it is possible that I will explore this engine more in the future.</p>
+								<p>In the first UE4 project I got involved in, I was tasked to help the author by implementing supportive systems to polish the user experience. I got the chance to step outside my comfort zone and try the famous blueprints of Unreal. The result has been satisfactory and it is possible that I will explore this engine more in the future.</p>
 							</div>
 							<div class="uk-child-width-1-1">
 								<h3 class="uk-heading-bullet uk-width-1-1"><span>Specifications</span></h3>
@@ -148,7 +148,7 @@
 							</div>
 							<p>
 								First system the player interacts with. Implemented by the artist alone at the beginning of the project, I rearranged its code once I took over him, by introducing functions and other small changes, to make it easier to read.<br>
-								During the development more was added to the blueprint, but just before the release, in order simplify the project use, it was decided to reduce the amount of inputs to just the ones to open the menu and to switch from and to the flying mode, and control it.
+								During the development more was added to the blueprint, but just before the release, in order to simplify the project use, it was decided to reduce the amount of inputs to just the ones to open the menu and to switch from and to the flying mode, and control it.
 							</p>
 							<div class="uk-child-width-1-2@m" uk-grid="masonry: true">
 								<div>
@@ -160,8 +160,8 @@
 											</div>
 										</a>
 									</div>
-									<p>Basicly it is an interface between the various inputs and the already built-in system of movement.<br>
-									To avoid an endless fall I implemented a system that detects when the player will reach a z coordinate under a specified treshold, and it will move it to the origin position.</p>
+									<p>Basically, it is an interface between the various inputs and the already built-in system of movement.<br>
+									To avoid an endless fall I implemented a system that detects when the player will reach a z coordinate under a specified threshold, and it will move it to the origin position.</p>
 								</div>
 								<div>
 									<h4 id="third_person_character-flying">Flying</h4>
@@ -172,7 +172,7 @@
 											</div>
 										</a>
 									</div>
-									<p>I was able to simulate flying by changing the camera distance from a 3rd person distance to a first, hiding the player model and removing constraints such as the gravity.<br>
+									<p>I was able to simulate flying by changing the camera distance from a 3rd person distance to a first, hiding the player model and removing constraints such as gravity.<br>
 									It is an instrument intended to be used to explore the environment more freely and rapidly and was also employed during the development.</p>
 								</div>
 								<div>
@@ -184,7 +184,7 @@
 											</div>
 										</a>
 									</div>
-									<p>A piece of code that only arrived towards the end of the project. It manages the interaction between the player and the UI. Such as positioning the player after the initial intro ending or it's visibility when the menu is open, to prevent an intrusion into the camera frame.</p>
+									<p>A piece of code that only arrived towards the end of the project. It manages the interaction between the player and the UI. Such as positioning the player after the initial intro ending or its visibility when the menu is open, to prevent an intrusion into the camera frame.</p>
 								</div>
 							</div>
 						</div>
@@ -193,7 +193,7 @@
 				<section class="uk-section uk-section-small">
 					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
 						<h2 id="in-game" class="uk-text-center title-link uk-heading-divider"><a href="#in-game">In game</a></h2>
-						<p>During the project development I had to program various complementary systems to further polish the environment.<br>
+						<p>During the project development, I had to program various complementary systems to further polish the environment.<br>
 						Here are some of them:</p>
 						<h3 class="uk-heading-bullet"><span>Group generator</span></h3>
 						<div class="uk-grid-small" uk-grid>
@@ -210,7 +210,7 @@
 									<a class="uk-position-absolute uk-transform-center" style="left: 60%; top: 55%" href="#group_generator-instantiate" uk-marker></a>
 								</div>
 							</div>
-							<p>In the original <a href="https://www.artstation.com/artwork/q9LEdz" class="uk-link">concept</a> you can notice groups of flying books moving around the buildings.<br>
+							<p>In the original <a href="https://www.artstation.com/artwork/q9LEdz" class="uk-link">concept</a>, you can notice groups of flying books moving around the buildings.<br>
 							To recreate the effect I developed a blueprint to randomly generate a group of <code>Static Meshes</code>, which are then moved following a <i>Spline</i>.<br>
 							The code is based on the <a class="uk-link" href="https://www.youtube.com/watch?v=7OOwwDocL2Y&t=583s">vertex animation</a> tutorial by Ghislain Giradot.</p>
 							<div class="uk-child-width-1-2@m" uk-grid="masonry: true">
@@ -223,7 +223,7 @@
 											</div>
 										</a>
 									</div>
-									<p>Starting from the center and proceeding in a circle, transforms, materials and meshes for the books are randomly generated, which were subsequently made visible in the editor to allow the artist greater freedom to edit the finished product. This generation is triggered using a boolean.</p>
+									<p>Starting from the centre, and proceeding in a circle, transforms, materials and meshes for the books are randomly generated, which were subsequently made visible in the editor to allow the artist greater freedom to edit the finished product. This generation is triggered using a boolean.</p>
 								</div>
 								<div>
 									<h4 id="group_generator-instantiate">Instantiate</h4>
@@ -261,20 +261,20 @@
 										</div>
 									</a>
 								</div>
-								<p class="uk-flex-first@m">To speed up development in a couple of cases, I developed this blueprint that deals with instantiating an actor a number of times at regular spacing in a circle of radius of choice. A customization that I could add in the future could be the possibility to select only a portion of the circle.</p>
+								<p class="uk-flex-first@m">To speed up development in a couple of cases, I developed this blueprint that deals with instantiating an actor a number of times at regular spacing in a circle of radius of choice. Customization that I could add in the future could be the possibility to select only a portion of the circle.</p>
 							</div>
 						</div>
 						<div class="uk-margin-medium-top">
-							<h3 class="uk-heading-bullet"><span>Orrey</span></h3>
+							<h3 class="uk-heading-bullet"><span>Orrery</span></h3>
 							<div class="uk-child-width-1-2@m uk-grid-row-small uk-grid-column-medium uk-grid-column-medium uk-flex-middle" uk-grid>
 								<div class="uk-position-relative uk-visible-toggle uk-child-width-1-1" uk-lightbox>
-									<a class="uk-link-reset" href="../img/projects/library/orrey.png" data-caption="Orrey blueprint">
+									<a class="uk-link-reset" href="../img/projects/library/orrery.png" data-caption="Orrery blueprint">
 										<div class="uk-inline uk-background-default">
-											<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/library/orrey.png" alt="">
+											<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/library/orrery.png" alt="">
 										</div>
 									</a>
 								</div>
-								<p>One of the first blueprints made. It merely controls the movement of an orrey positioned at the highest point of the environment.<br>
+								<p>One of the first blueprints made. It merely controls the movement of an orrery positioned at the highest point of the environment.<br>
 								The initial idea was to activate a particle effect to coincide with the alignment of the planets, but there has never been time to accomplish it.</p>
 							</div>
 						</div>
@@ -310,7 +310,7 @@
 											</div>
 										</a>
 									</div>
-									<p>The intro is composed in the <code>Sequencer</code>, and is then executed at the start of the game. A custom event called <code>OnEndedIntro</code> is called once it is finished. To make sure the player doesn't mess it up, his inputs (outside the key to show the menu and therefore interrupt the intro) are disabled during the execution.</p>
+									<p>The intro is composed in the <code>Sequencer</code> and is then executed at the start of the game. A custom event called <code>OnEndedIntro</code> is called once it is finished. To make sure the player doesn't mess it up, his inputs (outside the key to show the menu and therefore interrupt the intro) are disabled during the execution.</p>
 								</div>
 								<div>
 									<h4 id="user_interface-menu">Menu</h4>
@@ -345,10 +345,10 @@
 					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
 						<h2 id="closing-thoughts" class="uk-text-center title-link uk-heading-divider"><a href="#closing-thoughts">Closing thoughts</a></h2>
 						<div>
-							<p>First attempt to use Unreal Engine 4, this project taught me a lot about the software and its systems. A lack of strict control helped me develop the systems freely, and constant feedback and requests made me develop flexible systems that could be easily expanded in the future. Unfortunately, the absence of an online repository made it impossible working on the project without disrupting the artist.<br>
+							<p>First attempt to use Unreal Engine 4, this project taught me a lot about the software and its systems. A lack of strict control helped me develop the systems freely, and constant feedback and requests made me develop flexible systems that could be easily expanded in the future. Unfortunately, the absence of an online repository made it impossible to work on the project without disrupting the artist.<br>
 							If I could go back in time I would:</p>
 							<ul class="uk-list uk-list-circle">
-								<li>Establishing an online repository for the project. It would allow more than one person to work on the project at the same time, while also keeping an history of the changes.</li>
+								<li>Establishing an online repository for the project. It would allow more than one person to work on the project at the same time, while also keeping a history of the changes.</li>
 								<li>Use C++ to speed up the development of simple systems.</li>
 								<li>Rely more on the use of functions and macros to organize the blueprints.</li>
 							</ul>
