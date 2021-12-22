@@ -19,6 +19,10 @@
 	opacity: .6;
 }
 
+.experience-image{
+	border: calc(.2px + .05em) solid #e5e5e5;
+}
+
 p{
 	margin: 0px 0px 10px 0px;
 }
