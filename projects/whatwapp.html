@@ -63,7 +63,9 @@
 							<li><a href="#summary">Summary</a></li>
 							<li><a href="#onboarding">The onboarding experience</a></li>
 							<li><a href="#migration">Migrating a 4+ years old game</a></li>
-							<li><a href="#closing-thoughts">Closing thoughts</a></li>
+							<li><a href="#e2e">E2e tests</a></li>
+							<li><a href="#tournament">Supporting a new feature</a></li>
+							<!--<li><a href="#closing-thoughts">Closing thoughts</a></li>-->
 							<li class="uk-nav-divider"></li>
 							<li>
 								<a href="https://play.google.com/store/apps/details?id=com.WhatWapp.BurracoOnline" target="_blank">
@@ -159,11 +161,138 @@
 								<p>Personally, I had my hands full with learning a new coding language in the form of <span class="uk-text-bold">TypeScript</span> and using it to migrate various features, such as the minigames <span class="uk-text-bold">Candyland</span> (a Slot Machine) and <span class="uk-text-bold">Galleon</span> (a Match 3 game), or the club's <span class="uk-text-bold">Chat</span> and <span class="uk-text-bold">Managing</span> (member's promotion, kicking, etc..) systems, I contributed to the friend's <span class="uk-text-bold">Chat</span> and <span class="uk-text-bold">Donations</span> systems as well.<br>
 								In many of these cases, I had to refactor slices of code or rethink part of it to fit the uniquenesses of the new infrastructure. This was not limited to the server, but also the client-side needed some tweaking here and there to make everything run smoothly.<p>
 								<p>When everything was near completion, we started testing the game to spot any weakness, helped by other members of the team. I cannot remember a testing session ending without finding at least a couple of edge cases to fix the next day.<br>
-								Testing so extensively a game was something I had never done before, and it taught me a lot about how stressful can be the process of polishing a game, and I have now more respect for the UX and Testing branch of game development.
+								Testing so extensively a game was something I had never done before, and it taught me a lot about how stressful can be the process of polishing a game, and I have now more respect for the UX and Testing branch of game development.</p>
 							</div>
 						</div>
 					</div>
 				</section>
+				<section class="uk-section uk-section-xsmall">
+					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+						<h3 id="e2e" class="title-link uk-heading-divider"><a href="#e2e">E2e tests</a></h3>
+						<div class="uk-grid-small uk-child-width-1-1 uk-grid-row-medium" uk-grid>
+							<div>
+								<p>Once the server codebase migration ended and we could catch a break, it came the time to maintain the integrity of the source code and learn from the errors of the past. Such lessons came in the form of more flexibility via a restructure of the modules that composed the game using a monorepo configured with <a href="https://nx.dev/" target="_blank">Nx</a>, paired with the introduction of e2e tests developed with <a href="https://jestjs.io/" target="_blank">Jest</a> to guarantee stability in the face of future updates.</p>
+								<p>I took responsibility for performing the majority of these changes and I authored the refactoring of many sections of the game, such as
+								 <ul class="uk-list uk-list-disc">
+									<li><span class="uk-text-bold">Candyland</span>: A minigame resembling a slot machine, with many subsystems, unlocked daily at the reach of a threshold.</li>
+									<li><span class="uk-text-bold">Club's race</span>: A recurring event that sees clubs compete in a leaderboard subdivided into leagues where the victory factor is the amount of a specific currency (a seed) getting sacrificed. The race seed changes weekly.</li>
+									<li><span class="uk-text-bold">Friends</span>: Many subsystems connected with the friendship between two players, like the exchange of currency or the managing of their chat.</li>
+									<li><span class="uk-text-bold">Events</span>: A flexible module that allows scheduling tournaments of different types with entry costs and segmented rewards.</li>
+									<li><span class="uk-text-bold">Openapp</span>: The code responsible to rule over a player connecting to the game; many checks are performed during this action.</li>
+								</ul>
+								Thanks to this opportunity I was able to grow my knowledge of the server's inner workings.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="uk-section uk-section-xsmall">
+					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+						<h3 id="tournament" class="title-link uk-heading-divider"><a href="#tournament">Supporting a new feature</a></h3>
+						<div class="uk-grid-small uk-child-width-1-1 uk-grid-row-medium" uk-grid>
+							<div>
+								<p>Between March and April of 2023, my team was tasked with developing a new tournament to inject life into the stagnant experience of the game Burraco. The event would ultimately last only 3 days, but for that ephemeral amount of time, almost 2 months of work were needed to develop all that introducing a new feature entails.</p>
+								<p>This time I was entrusted to alter the existing infrastructure to fit the intentions of our Producer. Before getting to work I took care to understand how all the components involved would normally behave and to be 100% sure that no core parts were disrupted with my later refactoring I coded a web of e2e tests that would cover the normal flow and the many edge cases.</p>
+								<p>Once the time to dive deep into developing the feature came, I first used the provided design documentation to lay out a plan of intervention, which I later applied under the supervision of my Lead <a href="https://www.linkedin.com/in/riccardo-sacchi-5b124441/" target="_blank">Riccardo Sacchi</a>.</p>
+								<p>The fabric of the server was both solid and flexible enough to withstand my changes, and I was able to easily inject the code necessary to calculate the unique point system of this event and handle the refund for the entrance fee if a player were not able to play (due to a min number of participants mechanic).</p>
+								<p>Overall the experience taught me much about how to implement someone else intentions while keeping the codebase reliable and scalable.</p>
+							</div>
+							<div>
+								<div class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-small-bottom">
+									<div uk-slider="finite: true">
+										<div class="uk-position-relative">
+											<div class="uk-slider-container" uk-lightbox>
+												<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+													<li>
+														<div>
+															<a class="uk-inline" href="../img/projects/whatwapp/tournament/sample/rabbit_tournament_join_popup.png" data-caption="Join Popup">
+																<img src="../img/projects/whatwapp/tournament/sample/rabbit_tournament_join_popup.png" alt="">
+															</a>
+														</div>
+														<div class="uk-margin-small-top uk-text-center uk-text-italic">Join Popup</div>
+													</li>
+													<li>
+														<div>
+															<a class="uk-inline" href="../img/projects/whatwapp/tournament/sample/rabbit_tournament_info.png" data-caption="Info">
+																<img src="../img/projects/whatwapp/tournament/sample/rabbit_tournament_info.png" alt="">
+															</a>
+														</div>
+														<div class="uk-margin-small-top uk-text-center uk-text-italic">Info</div>
+													</li>
+													<li>
+														<div>
+															<a class="uk-inline" href="../img/projects/whatwapp/tournament/sample/rabbit_tournament_victory_points_details.png" data-caption="Victory Points Details">
+																<img src="../img/projects/whatwapp/tournament/sample/rabbit_tournament_victory_points_details.png" alt="">
+															</a>
+														</div>
+														<div class="uk-margin-small-top uk-text-center uk-text-italic">Victory Points Details</div>
+													</li>
+													<li>
+														<div>
+															<a class="uk-inline" href="../img/projects/whatwapp/tournament/sample/table/rabbit_tournament_table.png" data-caption="Table">
+																<img src="../img/projects/whatwapp/tournament/sample/table/rabbit_tournament_table.png" alt="">
+															</a>
+														</div>
+														<div class="uk-margin-small-top uk-text-center uk-text-italic">Table</div>
+													</li>
+													<li>
+														<div>
+															<a class="uk-inline" href="../img/projects/whatwapp/tournament/sample/rabbit_tournament_play.png" data-caption="Play">
+																<img src="../img/projects/whatwapp/tournament/sample/rabbit_tournament_play.png" alt="">
+															</a>
+														</div>
+														<div class="uk-margin-small-top uk-text-center uk-text-italic">Play</div>
+													</li>
+													<li>
+														<div>
+															<a class="uk-inline" href="../img/projects/whatwapp/tournament/sample/rabbit_tournament_victory_points_count.png" data-caption="Victory Points Count">
+																<img src="../img/projects/whatwapp/tournament/sample/rabbit_tournament_victory_points_count.png" alt="">
+															</a>
+														</div>
+														<div class="uk-margin-small-top uk-text-center uk-text-italic">Victory Points Count</div>
+													</li>
+													<li>
+														<div>
+															<a class="uk-inline" href="../img/projects/whatwapp/tournament/sample/rabbit_tournament_podium.png" data-caption="Podium">
+																<img src="../img/projects/whatwapp/tournament/sample/rabbit_tournament_podium.png" alt="">
+															</a>
+														</div>
+														<div class="uk-margin-small-top uk-text-center uk-text-italic">Podium</div>
+													</li>
+													<li>
+														<div>
+															<a class="uk-inline" href="../img/projects/whatwapp/tournament/sample/rabbit_tournament_top50.png" data-caption="Top 50">
+																<img src="../img/projects/whatwapp/tournament/sample/rabbit_tournament_top50.png" alt="">
+															</a>
+														</div>
+														<div class="uk-margin-small-top uk-text-center uk-text-italic">Top 50</div>
+													</li>
+													<li>
+														<div>
+															<a class="uk-inline" href="../img/projects/whatwapp/tournament/sample/rabbit_tournament_redeem.png" data-caption="Redeem">
+																<img src="../img/projects/whatwapp/tournament/sample/rabbit_tournament_redeem.png" alt="">
+															</a>
+														</div>
+														<div class="uk-margin-small-top uk-text-center uk-text-italic">Redeem</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+											
+										<div class="uk-position-relative" style="margin-top:20px!important">
+											<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+											
+											<a class="uk-position-center-left" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+											<a class="uk-position-center-right" href="#" uk-slidenav-next uk-slider-item="next"></a>
+										</div>
+										
+										<div class="uk-margin-small-top uk-text-center uk-text-italic">UI & UX by <a href="https://www.linkedin.com/in/clara-donadello/" target="_blank">Clara Donadello</a>, implemented in the project by <a href="https://www.linkedin.com/in/alessandrolusetti/" target="_blank">Alessandro Lusetti</a>.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--
 				<section class="uk-section uk-section-xsmall">
 					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
 						<h3 id="closing-thoughts" class="title-link uk-heading-divider"><a href="#closing-thoughts">Closing thoughts</a></h3>
@@ -175,6 +304,7 @@
 						</div>
 					</div>
 				</section>
+				-->
 			</main>
 			
 			<div class="uk-width-1-1 uk-width-3xlarge@s">
