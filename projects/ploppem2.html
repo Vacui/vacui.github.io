@@ -1,290 +1,693 @@
 ﻿<!DOCTYPE html>
 <html>
-	<head>
-		<title>Matteo Graizzaro Portfolio | Ploppem 2</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../css/uikit.min.css" />
-		<link rel="stylesheet" href="../css/styles.css" />
-		<link rel="stylesheet" href="../css/slider.css" />
-        <script src="../js/uikit.min.js"></script>
-        <script src="../js/uikit-icons.min.js"></script>
-	</head>
-	<body>
-		<div class="uk-position-relative" align="center">		
-			<div class="uk-padding-small-top uk-section-muted uk-margin-medium-bottom">
-				<div class="uk-width-1-1 uk-width-3xlarge@s" style="padding: 0 15px;">
-					<header class="uk-padding-small-top uk-grid-small uk-grid-collapse@m uk-child-width-1-1" uk-grid>
-						<h1>Matteo Graizzaro</h1>
-						<h3 class="uk-text-large uk-text-light">Game Programmer</h3>
-					</header>
-					
-					<hr class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom">
-				</div>
-				
-				<nav class="uk-navbar-container" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;" uk-navbar>
-					<div class="uk-navbar-center">
-						<ul class="uk-navbar-nav uk-child-width-1-2">
-							<li class="uk-padding-small"><a href="../">Home</a></li>
-							<li class="uk-padding-small">
-								<a>Projects</a>
-								<div class="uk-navbar-dropdown uk-text-left" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify; offset: 0">
-									<div class="uk-navbar-dropdown-grid uk-child-width-expand uk-margin-remove-left" uk-grid>
-										<ul class="uk-subnav uk-subnav-pill uk-flex-center uk-text-center" uk-margin>
-											<li><a href="whatwapp.html">Whatwapp<br><span class="uk-text-italic uk-text-capitalize">2021-Present</span></a></li>
-									   		<li><a href="village.html">Canals Village<br><span class="uk-text-italic uk-text-capitalize">2021-2023</span></a></li>
-											<li><a href="library.html">Whitches Library<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
-											<li><a href="solitaire.html">Solitaire<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
-											<li class="uk-active"><a href="ploppem2.html">Ploppem 2<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li> 
-											<li><a href="tunnel.html">Tunnel<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
-											<li><a href="ploppem.html">Ploppem<br><span class="uk-text-italic uk-text-capitalize">2020-2021</span></a></li>
-											<li><a href="nodib.html">Nodib<br><span class="uk-text-italic uk-text-capitalize">2020</span></a></li>
-											<li><a href="oath.html">Oath<br><span class="uk-text-italic uk-text-capitalize">2018-2019</span></a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-			
-			<div class="uk-width-1-1 uk-width-3xlarge@s uk-margin-remove uk-position-relative" style="z-index: 10;">
-				<div id="#sidebar" class="uk-text-left uk-sidebar-right uk-visible@l" style="width: 150px;">
-					<div uk-sticky="offset: 50; width-element: #sidebar;">
-						<ul uk-scrollspy-nav="closest: li; scroll: true; offset: 80; overflow: false" class="uk-nav-default uk-nav">
-							<li>
-								<a href="#">
-									<span uk-icon="chevron-up" class="uk-margin-small-right uk-icon"></span>
-									<span class="uk-text-middle">To top</span>
-								</a>
-							</li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="#summary">Summary</a></li>
-							<li><a href="#gameplay">Gameplay</a></li>
-							<li><a href="#user-interface">User Interface</a></li>
-							<li><a href="#monetization">Monetization</a></li>
-							<li><a href="#closing-thoughts">Closing thoughts</a></li>
-							<li class="uk-nav-divider"></li>
-							<li>
-								<a href="https://github.com/Vacui/Ploppem-2" target="_blank">
-									<span uk-icon="github" class="uk-margin-small-right"></span>
-									<span class="uk-text-middle">GitHub</span>
-								</a>
-							</li>
-							<li>
-								<a href="https://matteo-graizzaro.itch.io/ploppem-2" target="_blank">
-									<span uk-icon="itch-dot-io" class="uk-margin-small-right"></span>
-									<span class="uk-text-middle">Itch.io</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			
-			<main class="uk-position-relative uk-text-left">
-				<section class="uk-section uk-padding-remove-vertical uk-margin-medium-bottom">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<div class="uk-background-cover uk-height-medium uk-border-rounded" style="background-image: url(../img/projects/ploppem2/logo-small.jpg);"></div>
-					</div>
-				</section>
-				<section class="uk-hidden@l">
-					<div class="uk-padding-small-right uk-padding-small-left uk-flex-center uk-grid-column-small uk-margin-medium-top uk-grid-divider" style="font-size: 1.2rem;"uk-grid>
-						<div>
-							<a href="https://github.com/Vacui/Ploppem-2" target="_blank" class="uk-link uk-link-heading">
-								<span uk-icon="icon: github; ratio: 1.5" class="uk-margin-small-right"></span>
-								<span class="uk-text-middle">GitHub</span>
-							</a>
-						</div>
-						<div>
-							<a href="https://matteo-graizzaro.itch.io/ploppem-2" target="_blank" class="uk-link uk-link-heading">
-								<span uk-icon="icon: itch-dot-io; ratio: 1.5" class="uk-margin-small-right"></span>
-								<span class="uk-text-middle">Itch.io</span>
-							</a>
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
-						<h2 id="summary" class="uk-text-center title-link uk-heading-divider"><a href="#summary">Summary</a></h2>
-						<div class="uk-child-width-1-1 uk-child-width-1-2@m" uk-grid="masonry: true;" style="margin-top: 30px;">
-							<div>
-								<p>After hearing how much efficient the new Unity DOTS was, I decided to test it by myself while taking the opportunity to improve upon a previous project.<br>
-								In the end, I detected a considerable performance increase, but the feature it's still lacking support by the engine and its community, which further slowed down the development.</p>
-							</div>
-							<div class="uk-child-width-1-1">
-								<h3 class="uk-heading-bullet uk-width-1-1"><span>Specifications</span></h3>
-								<ul class="uk-list uk-list-circle">
-									<li>50 days half time (4h/day)</li>
-									<li>Developed in Unity</li>
-									<li>Endless runner game</li>
-									<li>UI icons from <a href="https://materialdesignicons.com/">Material Design Icons</a></li>
-									<li>Plugins used:
-										<a href="https://unitycodemonkey.com/utils.php">CodeMonkey Utils</a>, 
-										<a href="https://www.febucci.com/2020/10/custom-hierarchy-for-unity/">Custom Hierarchy</a>, 
-										<a href="https://assetstore.unity.com/packages/tools/gui/doozyui-complete-ui-management-system-138361">DoozyUI</a>, 
-										<a href="https://github.com/arimger/Unity-Editor-Toolbox">Editor Toolbox</a>, 
-										<a href="https://assetstore.unity.com/packages/tools/gui/graphy-ultimate-fps-counter-stats-monitor-debugger-105778">Graphy - Ultimate Stats Monitor</a>, 
-										<a href="https://assetstore.unity.com/packages/tools/gui/in-game-debug-console-68068">In-game Debug Console</a>, 
-										<a href="https://assetstore.unity.com/packages/tools/animation/leantween-3595">LeanTween</a>, 
-										<a href="https://github.com/Dysman/bgTools-playerPrefsEditor">PlayerPrefsEditor</a>, 
-										<a href="https://assetstore.unity.com/packages/tools/gui/procedural-ui-image-52200">Procedural UI Image</a>, 
-										TextMesh Pro, 
-										<a href="https://assetstore.unity.com/packages/tools/gui/translucent-image-fast-blurred-background-ui-78464">Translucent Image - Fast Blurred Background UI</a>, 
-										<a href="hhttps://assetstore.unity.com/packages/tools/gui/true-shadow-ui-soft-shadow-and-glow-beta-176322">True Shadow UI Soft Shadow and Glow</a> and 
-										<a href="https://assetstore.unity.com/packages/tools/gui/ultevents-111307">Ult Events</a>
-									</li>
-								</ul>
-							</div>
-							<div class="uk-child-width-1-1">
-								<h3 class="uk-heading-bullet uk-width-1-1"><span>Project goals</span></h3>
-								<ul class="uk-list uk-list-circle">
-									<li>Getting acquainted with the Unity DOTS</li>
-									<li>Improving my previous game <a href="ploppem.html">Ploppem</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
-						<h2 id="gameplay" class="uk-text-center title-link uk-heading-divider"><a href="#gameplay">Gameplay</a></h2>
-						<div>
-							<p>The concept around which everything revolves is simple:</p>
-							<blockquote cite="#">
-								<p class="uk-margin-small-bottom">
-									Endless waves of enemies spawn on the screen, touch them, and they will disappear.<br>
-									If you don't, they detonate by themselves after a specific amount of time, and you lose a <span class="uk-text-italic">heart</span>.<br>
-									Running out of hearts means <span class="uk-text-bold uk-text-primary">Game Over</span>.
-								</p>
-								<footer>Concept</footer>
-							</blockquote>
-							<p>But this time, mindful of my previous <a href="ploppem.html" target="_blank">attempt</a>, I kept the game simple and intuitive, while trying to make it fast and fun.</p> 
-						</div>
-						<div class="uk-margin-medium-top">
-							<div class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-remove-adjacent uk-align-left uk-width-1-2" uk-lightbox>
-								<a class="uk-link-reset" href="../img/projects/ploppem2/differences.jpg" data-caption="Ploppem <- -> Ploppem 2">
-									<div class="uk-invisible-hover uk-position-top-right uk-padding-small"><span uk-icon="icon: expand; ratio: 1.5"></span></div>
-									<img src="../img/projects/ploppem2/differences.jpg" alt="">
-								</a>
-								<div class="uk-margin-small-top uk-text-center uk-text-italic">Ploppem > Ploppem 2</div>
-							</div>
-							<div>
-								<h3 class="uk-heading-bullet"><span>Enemy design</span></h3>
-								<p>When it comes to the enemies, much has <span class="uk-text-bold uk-text-primary">improved</span> from the first game. Gone is their complex AI designed to avoid a collision between them or their visuals packed with all sorts of data.<br>
-								To encourage a <span class="uk-text-bold uk-text-primary">fast reaction</span> I reduced the enemies to simple shapes, I provided them with a direction of movement that changes only once they reach the edges of the screen, and their self-destruct timer is shown in a gradient from green to red. The enemies can now overlap each other, but killing more than one at a time does not affect the points earned.</p>
-							</div>
-						</div>
-						<div class="uk-margin-medium-top">
-							<h3 class="uk-heading-bullet"><span>Difficulty</span></h3>
-							<p>In <span class="uk-text-italic">Ploppem</span>  each time you killed an enemy, a substitute was queued to spawn after a short time. The main problem with this approach comes with the long time the player must wait after eliminating all the enemies on screen.<br>
-							To avoid it I separated the spawn from the kill system, and now the enemies keep coming <span class="uk-text-bold uk-text-primary">independently</span> from the player performance. Over time the stats of the newborns become more difficult, keeping the player on the edge of collapsing. This change also simplified the game design, therefore opening it to a more <span class="uk-text-bold uk-text-primary">broad</span> audience.</p>
-						</div>
-						<div class="uk-margin-medium-top">
-							<h3 class="uk-heading-bullet"><span>Coding</span></h3>
-							<p>By using the new Unity’s Data-Oriented Tech Stack (DOTS), I was able to further improve the <span class="uk-text-bold uk-text-primary">performances</span> by replacing the usual MonoBehaviour classes with components in ECS.<br>
-							Instead of an enemy object acting independently from the others, I have now an entity that is just a container for every data that defines a single enemy. This data is then processed by a system that efficiently moves each enemy <span class="uk-text-bold uk-text-primary">simultaneously</span> by using multi-threading processing through a Job. It has allowed me to introduce the aforementioned independent spawning system because even with more than 100 enemies on screen, the fps didn't drop below 60.<br>
-							The only aspect of the game I was not able to code using DOTS was the UI.</p>
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-secondary uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
-						<h2 id="user-interface" class="uk-text-center title-link uk-heading-divider"><a href="#user-interface">User Interface</a></h2>
-						<div class="uk-child-width-1-1 uk-margin-medium-top" uk-grid>
-							<div class="uk-position-relative uk-visible-toggle" uk-lightbox>
-								<a class="uk-link-reset" href="../img/projects/ploppem2/ui.jpg" data-caption="The game UI as structured using the plugin DoozyUI">
-									<div class="uk-invisible-hover uk-position-top-right uk-padding-small"><span uk-icon="icon: expand; ratio: 1.5"></span></div>
-									<img src="../img/projects/ploppem2/ui.jpg" alt="">
-								</a>
-								<div class="uk-margin-small-top uk-text-center uk-text-italic">The game UI as structured using the plugin DoozyUI</div>
-							</div>
-							<div>
-								<p>I started implementing the UI of the game using scripts made by myself, carried over from the previous project <a href="tunnel.html">Tunnel</a>, but while searching for a plugin capable of showing the console in-game, I stumbled across the page <a href="https://gameassetsfree.com/">Game Assets Free</a>, that allowed me to download various useful plugins, including DoozyUI, a complete management system for the UI. From that point forward I was able to more quickly create all the necessary parts of my interface.</p>
-								<p>But even if that helped me with the more technical part, I still had to put some effort into the design.</p>
-							</div>
-						</div>
-						<div class="uk-margin-medium-top uk-child-width-1-1" uk-grid>
-							<div>
-								<h3 class="uk-heading-bullet"><span>A bit of UX (User Experience)</span></h3>
-								<div class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-remove-adjacent uk-align-right uk-width-1-2@m" uk-lightbox>
-									<a class="uk-link-reset" href="../img/projects/ploppem2/ui-change.jpg" data-caption="Base -> Final Game UI">
-										<div class="uk-invisible-hover uk-position-top-right uk-padding-small" style="color: #666!important"><span uk-icon="icon: expand; ratio: 1.5"></span></div>
-										<img src="../img/projects/ploppem2/ui-change.jpg" alt="">
-									</a>
-									<div class="uk-margin-small-top uk-text-center uk-text-italic">Base -> Final Game UI</div>
-								</div>
-								<div>
-									<p>The interface that was redesigned the most while developing, was the game one.</p>
-									<p>During the prototyping it contained only the pause, a timer and the remaining lives in the center of the screen.<br>
-									This didn't change until about the middle of the project, where I <span class="uk-text-bold uk-text-primary">introduced</span> the score, and moved the lives to the top right, and in an attempt to reduce cluttering I also removed the timer. The pause button has been moved to the center to please both right and left handed.<br>
-									After further tests I decided to increase the size of the texts, reintroduce the timer and then move the score to the center, adding the highscore (which was previously in the pause menu), both numbers have an alpha to show the monsters below.</p>
-									<p>The main menu also got through quite the change. The originals 5 buttons (play, customize, about, settings and game stats) were reduced to 3 for the seek of simplicity.<br>
-									Both the game settings and the game stats were <span class="uk-text-bold uk-text-primary">relived</span> of unused functionalities, and incorporated in the main menu. I then took the game version and author from the about menu and also putted them in the main menu, leaving only the social links and credits.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
-						<h2 id="monetization" class="uk-text-center title-link uk-heading-divider"><a href="#monetization">Monetization</a></h2>
-						<div class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-remove-adjacent uk-align-right uk-width-1-3" uk-lightbox>
-							<a class="uk-link-reset" href="../img/projects/ploppem2/skins.png" data-caption="Customizations in the game">
-								<div class="uk-light uk-invisible-hover uk-position-top-right uk-padding-small" style="color: #666!important"><span uk-icon="icon: expand; ratio: 1.5"></span></div>
-								<img src="../img/projects/ploppem2/skins.png" alt="">
-							</a>
-							<div class="uk-margin-small-top uk-text-center uk-text-italic">Ploppem > Ploppem 2</div>
-						</div>
-						<div>
-							<p>To sustain itself, every game needs to generate an <span class="uk-text-bold uk-text-primary">income</span>, and usually, for Android's games, this comes in the form of a monetization system. Although <span class="uk-text-italic">Ploppem 2</span> didn't need one, I still theorized how I could implement it.<br>
-							Right now, the game rewards skins to who beats a specific highscore. They only slightly impact the gameplay difficulty, based on the skin shape size.</p>
-						</div>
-						<div class="uk-margin-medium-top">
-							<h3 class="uk-heading-bullet"><span>Currency</span></h3>
-							<p>I would change that by introducing a currency <span class="uk-text-bold uk-text-primary">earned</span> by playing, usable to buy the already mentioned skins. Being detached from the player's performance allows introducing higher costs than what can be collected in a single run. Less capable or experienced players should just play more runs. However, it takes time to do so, which brings me to the second and most important addition that makes monetization effective.</p>
-						</div>
-						<div class="uk-margin-medium-top">
-							<h3 class="uk-heading-bullet"><span>Premium Currency</span></h3>
-							<p>A second currency that can only be <span class="uk-text-bold uk-text-primary">purchased</span> with real money would allow me to offer those who do not have the skills or the time some support, in the form of shields or boosts to help them achieve the same accomplishments as others.<br>
-							The addition of other customizations, such as themes for the UI or different enemies' colours, could also <span class="uk-text-bold uk-text-primary">boost</span> the monetization, especially if some of them were premium-only.</p>
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
-						<h2 id="closing-thoughts" class="uk-text-center title-link uk-heading-divider"><a href="#closing-thoughts">Closing thoughts</a></h2>
-						<div>
-							<p>Ploppem 2 was a great opportunity to grow and despite the difficulties I encountered in adapting to DOP programming, it allowed me to do justice to one of the first concepts I ever developed, showing how much I have improved over the years.<br>
-							However, if I could go back in time I would:</p>
-							<ul class="uk-list uk-list-circle">
-								<li>I would have addressed a few bugs right away, and although I now know they are unsolvable, it would have spared me a lot of headaches towards the end of the project.</li>
-								<li>Plugins come in handy to speed up the development process, at the cost of build size and engine performances.</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-			</main>
-			<div class="uk-width-1-1 uk-width-3xlarge@s">
-				<footer class="uk-margin-large-top uk-padding-small">
-					<div class="uk-text-central uk-child-width-1-1" uk-grid>
-						<div class="uk-child-width-1-1 uk-flex-center uk-child-width-auto@s uk-grid-collapse uk-grid-medium@s" uk-grid>
-							<div>Email: <a href="">graizzaromatteo@gmail.com</a></div>
-							<div>Phone: <a href="">+39 3939684029</a></div>
-							<div>LinkedIn: <a href="">/in/matteo-graizzaro</a></div>
-						</div>
-						<div class="uk-child-width-1-1 uk-child-width-1-2@s uk-grid-collapse uk-margin-small-top" uk-grid>
-							<div class="uk-text-left@s">
-								Icons by <a href="https://simpleicons.org/" target="_blank">Simple Icons</a> & <a href="https://neuicons.com/" target="_blank">Neu Icons</a>
-							</div>
-							<div class="uk-text-right@s">
-								© 2021 by Graizzaro Matteo
-							</div>
-						</div>
-					</div>
-				</footer>
-			</div>
-		</div>
-	</body>
+  <head>
+    <title>Matteo Graizzaro Portfolio | Ploppem 2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/uikit.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/slider.css" />
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <div class="uk-position-relative" align="center">
+      <div
+        class="uk-padding-small-top uk-section-muted uk-margin-medium-bottom"
+      >
+        <div class="uk-width-1-1 uk-width-3xlarge@s" style="padding: 0 15px">
+          <header
+            class="uk-padding-small-top uk-grid-small uk-grid-collapse@m uk-child-width-1-1"
+            uk-grid
+          >
+            <h1>Matteo Graizzaro</h1>
+            <h3 class="uk-text-large uk-text-light">Game Programmer</h3>
+          </header>
+
+          <hr
+            class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom"
+          />
+        </div>
+
+        <nav
+          class="uk-navbar-container"
+          uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;"
+          uk-navbar
+        >
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-child-width-1-2">
+              <li class="uk-padding-small"><a href="../">Home</a></li>
+              <li class="uk-padding-small">
+                <a>Projects</a>
+                <div
+                  class="uk-navbar-dropdown uk-text-left"
+                  uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify; offset: 0"
+                >
+                  <div
+                    class="uk-navbar-dropdown-grid uk-child-width-expand uk-margin-remove-left"
+                    uk-grid
+                  >
+                    <ul
+                      class="uk-subnav uk-subnav-pill uk-flex-center uk-text-center"
+                      uk-margin
+                    >
+                      <li>
+                        <a href="whatwapp.html"
+                          >Whatwapp<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021-Present</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="village.html"
+                          >Canals Village<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021-2023</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="library.html"
+                          >Whitches Library<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="solitaire.html"
+                          >Solitaire<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li class="uk-active">
+                        <a href="ploppem2.html"
+                          >Ploppem 2<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="tunnel.html"
+                          >Tunnel<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="ploppem.html"
+                          >Ploppem<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2020-2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="nodib.html"
+                          >Nodib<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2020</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="oath.html"
+                          >Oath<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2018-2019</span
+                          ></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div
+        class="uk-width-1-1 uk-width-3xlarge@s uk-margin-remove uk-position-relative"
+        style="z-index: 10"
+      >
+        <div
+          id="#sidebar"
+          class="uk-text-left uk-sidebar-right uk-visible@l"
+          style="width: 150px"
+        >
+          <div uk-sticky="offset: 50; width-element: #sidebar;">
+            <ul
+              uk-scrollspy-nav="closest: li; scroll: true; offset: 80; overflow: false"
+              class="uk-nav-default uk-nav"
+            >
+              <li>
+                <a href="#">
+                  <span
+                    uk-icon="chevron-up"
+                    class="uk-margin-small-right uk-icon"
+                  ></span>
+                  <span class="uk-text-middle">To top</span>
+                </a>
+              </li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#summary">Summary</a></li>
+              <li><a href="#gameplay">Gameplay</a></li>
+              <li><a href="#user-interface">User Interface</a></li>
+              <li><a href="#monetization">Monetization</a></li>
+              <li><a href="#closing-thoughts">Closing thoughts</a></li>
+              <li class="uk-nav-divider"></li>
+              <li>
+                <a href="https://github.com/Vacui/Ploppem-2" target="_blank">
+                  <span uk-icon="github" class="uk-margin-small-right"></span>
+                  <span class="uk-text-middle">GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://matteo-graizzaro.itch.io/ploppem-2"
+                  target="_blank"
+                >
+                  <span
+                    uk-icon="itch-dot-io"
+                    class="uk-margin-small-right"
+                  ></span>
+                  <span class="uk-text-middle">Itch.io</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <main class="uk-position-relative uk-text-left">
+        <section
+          class="uk-section uk-padding-remove-vertical uk-margin-medium-bottom"
+        >
+          <div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+            <div
+              class="uk-background-cover uk-height-medium uk-border-rounded"
+              style="
+                background-image: url(../img/projects/ploppem2/logo-small.jpg);
+              "
+            ></div>
+          </div>
+        </section>
+        <section class="uk-hidden@l">
+          <div
+            class="uk-padding-small-right uk-padding-small-left uk-flex-center uk-grid-column-small uk-margin-medium-top uk-grid-divider"
+            style="font-size: 1.2rem"
+            uk-grid
+          >
+            <div>
+              <a
+                href="https://github.com/Vacui/Ploppem-2"
+                target="_blank"
+                class="uk-link uk-link-heading"
+              >
+                <span
+                  uk-icon="icon: github; ratio: 1.5"
+                  class="uk-margin-small-right"
+                ></span>
+                <span class="uk-text-middle">GitHub</span>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://matteo-graizzaro.itch.io/ploppem-2"
+                target="_blank"
+                class="uk-link uk-link-heading"
+              >
+                <span
+                  uk-icon="icon: itch-dot-io; ratio: 1.5"
+                  class="uk-margin-small-right"
+                ></span>
+                <span class="uk-text-middle">Itch.io</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+            <h2
+              id="summary"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#summary">Summary</a>
+            </h2>
+            <div
+              class="uk-child-width-1-1 uk-child-width-1-2@m"
+              uk-grid="masonry: true;"
+              style="margin-top: 30px"
+            >
+              <div>
+                <p>
+                  After hearing how much efficient the new Unity DOTS was, I
+                  decided to test it by myself while taking the opportunity to
+                  improve upon a previous project.<br />
+                  In the end, I detected a considerable performance increase,
+                  but the feature it's still lacking support by the engine and
+                  its community, which further slowed down the development.
+                </p>
+              </div>
+              <div class="uk-child-width-1-1">
+                <h3 class="uk-heading-bullet uk-width-1-1">
+                  <span>Specifications</span>
+                </h3>
+                <ul class="uk-list uk-list-circle">
+                  <li>50 days half time (4h/day)</li>
+                  <li>Developed in Unity</li>
+                  <li>Endless runner game</li>
+                  <li>
+                    UI icons from
+                    <a href="https://materialdesignicons.com/"
+                      >Material Design Icons</a
+                    >
+                  </li>
+                  <li>
+                    Plugins used:
+                    <a href="https://unitycodemonkey.com/utils.php"
+                      >CodeMonkey Utils</a
+                    >,
+                    <a
+                      href="https://www.febucci.com/2020/10/custom-hierarchy-for-unity/"
+                      >Custom Hierarchy</a
+                    >,
+                    <a
+                      href="https://assetstore.unity.com/packages/tools/gui/doozyui-complete-ui-management-system-138361"
+                      >DoozyUI</a
+                    >,
+                    <a href="https://github.com/arimger/Unity-Editor-Toolbox"
+                      >Editor Toolbox</a
+                    >,
+                    <a
+                      href="https://assetstore.unity.com/packages/tools/gui/graphy-ultimate-fps-counter-stats-monitor-debugger-105778"
+                      >Graphy - Ultimate Stats Monitor</a
+                    >,
+                    <a
+                      href="https://assetstore.unity.com/packages/tools/gui/in-game-debug-console-68068"
+                      >In-game Debug Console</a
+                    >,
+                    <a
+                      href="https://assetstore.unity.com/packages/tools/animation/leantween-3595"
+                      >LeanTween</a
+                    >,
+                    <a
+                      href="https://github.com/Dysman/bgTools-playerPrefsEditor"
+                      >PlayerPrefsEditor</a
+                    >,
+                    <a
+                      href="https://assetstore.unity.com/packages/tools/gui/procedural-ui-image-52200"
+                      >Procedural UI Image</a
+                    >, TextMesh Pro,
+                    <a
+                      href="https://assetstore.unity.com/packages/tools/gui/translucent-image-fast-blurred-background-ui-78464"
+                      >Translucent Image - Fast Blurred Background UI</a
+                    >,
+                    <a
+                      href="hhttps://assetstore.unity.com/packages/tools/gui/true-shadow-ui-soft-shadow-and-glow-beta-176322"
+                      >True Shadow UI Soft Shadow and Glow</a
+                    >
+                    and
+                    <a
+                      href="https://assetstore.unity.com/packages/tools/gui/ultevents-111307"
+                      >Ult Events</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="uk-child-width-1-1">
+                <h3 class="uk-heading-bullet uk-width-1-1">
+                  <span>Project goals</span>
+                </h3>
+                <ul class="uk-list uk-list-circle">
+                  <li>Getting acquainted with the Unity DOTS</li>
+                  <li>
+                    Improving my previous game
+                    <a href="ploppem.html">Ploppem</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+            <h2
+              id="gameplay"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#gameplay">Gameplay</a>
+            </h2>
+            <div>
+              <p>The concept around which everything revolves is simple:</p>
+              <blockquote cite="#">
+                <p class="uk-margin-small-bottom">
+                  Endless waves of enemies spawn on the screen, touch them, and
+                  they will disappear.<br />
+                  If you don't, they detonate by themselves after a specific
+                  amount of time, and you lose a
+                  <span class="uk-text-italic">heart</span>.<br />
+                  Running out of hearts means
+                  <span class="uk-text-bold uk-text-primary">Game Over</span>.
+                </p>
+                <footer>Concept</footer>
+              </blockquote>
+              <p>
+                But this time, mindful of my previous
+                <a href="ploppem.html" target="_blank">attempt</a>, I kept the
+                game simple and intuitive, while trying to make it fast and fun.
+              </p>
+            </div>
+            <div class="uk-margin-medium-top">
+              <div
+                class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-remove-adjacent uk-align-left uk-width-1-2"
+                uk-lightbox
+              >
+                <a
+                  class="uk-link-reset"
+                  href="../img/projects/ploppem2/differences.jpg"
+                  data-caption="Ploppem <- -> Ploppem 2"
+                >
+                  <div
+                    class="uk-invisible-hover uk-position-top-right uk-padding-small"
+                  >
+                    <span uk-icon="icon: expand; ratio: 1.5"></span>
+                  </div>
+                  <img src="../img/projects/ploppem2/differences.jpg" alt="" />
+                </a>
+                <div class="uk-margin-small-top uk-text-center uk-text-italic">
+                  Ploppem > Ploppem 2
+                </div>
+              </div>
+              <div>
+                <h3 class="uk-heading-bullet"><span>Enemy design</span></h3>
+                <p>
+                  When it comes to the enemies, much has
+                  <span class="uk-text-bold uk-text-primary">improved</span>
+                  from the first game. Gone is their complex AI designed to
+                  avoid a collision between them or their visuals packed with
+                  all sorts of data.<br />
+                  To encourage a
+                  <span class="uk-text-bold uk-text-primary"
+                    >fast reaction</span
+                  >
+                  I reduced the enemies to simple shapes, I provided them with a
+                  direction of movement that changes only once they reach the
+                  edges of the screen, and their self-destruct timer is shown in
+                  a gradient from green to red. The enemies can now overlap each
+                  other, but killing more than one at a time does not affect the
+                  points earned.
+                </p>
+              </div>
+            </div>
+            <div class="uk-margin-medium-top">
+              <h3 class="uk-heading-bullet"><span>Difficulty</span></h3>
+              <p>
+                In <span class="uk-text-italic">Ploppem</span> each time you
+                killed an enemy, a substitute was queued to spawn after a short
+                time. The main problem with this approach comes with the long
+                time the player must wait after eliminating all the enemies on
+                screen.<br />
+                To avoid it I separated the spawn from the kill system, and now
+                the enemies keep coming
+                <span class="uk-text-bold uk-text-primary">independently</span>
+                from the player performance. Over time the stats of the newborns
+                become more difficult, keeping the player on the edge of
+                collapsing. This change also simplified the game design,
+                therefore opening it to a more
+                <span class="uk-text-bold uk-text-primary">broad</span>
+                audience.
+              </p>
+            </div>
+            <div class="uk-margin-medium-top">
+              <h3 class="uk-heading-bullet"><span>Coding</span></h3>
+              <p>
+                By using the new Unity’s Data-Oriented Tech Stack (DOTS), I was
+                able to further improve the
+                <span class="uk-text-bold uk-text-primary">performances</span>
+                by replacing the usual MonoBehaviour classes with components in
+                ECS.<br />
+                Instead of an enemy object acting independently from the others,
+                I have now an entity that is just a container for every data
+                that defines a single enemy. This data is then processed by a
+                system that efficiently moves each enemy
+                <span class="uk-text-bold uk-text-primary">simultaneously</span>
+                by using multi-threading processing through a Job. It has
+                allowed me to introduce the aforementioned independent spawning
+                system because even with more than 100 enemies on screen, the
+                fps didn't drop below 60.<br />
+                The only aspect of the game I was not able to code using DOTS
+                was the UI.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-secondary uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+            <h2
+              id="user-interface"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#user-interface">User Interface</a>
+            </h2>
+            <div class="uk-child-width-1-1 uk-margin-medium-top" uk-grid>
+              <div class="uk-position-relative uk-visible-toggle" uk-lightbox>
+                <a
+                  class="uk-link-reset"
+                  href="../img/projects/ploppem2/ui.jpg"
+                  data-caption="The game UI as structured using the plugin DoozyUI"
+                >
+                  <div
+                    class="uk-invisible-hover uk-position-top-right uk-padding-small"
+                  >
+                    <span uk-icon="icon: expand; ratio: 1.5"></span>
+                  </div>
+                  <img src="../img/projects/ploppem2/ui.jpg" alt="" />
+                </a>
+                <div class="uk-margin-small-top uk-text-center uk-text-italic">
+                  The game UI as structured using the plugin DoozyUI
+                </div>
+              </div>
+              <div>
+                <p>
+                  I started implementing the UI of the game using scripts made
+                  by myself, carried over from the previous project
+                  <a href="tunnel.html">Tunnel</a>, but while searching for a
+                  plugin capable of showing the console in-game, I stumbled
+                  across the page
+                  <a href="https://gameassetsfree.com/">Game Assets Free</a>,
+                  that allowed me to download various useful plugins, including
+                  DoozyUI, a complete management system for the UI. From that
+                  point forward I was able to more quickly create all the
+                  necessary parts of my interface.
+                </p>
+                <p>
+                  But even if that helped me with the more technical part, I
+                  still had to put some effort into the design.
+                </p>
+              </div>
+            </div>
+            <div class="uk-margin-medium-top uk-child-width-1-1" uk-grid>
+              <div>
+                <h3 class="uk-heading-bullet">
+                  <span>A bit of UX (User Experience)</span>
+                </h3>
+                <div
+                  class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-remove-adjacent uk-align-right uk-width-1-2@m"
+                  uk-lightbox
+                >
+                  <a
+                    class="uk-link-reset"
+                    href="../img/projects/ploppem2/ui-change.jpg"
+                    data-caption="Base -> Final Game UI"
+                  >
+                    <div
+                      class="uk-invisible-hover uk-position-top-right uk-padding-small"
+                      style="color: #666 !important"
+                    >
+                      <span uk-icon="icon: expand; ratio: 1.5"></span>
+                    </div>
+                    <img src="../img/projects/ploppem2/ui-change.jpg" alt="" />
+                  </a>
+                  <div
+                    class="uk-margin-small-top uk-text-center uk-text-italic"
+                  >
+                    Base -> Final Game UI
+                  </div>
+                </div>
+                <div>
+                  <p>
+                    The interface that was redesigned the most while developing,
+                    was the game one.
+                  </p>
+                  <p>
+                    During the prototyping it contained only the pause, a timer
+                    and the remaining lives in the center of the screen.<br />
+                    This didn't change until about the middle of the project,
+                    where I
+                    <span class="uk-text-bold uk-text-primary">introduced</span>
+                    the score, and moved the lives to the top right, and in an
+                    attempt to reduce cluttering I also removed the timer. The
+                    pause button has been moved to the center to please both
+                    right and left handed.<br />
+                    After further tests I decided to increase the size of the
+                    texts, reintroduce the timer and then move the score to the
+                    center, adding the highscore (which was previously in the
+                    pause menu), both numbers have an alpha to show the monsters
+                    below.
+                  </p>
+                  <p>
+                    The main menu also got through quite the change. The
+                    originals 5 buttons (play, customize, about, settings and
+                    game stats) were reduced to 3 for the seek of simplicity.<br />
+                    Both the game settings and the game stats were
+                    <span class="uk-text-bold uk-text-primary">relived</span> of
+                    unused functionalities, and incorporated in the main menu. I
+                    then took the game version and author from the about menu
+                    and also putted them in the main menu, leaving only the
+                    social links and credits.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+            <h2
+              id="monetization"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#monetization">Monetization</a>
+            </h2>
+            <div
+              class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-remove-adjacent uk-align-right uk-width-1-3"
+              uk-lightbox
+            >
+              <a
+                class="uk-link-reset"
+                href="../img/projects/ploppem2/skins.png"
+                data-caption="Customizations in the game"
+              >
+                <div
+                  class="uk-light uk-invisible-hover uk-position-top-right uk-padding-small"
+                  style="color: #666 !important"
+                >
+                  <span uk-icon="icon: expand; ratio: 1.5"></span>
+                </div>
+                <img src="../img/projects/ploppem2/skins.png" alt="" />
+              </a>
+              <div class="uk-margin-small-top uk-text-center uk-text-italic">
+                Ploppem > Ploppem 2
+              </div>
+            </div>
+            <div>
+              <p>
+                To sustain itself, every game needs to generate an
+                <span class="uk-text-bold uk-text-primary">income</span>, and
+                usually, for Android's games, this comes in the form of a
+                monetization system. Although
+                <span class="uk-text-italic">Ploppem 2</span> didn't need one, I
+                still theorized how I could implement it.<br />
+                Right now, the game rewards skins to who beats a specific
+                highscore. They only slightly impact the gameplay difficulty,
+                based on the skin shape size.
+              </p>
+            </div>
+            <div class="uk-margin-medium-top">
+              <h3 class="uk-heading-bullet"><span>Currency</span></h3>
+              <p>
+                I would change that by introducing a currency
+                <span class="uk-text-bold uk-text-primary">earned</span> by
+                playing, usable to buy the already mentioned skins. Being
+                detached from the player's performance allows introducing higher
+                costs than what can be collected in a single run. Less capable
+                or experienced players should just play more runs. However, it
+                takes time to do so, which brings me to the second and most
+                important addition that makes monetization effective.
+              </p>
+            </div>
+            <div class="uk-margin-medium-top">
+              <h3 class="uk-heading-bullet"><span>Premium Currency</span></h3>
+              <p>
+                A second currency that can only be
+                <span class="uk-text-bold uk-text-primary">purchased</span> with
+                real money would allow me to offer those who do not have the
+                skills or the time some support, in the form of shields or
+                boosts to help them achieve the same accomplishments as
+                others.<br />
+                The addition of other customizations, such as themes for the UI
+                or different enemies' colours, could also
+                <span class="uk-text-bold uk-text-primary">boost</span> the
+                monetization, especially if some of them were premium-only.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+            <h2
+              id="closing-thoughts"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#closing-thoughts">Closing thoughts</a>
+            </h2>
+            <div>
+              <p>
+                Ploppem 2 was a great opportunity to grow and despite the
+                difficulties I encountered in adapting to DOP programming, it
+                allowed me to do justice to one of the first concepts I ever
+                developed, showing how much I have improved over the years.<br />
+                However, if I could go back in time I would:
+              </p>
+              <ul class="uk-list uk-list-circle">
+                <li>
+                  I would have addressed a few bugs right away, and although I
+                  now know they are unsolvable, it would have spared me a lot of
+                  headaches towards the end of the project.
+                </li>
+                <li>
+                  Plugins come in handy to speed up the development process, at
+                  the cost of build size and engine performances.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="uk-width-1-1 uk-width-3xlarge@s">
+        <footer class="uk-margin-large-top uk-padding-small">
+          <div class="uk-text-central uk-child-width-1-1" uk-grid>
+            <div
+              class="uk-child-width-1-1 uk-flex-center uk-child-width-auto@s uk-grid-collapse uk-grid-medium@s"
+              uk-grid
+            >
+              <div>Email: <a href="">graizzaromatteo@gmail.com</a></div>
+              <div>Phone: <a href="">+39 3939684029</a></div>
+              <div>LinkedIn: <a href="">/in/matteo-graizzaro</a></div>
+            </div>
+            <div
+              class="uk-child-width-1-1 uk-child-width-1-2@s uk-grid-collapse uk-margin-small-top"
+              uk-grid
+            >
+              <div class="uk-text-left@s">
+                Icons by
+                <a href="https://simpleicons.org/" target="_blank"
+                  >Simple Icons</a
+                >
+                & <a href="https://neuicons.com/" target="_blank">Neu Icons</a>
+              </div>
+              <div class="uk-text-right@s">© 2021 by Graizzaro Matteo</div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>

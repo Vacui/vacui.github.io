@@ -1,396 +1,908 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Matteo Graizzaro Portfolio | Witches Library</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../css/uikit.min.css" />
-		<link rel="stylesheet" href="../css/styles.css" />
-		<link rel="stylesheet" href="../css/slider.css" />
-        <script src="../js/uikit.min.js"></script>
-        <script src="../js/uikit-icons.min.js"></script>
-	</head>
-	<body>
-		<div class="uk-position-relative" align="center">		
-			<div class="uk-padding-small-top uk-section-muted uk-margin-medium-bottom">
-				<div class="uk-width-1-1 uk-width-3xlarge@s" style="padding: 0 15px;">
-					<header class="uk-padding-small-top uk-grid-small uk-grid-collapse@m uk-child-width-1-1" uk-grid>
-						<h1>Matteo Graizzaro</h1>
-						<h3 class="uk-text-large uk-text-light">Game Programmer</h3>
-					</header>
-					
-					<hr class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom">
-				</div>
-				
-				<nav class="uk-navbar-container" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;" uk-navbar>
-					<div class="uk-navbar-center">
-						<ul class="uk-navbar-nav uk-child-width-1-2">
-							<li class="uk-padding-small"><a href="../">Home</a></li>
-							<li class="uk-padding-small">
-								<a>Projects</a>
-								<div class="uk-navbar-dropdown uk-text-left" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify; offset: 0">
-									<div class="uk-navbar-dropdown-grid uk-child-width-expand uk-margin-remove-left" uk-grid>
-										<ul class="uk-subnav uk-subnav-pill uk-flex-center uk-text-center" uk-margin>
-											<li><a href="whatwapp.html">Whatwapp<br><span class="uk-text-italic uk-text-capitalize">2021-Present</span></a></li>
-									   		<li><a href="village.html">Canals Village<br><span class="uk-text-italic uk-text-capitalize">2021-2023</span></a></li>
-											<li class="uk-active"><a href="library.html">Whitches Library<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
-											<li><a href="solitaire.html">Solitaire<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
-											<li><a href="ploppem2.html">Ploppem 2<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li> 
-											<li><a href="tunnel.html">Tunnel<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
-											<li><a href="ploppem.html">Ploppem<br><span class="uk-text-italic uk-text-capitalize">2020-2021</span></a></li>
-											<li><a href="nodib.html">Nodib<br><span class="uk-text-italic uk-text-capitalize">2020</span></a></li>
-											<li><a href="oath.html">Oath<br><span class="uk-text-italic uk-text-capitalize">2018-2019</span></a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-			
-			<div class="uk-width-1-1 uk-width-3xlarge@s uk-margin-remove uk-position-relative" style="z-index: 10;">
-				<div id="#sidebar" class="uk-text-left uk-sidebar-right uk-visible@l" style="width: 150px;">
-					<div uk-sticky="offset: 50; width-element: #sidebar;">
-						<ul uk-scrollspy-nav="closest: li; scroll: true; offset: 80; overflow: false" class="uk-nav-default uk-nav">
-							<li>
-								<a href="#">
-									<span uk-icon="chevron-up" class="uk-margin-small-right uk-icon"></span>
-									<span class="uk-text-middle">To top</span>
-								</a>
-							</li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="#summary">Summary</a></li>
-							<li><a href="#third-person-character">Third person character</a></li>
-							<li><a href="#in-game">In game</a></li>
-							<li><a href="#user-interface">User Interface</a></li>
-							<li><a href="#closing-thoughts">Closing thoughts</a></li>
-							<li class="uk-nav-divider"></li>
-							<li>
-								<a href="https://www.artstation.com/artwork/aYA90R" target="_blank">
-									<span uk-icon="artstation" class="uk-margin-small-right"></span>
-									<span class="uk-text-middle">ArtStation</span>
-								</a>
-							</li>
-							<li>
-								<a href="https://ighibi.itch.io/witch-library" target="_blank">
-									<span uk-icon="itch-dot-io" class="uk-margin-small-right"></span>
-									<span class="uk-text-middle">Itch.io</span>
-								</a>
-							</li>
-							<li>
-								<a href="https://bitbucket.org/Andrea_Graizzaro/witches-library/" target="_blank">
-									<span uk-icon="bitbucket" class="uk-margin-small-right"></span>
-									<span class="uk-text-middle">Bitbucket</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			
-			<main class="uk-position-relative uk-text-left">
-				<section class="uk-section uk-padding-remove-vertical uk-margin-medium-bottom">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<div class="uk-background-cover uk-height-medium uk-border-rounded" style="background-image: url(../img/projects/library/logo-small.jpg);"></div>
-					</div>
-				</section>
-				<section class="uk-hidden@l">
-					<div class="uk-padding-small-right uk-padding-small-left uk-flex-center uk-grid-column-small uk-margin-medium-top uk-grid-divider" style="font-size: 1.2rem;"uk-grid>
-						<div>
-							<a href="https://www.artstation.com/artwork/aYA90R" target="_blank" class="uk-link uk-link-heading">
-								<span uk-icon="icon: artstation; ratio: 1.5" class="uk-margin-small-right"></span>
-								<span class="uk-text-middle">ArtStation</span>
-							</a>
-						</div>
-						<div>
-							<a href="https://ighibi.itch.io/witch-library" target="_blank" class="uk-link uk-link-heading">
-								<span uk-icon="icon: itch-dot-io; ratio: 1.5" class="uk-margin-small-right"></span>
-								<span class="uk-text-middle">Itch.io</span>
-							</a>
-						</div>
-						<div>
-							<a href="https://bitbucket.org/Andrea_Graizzaro/witches-library/" target="_blank" class="uk-link uk-link-heading">
-								<span uk-icon="icon: bitbucket; ratio: 1.5" class="uk-margin-small-right"></span>
-								<span class="uk-text-middle">Bitbucket</span>
-							</a>
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
-						<h2 id="summary" class="uk-text-center title-link uk-heading-divider"><a href="#summary">Summary</a></h2>
-						<div class="uk-child-width-1-1 uk-child-width-1-2@m" uk-grid="masonry: true;" style="margin-top: 30px;">
-							<div>
-								<p>In the first UE4 project I got involved in, I was tasked to help the author by implementing supportive systems to polish the user experience. I got the chance to step outside my comfort zone and try the famous blueprints of Unreal. The result has been satisfactory and it is possible that I will explore this engine more in the future.</p>
-							</div>
-							<div class="uk-child-width-1-1">
-								<h3 class="uk-heading-bullet uk-width-1-1"><span>Specifications</span></h3>
-								<ul class="uk-list uk-list-circle">
-									<li>Helped from time to time</li>
-									<li>Developed in Unreal Engine 2.26</li>
-									<li>3D Environment</li>
-									<li>More about the people who helped the development in the project downloadable build.</li>
-								</ul>
-							</div>
-							<div class="uk-child-width-1-1">
-								<h3 class="uk-heading-bullet uk-width-1-1"><span>Project goals</span></h3>
-								<ul class="uk-list uk-list-circle">
-									<li>Gain experience in working with the Unreal Engine</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
-						<h2 id="third-person-character" class="uk-text-center title-link uk-heading-divider"><a href="#third-person-character">Third person character</a></h2>
-						<div class="uk-grid-small" uk-grid>
-							<div class="uk-position-relative">
-								<div class="uk-position-relative uk-visible-toggle" uk-lightbox>
-									<a class="uk-link-reset" href="../img/projects/library/third_person_character.png" data-caption="Third Person Character Blueprint">
-										<div class="uk-inline uk-background-default">
-											<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/library/third_person_character.png" alt="">
-										</div>
-									</a>
-								</div>
-								<div class="uk-light uk-background-cover">
-									<a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 30%" href="#third_person_character-movement" uk-marker></a>
-									<a class="uk-position-absolute uk-transform-center" style="left: 30%; top: 75%" href="#third_person_character-flying" uk-marker></a>
-									<a class="uk-position-absolute uk-transform-center" style="left: 65%; top: 85%" href="#third_person_character-menu" uk-marker></a>
-								</div>
-							</div>
-							<p>
-								First system the player interacts with. Implemented by the artist alone at the beginning of the project, I rearranged its code once I took over him, by introducing functions and other small changes, to make it easier to read.<br>
-								During the development more was added to the blueprint, but just before the release, in order to simplify the project use, it was decided to reduce the amount of inputs to just the ones to open the menu and to switch from and to the flying mode, and control it.
-							</p>
-							<div class="uk-child-width-1-2@m" uk-grid="masonry: true">
-								<div>
-									<h4 id="third_person_character-movement">Movement</h4>
-									<div class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-small-bottom" uk-lightbox>
-										<a class="uk-link-reset" href="../img/projects/library/third_person_character-movement.png" data-caption="Third Person Character movement code">
-											<div class="uk-inline uk-background-default">
-												<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/library/third_person_character-movement.png" alt="">
-											</div>
-										</a>
-									</div>
-									<p>Basically, it is an interface between the various inputs and the already built-in system of movement.<br>
-									To avoid an endless fall I implemented a system that detects when the player will reach a z coordinate under a specified threshold, and it will move it to the origin position.</p>
-								</div>
-								<div>
-									<h4 id="third_person_character-flying">Flying</h4>
-									<div class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-small-bottom" uk-lightbox>
-										<a class="uk-link-reset" href="../img/projects/library/third_person_character-flying.png" data-caption="Third Person Character flying code">
-											<div class="uk-inline uk-background-default">
-												<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/library/third_person_character-flying.png" alt="">
-											</div>
-										</a>
-									</div>
-									<p>I was able to simulate flying by changing the camera distance from a 3rd person distance to a first, hiding the player model and removing constraints such as gravity.<br>
-									It is an instrument intended to be used to explore the environment more freely and rapidly and was also employed during the development.</p>
-								</div>
-								<div>
-									<h4 id="third_person_character-menu">Menu</h4>
-									<div class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-small-bottom" uk-lightbox>
-										<a class="uk-link-reset" href="../img/projects/library/third_person_character-menu.png" data-caption="Third Person Character menu code">
-											<div class="uk-inline uk-background-default">
-												<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/library/third_person_character-menu.png" alt="">
-											</div>
-										</a>
-									</div>
-									<p>A piece of code that only arrived towards the end of the project. It manages the interaction between the player and the UI. Such as positioning the player after the initial intro ending or its visibility when the menu is open, to prevent an intrusion into the camera frame.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-secondary uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
-						<h2 id="in-game" class="uk-text-center title-link uk-heading-divider"><a href="#in-game">In game</a></h2>
-						<p>During the project development, I had to program various complementary systems to further polish the environment.<br>
-						Here are some of them:</p>
-						<h3 class="uk-heading-bullet"><span>Group generator</span></h3>
-						<div class="uk-grid-small" uk-grid>
-							<div class="uk-position-relative">
-								<div class="uk-position-relative uk-visible-toggle" uk-lightbox>
-									<a class="uk-link-reset" href="../img/projects/library/group_generator.png" data-caption="Group generator Blueprint">
-										<div class="uk-inline uk-background-default">
-											<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/library/group_generator.png" alt="">
-										</div>
-									</a>
-								</div>
-								<div class="uk-light uk-background-cover">
-									<a class="uk-position-absolute uk-transform-center" style="left: 80%; top: 45%" href="#group_generator-generate" uk-marker></a>
-									<a class="uk-position-absolute uk-transform-center" style="left: 60%; top: 55%" href="#group_generator-instantiate" uk-marker></a>
-								</div>
-							</div>
-							<p>In the original <a href="https://www.artstation.com/artwork/q9LEdz" class="uk-link" target="_blank">concept</a>, you can notice groups of flying books moving around the buildings.<br>
-							To recreate the effect I developed a blueprint to randomly generate a group of <code>Static Meshes</code>, which are then moved following a <i>Spline</i>.<br>
-							The code is based on the <a class="uk-link" href="https://www.youtube.com/watch?v=7OOwwDocL2Y&t=583s" target="_blank">vertex animation</a> tutorial by Ghislain Giradot.</p>
-							<div class="uk-child-width-1-2@m" uk-grid="masonry: true">
-								<div>
-									<h4 id="group_generator-generate">Generate</h4>
-									<div class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-small-bottom" uk-lightbox>
-										<a class="uk-link-reset" href="../img/projects/library/group_generator-generate.png" data-caption="Group Generator generate code">
-											<div class="uk-inline uk-background-default">
-												<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/library/group_generator-generate.png" alt="">
-											</div>
-										</a>
-									</div>
-									<p>Starting from the centre, and proceeding in a circle, transforms, materials and meshes for the books are randomly generated, which were subsequently made visible in the editor to allow the artist greater freedom to edit the finished product. This generation is triggered using a boolean.</p>
-								</div>
-								<div>
-									<h4 id="group_generator-instantiate">Instantiate</h4>
-									<div class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-small-bottom" uk-lightbox>
-										<a class="uk-link-reset" href="../img/projects/library/group_generator-instantiate.png" data-caption="Group Generator instantiate code">
-											<div class="uk-inline uk-background-default">
-												<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/library/group_generator-instantiate.png" alt="">
-											</div>
-										</a>
-									</div>
-									<p>Once the generation is complete or the game is started, the randomly generated transform, material and mesh arrays are read and used to create static meshes.</p>
-								</div>
-							</div>
-						</div>
-						<div class="uk-margin-medium-top">
-							<h3 class="uk-heading-bullet"><span>Spline</span></h3>
-							<div class="uk-child-width-1-2@m uk-grid-row-small uk-grid-column-medium uk-flex-middle" uk-grid>
-								<div class="uk-position-relative uk-visible-toggle uk-child-width-1-1" uk-lightbox>
-									<a class="uk-link-reset" href="../img/projects/library/spline.png" data-caption="Credits blueprint">
-										<div class="uk-inline uk-background-default">
-											<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/library/spline.png" alt="">
-										</div>
-									</a>
-								</div>
-								<p>Any object (in our case the flying books) can be moved in the environment through this blueprint. The artist can freely customize their path through a Spline, and their speed and direction of travel in the editor.</p>								
-							</div>
-						</div>
-						<div class="uk-margin-medium-top">
-							<h3 class="uk-heading-bullet"><span>Spawn actors in radius</span></h3>
-							<div class="uk-child-width-1-2@m uk-grid-row-small uk-grid-column-medium uk-flex-middle" uk-grid>
-								<div class="uk-position-relative uk-visible-toggle uk-child-width-1-1" uk-lightbox>
-									<a class="uk-link-reset" href="../img/projects/library/spawn_actor_radius.png" data-caption="Spawn actors in radius blueprint">
-										<div class="uk-inline uk-background-default">
-											<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/library/spawn_actor_radius.png" alt="">
-										</div>
-									</a>
-								</div>
-								<p class="uk-flex-first@m">To speed up development in a couple of cases, I developed this blueprint that deals with instantiating an actor a number of times at regular spacing in a circle of radius of choice. Customization that I could add in the future could be the possibility to select only a portion of the circle.</p>
-							</div>
-						</div>
-						<div class="uk-margin-medium-top">
-							<h3 class="uk-heading-bullet"><span>Orrery</span></h3>
-							<div class="uk-child-width-1-2@m uk-grid-row-small uk-grid-column-medium uk-grid-column-medium uk-flex-middle" uk-grid>
-								<div class="uk-position-relative uk-visible-toggle uk-child-width-1-1" uk-lightbox>
-									<a class="uk-link-reset" href="../img/projects/library/orrery.png" data-caption="Orrery blueprint">
-										<div class="uk-inline uk-background-default">
-											<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/library/orrery.png" alt="">
-										</div>
-									</a>
-								</div>
-								<p>One of the first blueprints made. It merely controls the movement of an orrery positioned at the highest point of the environment.<br>
-								The initial idea was to activate a particle effect to coincide with the alignment of the planets, but there has never been time to accomplish it.</p>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
-						<h2 id="user-interface" class="uk-text-center title-link uk-heading-divider"><a href="#user-interface">User Interface</a></h2>
-						<p>One of the last systems to be introduced in the project, and also one of the most complex. It is composed of multiple blueprints and parts of blueprints, which communicate with each other through events.</p>
-						<div class="uk-child-width-1-1 uk-margin-medium-top uk-grid-small" uk-grid>
-							<h3 class="uk-heading-bullet"><span>Master</span></h3>
-							<div class="uk-position-relative">
-								<div class="uk-position-relative uk-visible-toggle" uk-lightbox>
-									<a class="uk-link-reset" href="../img/projects/library/user_interface.png" data-caption="UI Master Blueprint">
-										<div class="uk-inline uk-background-default">
-											<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/library/user_interface.png" alt="">
-										</div>
-									</a>
-								</div>
-								<div class="uk-light uk-background-cover">
-									<a class="uk-position-absolute uk-transform-center" style="left: 70%; top: 10%" href="#user_interface-intro" uk-marker></a>
-									<a class="uk-position-absolute uk-transform-center" style="left: 40%; top: 65%" href="#user_interface-menu" uk-marker></a>
-								</div>
-							</div>
-							<p>Head of all the User Interface, it handles the startup intro and the toggle of the Menu.</p>
-							<div class="uk-grid-medium uk-child-width-1-2@m" uk-grid="masonry: true">
-								<div>
-									<h4 id="user_interface-intro">Intro</h4>
-									<div class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-small-bottom" uk-lightbox>
-										<a class="uk-link-reset" href="../img/projects/library/user_interface-intro.png" data-caption="UI Master intro code">
-											<div class="uk-inline uk-background-default">
-												<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/library/user_interface-intro.png" alt="">
-											</div>
-										</a>
-									</div>
-									<p>The intro is composed in the <code>Sequencer</code> and is then executed at the start of the game. A custom event called <code>OnEndedIntro</code> is called once it is finished. To make sure the player doesn't mess it up, his inputs (outside the key to show the menu and therefore interrupt the intro) are disabled during the execution.</p>
-								</div>
-								<div>
-									<h4 id="user_interface-menu">Menu</h4>
-									<div class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-small-bottom" uk-lightbox>
-										<a class="uk-link-reset" href="../img/projects/library/user_interface-menu.png" data-caption="UI Master menu code">
-											<div class="uk-inline uk-background-default">
-												<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/library/user_interface-menu.png" alt="">
-											</div>
-										</a>
-									</div>
-									<p>Shown using the M key, the menu allows the player to explore the credits and exit the game. Several controls have been put in place to block and hide the player while it is shown.</p>
-								</div>
-							</div>
-						</div>
-						<div class="uk-margin-medium-top">
-							<h3 class="uk-heading-bullet"><span>Credits</span></h3>
-							<div class="uk-child-width-1-2@m uk-grid-row-small uk-grid-column-medium uk-grid-column-medium uk-flex-middle" uk-grid>
-								<div class="uk-position-relative uk-visible-toggle uk-child-width-1-1" uk-lightbox>
-									<a class="uk-link-reset" href="../img/projects/library/user_interface-credits.png" data-caption="Credits blueprint">
-										<div class="uk-inline uk-background-default">
-											<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/library/user_interface-credits.png" alt="">
-										</div>
-									</a>
-								</div>
-								<p>Necessary to give due credit to those who developed, collaborated and inspired the project, this blueprint contains a list of <code>UIWidgets</code> that are shown in sequence at set points in the intro. A fade effect was introduced by programming to make their appearance and disappearance more elegant.<br>
-								Some limitations of this system are the obligatory sequentiality of the <code>UIWidgets</code> (there cannot be two at the same time), and the same speed for the fade animation for all.</p>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
-						<h2 id="closing-thoughts" class="uk-text-center title-link uk-heading-divider"><a href="#closing-thoughts">Closing thoughts</a></h2>
-						<div>
-							<p>First attempt to use Unreal Engine 4, this project taught me a lot about the software and its systems. A lack of strict control helped me develop the systems freely, and constant feedback and requests made me develop flexible systems that could be easily expanded in the future. Unfortunately, the absence of an online repository made it impossible to work on the project without disrupting the artist.<br>
-							If I could go back in time I would:</p>
-							<ul class="uk-list uk-list-circle">
-								<li>Establishing an online repository for the project. It would allow more than one person to work on the project at the same time, while also keeping a history of the changes.</li>
-								<li>Use C++ to speed up the development of simple systems.</li>
-								<li>Rely more on the use of functions and macros to organize the blueprints.</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-			</main>
-			
-			<div class="uk-width-1-1 uk-width-3xlarge@s">
-				<footer class="uk-margin-large-top uk-padding-small">
-					<div class="uk-text-central uk-child-width-1-1" uk-grid>
-						<div class="uk-child-width-1-1 uk-flex-center uk-child-width-auto@s uk-grid-collapse uk-grid-medium@s" uk-grid>
-							<div>Email: <a href="">graizzaromatteo@gmail.com</a></div>
-							<div>Phone: <a href="">+39 3939684029</a></div>
-							<div>LinkedIn: <a href="">/in/matteo-graizzaro</a></div>
-						</div>
-						<div class="uk-child-width-1-1 uk-child-width-1-2@s uk-grid-collapse uk-margin-small-top" uk-grid>
-							<div class="uk-text-left@s">
-								Icons by <a href="https://simpleicons.org/" target="_blank">Simple Icons</a> & <a href="https://neuicons.com/" target="_blank">Neu Icons</a>
-							</div>
-							<div class="uk-text-right@s">
-								© 2021 by Graizzaro Matteo
-							</div>
-						</div>
-					</div>
-				</footer>
-			</div>
-			
-		</div>
-	</body>
+  <head>
+    <title>Matteo Graizzaro Portfolio | Witches Library</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/uikit.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/slider.css" />
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <div class="uk-position-relative" align="center">
+      <div
+        class="uk-padding-small-top uk-section-muted uk-margin-medium-bottom"
+      >
+        <div class="uk-width-1-1 uk-width-3xlarge@s" style="padding: 0 15px">
+          <header
+            class="uk-padding-small-top uk-grid-small uk-grid-collapse@m uk-child-width-1-1"
+            uk-grid
+          >
+            <h1>Matteo Graizzaro</h1>
+            <h3 class="uk-text-large uk-text-light">Game Programmer</h3>
+          </header>
+
+          <hr
+            class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom"
+          />
+        </div>
+
+        <nav
+          class="uk-navbar-container"
+          uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;"
+          uk-navbar
+        >
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-child-width-1-2">
+              <li class="uk-padding-small"><a href="../">Home</a></li>
+              <li class="uk-padding-small">
+                <a>Projects</a>
+                <div
+                  class="uk-navbar-dropdown uk-text-left"
+                  uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify; offset: 0"
+                >
+                  <div
+                    class="uk-navbar-dropdown-grid uk-child-width-expand uk-margin-remove-left"
+                    uk-grid
+                  >
+                    <ul
+                      class="uk-subnav uk-subnav-pill uk-flex-center uk-text-center"
+                      uk-margin
+                    >
+                      <li>
+                        <a href="whatwapp.html"
+                          >Whatwapp<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021-Present</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="village.html"
+                          >Canals Village<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021-2023</span
+                          ></a
+                        >
+                      </li>
+                      <li class="uk-active">
+                        <a href="library.html"
+                          >Whitches Library<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="solitaire.html"
+                          >Solitaire<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="ploppem2.html"
+                          >Ploppem 2<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="tunnel.html"
+                          >Tunnel<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="ploppem.html"
+                          >Ploppem<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2020-2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="nodib.html"
+                          >Nodib<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2020</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="oath.html"
+                          >Oath<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2018-2019</span
+                          ></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div
+        class="uk-width-1-1 uk-width-3xlarge@s uk-margin-remove uk-position-relative"
+        style="z-index: 10"
+      >
+        <div
+          id="#sidebar"
+          class="uk-text-left uk-sidebar-right uk-visible@l"
+          style="width: 150px"
+        >
+          <div uk-sticky="offset: 50; width-element: #sidebar;">
+            <ul
+              uk-scrollspy-nav="closest: li; scroll: true; offset: 80; overflow: false"
+              class="uk-nav-default uk-nav"
+            >
+              <li>
+                <a href="#">
+                  <span
+                    uk-icon="chevron-up"
+                    class="uk-margin-small-right uk-icon"
+                  ></span>
+                  <span class="uk-text-middle">To top</span>
+                </a>
+              </li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#summary">Summary</a></li>
+              <li>
+                <a href="#third-person-character">Third person character</a>
+              </li>
+              <li><a href="#in-game">In game</a></li>
+              <li><a href="#user-interface">User Interface</a></li>
+              <li><a href="#closing-thoughts">Closing thoughts</a></li>
+              <li class="uk-nav-divider"></li>
+              <li>
+                <a
+                  href="https://www.artstation.com/artwork/aYA90R"
+                  target="_blank"
+                >
+                  <span
+                    uk-icon="artstation"
+                    class="uk-margin-small-right"
+                  ></span>
+                  <span class="uk-text-middle">ArtStation</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://ighibi.itch.io/witch-library" target="_blank">
+                  <span
+                    uk-icon="itch-dot-io"
+                    class="uk-margin-small-right"
+                  ></span>
+                  <span class="uk-text-middle">Itch.io</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://bitbucket.org/Andrea_Graizzaro/witches-library/"
+                  target="_blank"
+                >
+                  <span
+                    uk-icon="bitbucket"
+                    class="uk-margin-small-right"
+                  ></span>
+                  <span class="uk-text-middle">Bitbucket</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <main class="uk-position-relative uk-text-left">
+        <section
+          class="uk-section uk-padding-remove-vertical uk-margin-medium-bottom"
+        >
+          <div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+            <div
+              class="uk-background-cover uk-height-medium uk-border-rounded"
+              style="
+                background-image: url(../img/projects/library/logo-small.jpg);
+              "
+            ></div>
+          </div>
+        </section>
+        <section class="uk-hidden@l">
+          <div
+            class="uk-padding-small-right uk-padding-small-left uk-flex-center uk-grid-column-small uk-margin-medium-top uk-grid-divider"
+            style="font-size: 1.2rem"
+            uk-grid
+          >
+            <div>
+              <a
+                href="https://www.artstation.com/artwork/aYA90R"
+                target="_blank"
+                class="uk-link uk-link-heading"
+              >
+                <span
+                  uk-icon="icon: artstation; ratio: 1.5"
+                  class="uk-margin-small-right"
+                ></span>
+                <span class="uk-text-middle">ArtStation</span>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://ighibi.itch.io/witch-library"
+                target="_blank"
+                class="uk-link uk-link-heading"
+              >
+                <span
+                  uk-icon="icon: itch-dot-io; ratio: 1.5"
+                  class="uk-margin-small-right"
+                ></span>
+                <span class="uk-text-middle">Itch.io</span>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://bitbucket.org/Andrea_Graizzaro/witches-library/"
+                target="_blank"
+                class="uk-link uk-link-heading"
+              >
+                <span
+                  uk-icon="icon: bitbucket; ratio: 1.5"
+                  class="uk-margin-small-right"
+                ></span>
+                <span class="uk-text-middle">Bitbucket</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+            <h2
+              id="summary"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#summary">Summary</a>
+            </h2>
+            <div
+              class="uk-child-width-1-1 uk-child-width-1-2@m"
+              uk-grid="masonry: true;"
+              style="margin-top: 30px"
+            >
+              <div>
+                <p>
+                  In the first UE4 project I got involved in, I was tasked to
+                  help the author by implementing supportive systems to polish
+                  the user experience. I got the chance to step outside my
+                  comfort zone and try the famous blueprints of Unreal. The
+                  result has been satisfactory and it is possible that I will
+                  explore this engine more in the future.
+                </p>
+              </div>
+              <div class="uk-child-width-1-1">
+                <h3 class="uk-heading-bullet uk-width-1-1">
+                  <span>Specifications</span>
+                </h3>
+                <ul class="uk-list uk-list-circle">
+                  <li>Helped from time to time</li>
+                  <li>Developed in Unreal Engine 2.26</li>
+                  <li>3D Environment</li>
+                  <li>
+                    More about the people who helped the development in the
+                    project downloadable build.
+                  </li>
+                </ul>
+              </div>
+              <div class="uk-child-width-1-1">
+                <h3 class="uk-heading-bullet uk-width-1-1">
+                  <span>Project goals</span>
+                </h3>
+                <ul class="uk-list uk-list-circle">
+                  <li>Gain experience in working with the Unreal Engine</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+            <h2
+              id="third-person-character"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#third-person-character">Third person character</a>
+            </h2>
+            <div class="uk-grid-small" uk-grid>
+              <div class="uk-position-relative">
+                <div class="uk-position-relative uk-visible-toggle" uk-lightbox>
+                  <a
+                    class="uk-link-reset"
+                    href="../img/projects/library/third_person_character.png"
+                    data-caption="Third Person Character Blueprint"
+                  >
+                    <div class="uk-inline uk-background-default">
+                      <img
+                        uk-toggle="cls: project-image-hover; mode: hover;"
+                        src="../img/projects/library/third_person_character.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="uk-light uk-background-cover">
+                  <a
+                    class="uk-position-absolute uk-transform-center"
+                    style="left: 50%; top: 30%"
+                    href="#third_person_character-movement"
+                    uk-marker
+                  ></a>
+                  <a
+                    class="uk-position-absolute uk-transform-center"
+                    style="left: 30%; top: 75%"
+                    href="#third_person_character-flying"
+                    uk-marker
+                  ></a>
+                  <a
+                    class="uk-position-absolute uk-transform-center"
+                    style="left: 65%; top: 85%"
+                    href="#third_person_character-menu"
+                    uk-marker
+                  ></a>
+                </div>
+              </div>
+              <p>
+                First system the player interacts with. Implemented by the
+                artist alone at the beginning of the project, I rearranged its
+                code once I took over him, by introducing functions and other
+                small changes, to make it easier to read.<br />
+                During the development more was added to the blueprint, but just
+                before the release, in order to simplify the project use, it was
+                decided to reduce the amount of inputs to just the ones to open
+                the menu and to switch from and to the flying mode, and control
+                it.
+              </p>
+              <div class="uk-child-width-1-2@m" uk-grid="masonry: true">
+                <div>
+                  <h4 id="third_person_character-movement">Movement</h4>
+                  <div
+                    class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-small-bottom"
+                    uk-lightbox
+                  >
+                    <a
+                      class="uk-link-reset"
+                      href="../img/projects/library/third_person_character-movement.png"
+                      data-caption="Third Person Character movement code"
+                    >
+                      <div class="uk-inline uk-background-default">
+                        <img
+                          uk-toggle="cls: project-image-hover; mode: hover;"
+                          src="../img/projects/library/third_person_character-movement.png"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <p>
+                    Basically, it is an interface between the various inputs and
+                    the already built-in system of movement.<br />
+                    To avoid an endless fall I implemented a system that detects
+                    when the player will reach a z coordinate under a specified
+                    threshold, and it will move it to the origin position.
+                  </p>
+                </div>
+                <div>
+                  <h4 id="third_person_character-flying">Flying</h4>
+                  <div
+                    class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-small-bottom"
+                    uk-lightbox
+                  >
+                    <a
+                      class="uk-link-reset"
+                      href="../img/projects/library/third_person_character-flying.png"
+                      data-caption="Third Person Character flying code"
+                    >
+                      <div class="uk-inline uk-background-default">
+                        <img
+                          uk-toggle="cls: project-image-hover; mode: hover;"
+                          src="../img/projects/library/third_person_character-flying.png"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <p>
+                    I was able to simulate flying by changing the camera
+                    distance from a 3rd person distance to a first, hiding the
+                    player model and removing constraints such as gravity.<br />
+                    It is an instrument intended to be used to explore the
+                    environment more freely and rapidly and was also employed
+                    during the development.
+                  </p>
+                </div>
+                <div>
+                  <h4 id="third_person_character-menu">Menu</h4>
+                  <div
+                    class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-small-bottom"
+                    uk-lightbox
+                  >
+                    <a
+                      class="uk-link-reset"
+                      href="../img/projects/library/third_person_character-menu.png"
+                      data-caption="Third Person Character menu code"
+                    >
+                      <div class="uk-inline uk-background-default">
+                        <img
+                          uk-toggle="cls: project-image-hover; mode: hover;"
+                          src="../img/projects/library/third_person_character-menu.png"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <p>
+                    A piece of code that only arrived towards the end of the
+                    project. It manages the interaction between the player and
+                    the UI. Such as positioning the player after the initial
+                    intro ending or its visibility when the menu is open, to
+                    prevent an intrusion into the camera frame.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-secondary uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+            <h2
+              id="in-game"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#in-game">In game</a>
+            </h2>
+            <p>
+              During the project development, I had to program various
+              complementary systems to further polish the environment.<br />
+              Here are some of them:
+            </p>
+            <h3 class="uk-heading-bullet"><span>Group generator</span></h3>
+            <div class="uk-grid-small" uk-grid>
+              <div class="uk-position-relative">
+                <div class="uk-position-relative uk-visible-toggle" uk-lightbox>
+                  <a
+                    class="uk-link-reset"
+                    href="../img/projects/library/group_generator.png"
+                    data-caption="Group generator Blueprint"
+                  >
+                    <div class="uk-inline uk-background-default">
+                      <img
+                        uk-toggle="cls: project-image-hover; mode: hover;"
+                        src="../img/projects/library/group_generator.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="uk-light uk-background-cover">
+                  <a
+                    class="uk-position-absolute uk-transform-center"
+                    style="left: 80%; top: 45%"
+                    href="#group_generator-generate"
+                    uk-marker
+                  ></a>
+                  <a
+                    class="uk-position-absolute uk-transform-center"
+                    style="left: 60%; top: 55%"
+                    href="#group_generator-instantiate"
+                    uk-marker
+                  ></a>
+                </div>
+              </div>
+              <p>
+                In the original
+                <a
+                  href="https://www.artstation.com/artwork/q9LEdz"
+                  class="uk-link"
+                  target="_blank"
+                  >concept</a
+                >, you can notice groups of flying books moving around the
+                buildings.<br />
+                To recreate the effect I developed a blueprint to randomly
+                generate a group of <code>Static Meshes</code>, which are then
+                moved following a <i>Spline</i>.<br />
+                The code is based on the
+                <a
+                  class="uk-link"
+                  href="https://www.youtube.com/watch?v=7OOwwDocL2Y&t=583s"
+                  target="_blank"
+                  >vertex animation</a
+                >
+                tutorial by Ghislain Giradot.
+              </p>
+              <div class="uk-child-width-1-2@m" uk-grid="masonry: true">
+                <div>
+                  <h4 id="group_generator-generate">Generate</h4>
+                  <div
+                    class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-small-bottom"
+                    uk-lightbox
+                  >
+                    <a
+                      class="uk-link-reset"
+                      href="../img/projects/library/group_generator-generate.png"
+                      data-caption="Group Generator generate code"
+                    >
+                      <div class="uk-inline uk-background-default">
+                        <img
+                          uk-toggle="cls: project-image-hover; mode: hover;"
+                          src="../img/projects/library/group_generator-generate.png"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <p>
+                    Starting from the centre, and proceeding in a circle,
+                    transforms, materials and meshes for the books are randomly
+                    generated, which were subsequently made visible in the
+                    editor to allow the artist greater freedom to edit the
+                    finished product. This generation is triggered using a
+                    boolean.
+                  </p>
+                </div>
+                <div>
+                  <h4 id="group_generator-instantiate">Instantiate</h4>
+                  <div
+                    class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-small-bottom"
+                    uk-lightbox
+                  >
+                    <a
+                      class="uk-link-reset"
+                      href="../img/projects/library/group_generator-instantiate.png"
+                      data-caption="Group Generator instantiate code"
+                    >
+                      <div class="uk-inline uk-background-default">
+                        <img
+                          uk-toggle="cls: project-image-hover; mode: hover;"
+                          src="../img/projects/library/group_generator-instantiate.png"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <p>
+                    Once the generation is complete or the game is started, the
+                    randomly generated transform, material and mesh arrays are
+                    read and used to create static meshes.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="uk-margin-medium-top">
+              <h3 class="uk-heading-bullet"><span>Spline</span></h3>
+              <div
+                class="uk-child-width-1-2@m uk-grid-row-small uk-grid-column-medium uk-flex-middle"
+                uk-grid
+              >
+                <div
+                  class="uk-position-relative uk-visible-toggle uk-child-width-1-1"
+                  uk-lightbox
+                >
+                  <a
+                    class="uk-link-reset"
+                    href="../img/projects/library/spline.png"
+                    data-caption="Credits blueprint"
+                  >
+                    <div class="uk-inline uk-background-default">
+                      <img
+                        uk-toggle="cls: project-image-hover; mode: hover;"
+                        src="../img/projects/library/spline.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                </div>
+                <p>
+                  Any object (in our case the flying books) can be moved in the
+                  environment through this blueprint. The artist can freely
+                  customize their path through a Spline, and their speed and
+                  direction of travel in the editor.
+                </p>
+              </div>
+            </div>
+            <div class="uk-margin-medium-top">
+              <h3 class="uk-heading-bullet">
+                <span>Spawn actors in radius</span>
+              </h3>
+              <div
+                class="uk-child-width-1-2@m uk-grid-row-small uk-grid-column-medium uk-flex-middle"
+                uk-grid
+              >
+                <div
+                  class="uk-position-relative uk-visible-toggle uk-child-width-1-1"
+                  uk-lightbox
+                >
+                  <a
+                    class="uk-link-reset"
+                    href="../img/projects/library/spawn_actor_radius.png"
+                    data-caption="Spawn actors in radius blueprint"
+                  >
+                    <div class="uk-inline uk-background-default">
+                      <img
+                        uk-toggle="cls: project-image-hover; mode: hover;"
+                        src="../img/projects/library/spawn_actor_radius.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                </div>
+                <p class="uk-flex-first@m">
+                  To speed up development in a couple of cases, I developed this
+                  blueprint that deals with instantiating an actor a number of
+                  times at regular spacing in a circle of radius of choice.
+                  Customization that I could add in the future could be the
+                  possibility to select only a portion of the circle.
+                </p>
+              </div>
+            </div>
+            <div class="uk-margin-medium-top">
+              <h3 class="uk-heading-bullet"><span>Orrery</span></h3>
+              <div
+                class="uk-child-width-1-2@m uk-grid-row-small uk-grid-column-medium uk-grid-column-medium uk-flex-middle"
+                uk-grid
+              >
+                <div
+                  class="uk-position-relative uk-visible-toggle uk-child-width-1-1"
+                  uk-lightbox
+                >
+                  <a
+                    class="uk-link-reset"
+                    href="../img/projects/library/orrery.png"
+                    data-caption="Orrery blueprint"
+                  >
+                    <div class="uk-inline uk-background-default">
+                      <img
+                        uk-toggle="cls: project-image-hover; mode: hover;"
+                        src="../img/projects/library/orrery.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                </div>
+                <p>
+                  One of the first blueprints made. It merely controls the
+                  movement of an orrery positioned at the highest point of the
+                  environment.<br />
+                  The initial idea was to activate a particle effect to coincide
+                  with the alignment of the planets, but there has never been
+                  time to accomplish it.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+            <h2
+              id="user-interface"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#user-interface">User Interface</a>
+            </h2>
+            <p>
+              One of the last systems to be introduced in the project, and also
+              one of the most complex. It is composed of multiple blueprints and
+              parts of blueprints, which communicate with each other through
+              events.
+            </p>
+            <div
+              class="uk-child-width-1-1 uk-margin-medium-top uk-grid-small"
+              uk-grid
+            >
+              <h3 class="uk-heading-bullet"><span>Master</span></h3>
+              <div class="uk-position-relative">
+                <div class="uk-position-relative uk-visible-toggle" uk-lightbox>
+                  <a
+                    class="uk-link-reset"
+                    href="../img/projects/library/user_interface.png"
+                    data-caption="UI Master Blueprint"
+                  >
+                    <div class="uk-inline uk-background-default">
+                      <img
+                        uk-toggle="cls: project-image-hover; mode: hover;"
+                        src="../img/projects/library/user_interface.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="uk-light uk-background-cover">
+                  <a
+                    class="uk-position-absolute uk-transform-center"
+                    style="left: 70%; top: 10%"
+                    href="#user_interface-intro"
+                    uk-marker
+                  ></a>
+                  <a
+                    class="uk-position-absolute uk-transform-center"
+                    style="left: 40%; top: 65%"
+                    href="#user_interface-menu"
+                    uk-marker
+                  ></a>
+                </div>
+              </div>
+              <p>
+                Head of all the User Interface, it handles the startup intro and
+                the toggle of the Menu.
+              </p>
+              <div
+                class="uk-grid-medium uk-child-width-1-2@m"
+                uk-grid="masonry: true"
+              >
+                <div>
+                  <h4 id="user_interface-intro">Intro</h4>
+                  <div
+                    class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-small-bottom"
+                    uk-lightbox
+                  >
+                    <a
+                      class="uk-link-reset"
+                      href="../img/projects/library/user_interface-intro.png"
+                      data-caption="UI Master intro code"
+                    >
+                      <div class="uk-inline uk-background-default">
+                        <img
+                          uk-toggle="cls: project-image-hover; mode: hover;"
+                          src="../img/projects/library/user_interface-intro.png"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <p>
+                    The intro is composed in the <code>Sequencer</code> and is
+                    then executed at the start of the game. A custom event
+                    called <code>OnEndedIntro</code> is called once it is
+                    finished. To make sure the player doesn't mess it up, his
+                    inputs (outside the key to show the menu and therefore
+                    interrupt the intro) are disabled during the execution.
+                  </p>
+                </div>
+                <div>
+                  <h4 id="user_interface-menu">Menu</h4>
+                  <div
+                    class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-small-bottom"
+                    uk-lightbox
+                  >
+                    <a
+                      class="uk-link-reset"
+                      href="../img/projects/library/user_interface-menu.png"
+                      data-caption="UI Master menu code"
+                    >
+                      <div class="uk-inline uk-background-default">
+                        <img
+                          uk-toggle="cls: project-image-hover; mode: hover;"
+                          src="../img/projects/library/user_interface-menu.png"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <p>
+                    Shown using the M key, the menu allows the player to explore
+                    the credits and exit the game. Several controls have been
+                    put in place to block and hide the player while it is shown.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="uk-margin-medium-top">
+              <h3 class="uk-heading-bullet"><span>Credits</span></h3>
+              <div
+                class="uk-child-width-1-2@m uk-grid-row-small uk-grid-column-medium uk-grid-column-medium uk-flex-middle"
+                uk-grid
+              >
+                <div
+                  class="uk-position-relative uk-visible-toggle uk-child-width-1-1"
+                  uk-lightbox
+                >
+                  <a
+                    class="uk-link-reset"
+                    href="../img/projects/library/user_interface-credits.png"
+                    data-caption="Credits blueprint"
+                  >
+                    <div class="uk-inline uk-background-default">
+                      <img
+                        uk-toggle="cls: project-image-hover; mode: hover;"
+                        src="../img/projects/library/user_interface-credits.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                </div>
+                <p>
+                  Necessary to give due credit to those who developed,
+                  collaborated and inspired the project, this blueprint contains
+                  a list of <code>UIWidgets</code> that are shown in sequence at
+                  set points in the intro. A fade effect was introduced by
+                  programming to make their appearance and disappearance more
+                  elegant.<br />
+                  Some limitations of this system are the obligatory
+                  sequentiality of the <code>UIWidgets</code> (there cannot be
+                  two at the same time), and the same speed for the fade
+                  animation for all.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+            <h2
+              id="closing-thoughts"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#closing-thoughts">Closing thoughts</a>
+            </h2>
+            <div>
+              <p>
+                First attempt to use Unreal Engine 4, this project taught me a
+                lot about the software and its systems. A lack of strict control
+                helped me develop the systems freely, and constant feedback and
+                requests made me develop flexible systems that could be easily
+                expanded in the future. Unfortunately, the absence of an online
+                repository made it impossible to work on the project without
+                disrupting the artist.<br />
+                If I could go back in time I would:
+              </p>
+              <ul class="uk-list uk-list-circle">
+                <li>
+                  Establishing an online repository for the project. It would
+                  allow more than one person to work on the project at the same
+                  time, while also keeping a history of the changes.
+                </li>
+                <li>Use C++ to speed up the development of simple systems.</li>
+                <li>
+                  Rely more on the use of functions and macros to organize the
+                  blueprints.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div class="uk-width-1-1 uk-width-3xlarge@s">
+        <footer class="uk-margin-large-top uk-padding-small">
+          <div class="uk-text-central uk-child-width-1-1" uk-grid>
+            <div
+              class="uk-child-width-1-1 uk-flex-center uk-child-width-auto@s uk-grid-collapse uk-grid-medium@s"
+              uk-grid
+            >
+              <div>Email: <a href="">graizzaromatteo@gmail.com</a></div>
+              <div>Phone: <a href="">+39 3939684029</a></div>
+              <div>LinkedIn: <a href="">/in/matteo-graizzaro</a></div>
+            </div>
+            <div
+              class="uk-child-width-1-1 uk-child-width-1-2@s uk-grid-collapse uk-margin-small-top"
+              uk-grid
+            >
+              <div class="uk-text-left@s">
+                Icons by
+                <a href="https://simpleicons.org/" target="_blank"
+                  >Simple Icons</a
+                >
+                & <a href="https://neuicons.com/" target="_blank">Neu Icons</a>
+              </div>
+              <div class="uk-text-right@s">© 2021 by Graizzaro Matteo</div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>

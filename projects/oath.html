@@ -1,125 +1,279 @@
 ﻿<!DOCTYPE html>
 <html>
-	<head>
-		<title>Matteo Graizzaro Portfolio | Oath</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../css/uikit.min.css" />
-		<link rel="stylesheet" href="../css/styles.css" />
-        <script src="../js/uikit.min.js"></script>
-        <script src="../js/uikit-icons.min.js"></script>
-	</head>
-	<body>
-		<div class="uk-position-relative" align="center">
-			<div class="uk-padding-small-top uk-section-muted uk-margin-medium-bottom">
-				<div class="uk-width-1-1 uk-width-2xlarge@s" style="padding: 0 15px;">
-					<header class="uk-padding-small-top uk-grid-small uk-grid-collapse@m uk-child-width-1-1" uk-grid>
-						<h1>Matteo Graizzaro</h1>
-						<h3 class="uk-text-large uk-text-light">Game Programmer</h3>
-					</header>
-					
-					<hr class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom">
-				</div>
-				
-				<nav class="uk-navbar-container" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;" uk-navbar>
-					<div class="uk-navbar-center">
-						<ul class="uk-navbar-nav uk-child-width-1-2">
-							<li class="uk-padding-small"><a href="../">Home</a></li>
-							<li class="uk-padding-small">
-								<a>Projects</a>
-								<div class="uk-navbar-dropdown uk-text-left" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify; offset: 0">
-									<div class="uk-navbar-dropdown-grid uk-child-width-expand uk-margin-remove-left" uk-grid>
-										<ul class="uk-subnav uk-subnav-pill uk-flex-center uk-text-center" uk-margin>
-											<li><a href="whatwapp.html">Whatwapp<br><span class="uk-text-italic uk-text-capitalize">2021-Present</span></a></li>
-									   		<li><a href="village.html">Canals Village<br><span class="uk-text-italic uk-text-capitalize">2021-2023</span></a></li>
-											<li><a href="library.html">Whitches Library<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
-											<li><a href="solitaire.html">Solitaire<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
-											<li><a href="ploppem2.html">Ploppem 2<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li> 
-											<li><a href="tunnel.html">Tunnel<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
-											<li><a href="ploppem.html">Ploppem<br><span class="uk-text-italic uk-text-capitalize">2020-2021</span></a></li>
-											<li><a href="nodib.html">Nodib<br><span class="uk-text-italic uk-text-capitalize">2020</span></a></li>
-											<li class="uk-active"><a href="oath.html">Oath<br><span class="uk-text-italic uk-text-capitalize">2018-2019</span></a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-			
-			<div class="uk-width-1-1 uk-width-3xlarge@s uk-margin-remove uk-position-relative" style="z-index: 10;">
-				<div id="#sidebar" class="uk-text-left uk-sidebar-right uk-visible@l" style="width: 150px;">
-					<div uk-sticky="offset: 50; width-element: #sidebar;">
-						<ul uk-scrollspy-nav="closest: li; scroll: true; offset: 100; overflow: false" class="uk-nav-default uk-nav">
-							<li>
-								<a href="#">
-									<span uk-icon="chevron-up" class="uk-margin-small-right uk-icon"></span>
-									<span class="uk-text-middle">To top</span>
-								</a>
-							</li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="#summary">Summary</a></li>
-							<li><a href="#production">Production</a></li>
-							<li class="uk-nav-divider"></li>
-							<li>
-								<a href="https://eventhorizonschool.itch.io/oath" target="_blank">
-									<span uk-icon="itch-dot-io" class="uk-margin-small-right"></span>
-									<span class="uk-text-middle">Itch.io</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			
-			<main class="uk-position-relative uk-text-left" style="z-index: 1;">
-				<section class="uk-section uk-padding-remove-vertical uk-margin-medium-bottom">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 class="uk-text-center uk-text-uppercase">Oath</h2>	
-						<img class="project-image uk-margin-small-bottom" data-src="../img/projects/oath/gameplay.jpg" uk-img>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 id="summary" class="uk-text-center title-link uk-heading-divider"><a href="#summary">Summary</a></h2>
-						<p>Oath is a single-player hack'n'slash isometric game I produced during my second year on a Game Design course I attended between 2017-2020. It is the result of the combined efforts of more than 20 individuals from all the school departments: Concept Art, Game Programming, Game Design and 3D Modelling</p>
-						<p>The task I had to perform was keeping an eye on all the online platforms the teams were using, and trying to improve their efficency by introducing new methodologies, templates, and settings.</p>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 id="production" class="uk-text-center title-link uk-heading-divider"><a href="#production">Production</a></h2>
-						<p>My biggest challenge was learning all the different tools I was assigned to manage.<br>We used Google Drive as central file storage, Sourcetree and GitHub for the game code, but the daily life of every worker revolved around the online task platform named Trello.<br>Define rules to reduce the confusion and find the best way to organize the work, was the biggest problem I had to overcome during the game development.</p>
-						<p>The first solution that I found after various attempts, together with the other departments' chiefs, was complex and hard to use, but as I refined the templates and more people understood the pros of an organized push, the development process becomes more fluid.</p>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<p>In the end, helping producing Oath teached me many things about teamwork and how to hear and ask for feedback, so I'm happy to had had that experience.</p>
-					</div>
-				</section>
-			</main>
-			
-			<div class="uk-width-1-1 uk-width-3xlarge@s">
-				<footer class="uk-margin-large-top uk-padding-small">
-					<div class="uk-text-central uk-child-width-1-1" uk-grid>
-						<div class="uk-child-width-1-1 uk-flex-center uk-child-width-auto@s uk-grid-collapse uk-grid-medium@s" uk-grid>
-							<div>Email: <a href="">graizzaromatteo@gmail.com</a></div>
-							<div>Phone: <a href="">+39 3939684029</a></div>
-							<div>LinkedIn: <a href="">/in/matteo-graizzaro</a></div>
-						</div>
-						<div class="uk-child-width-1-1 uk-child-width-1-2@s uk-grid-collapse uk-margin-small-top" uk-grid>
-							<div class="uk-text-left@s">
-								Icons by <a href="https://simpleicons.org/" target="_blank">Simple Icons</a> & <a href="https://neuicons.com/" target="_blank">Neu Icons</a>
-							</div>
-							<div class="uk-text-right@s">
-								© 2021 by Graizzaro Matteo
-							</div>
-						</div>
-					</div>
-				</footer>
-			</div>
-		</div>
-	</body>
+  <head>
+    <title>Matteo Graizzaro Portfolio | Oath</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/uikit.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <div class="uk-position-relative" align="center">
+      <div
+        class="uk-padding-small-top uk-section-muted uk-margin-medium-bottom"
+      >
+        <div class="uk-width-1-1 uk-width-2xlarge@s" style="padding: 0 15px">
+          <header
+            class="uk-padding-small-top uk-grid-small uk-grid-collapse@m uk-child-width-1-1"
+            uk-grid
+          >
+            <h1>Matteo Graizzaro</h1>
+            <h3 class="uk-text-large uk-text-light">Game Programmer</h3>
+          </header>
+
+          <hr
+            class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom"
+          />
+        </div>
+
+        <nav
+          class="uk-navbar-container"
+          uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;"
+          uk-navbar
+        >
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-child-width-1-2">
+              <li class="uk-padding-small"><a href="../">Home</a></li>
+              <li class="uk-padding-small">
+                <a>Projects</a>
+                <div
+                  class="uk-navbar-dropdown uk-text-left"
+                  uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify; offset: 0"
+                >
+                  <div
+                    class="uk-navbar-dropdown-grid uk-child-width-expand uk-margin-remove-left"
+                    uk-grid
+                  >
+                    <ul
+                      class="uk-subnav uk-subnav-pill uk-flex-center uk-text-center"
+                      uk-margin
+                    >
+                      <li>
+                        <a href="whatwapp.html"
+                          >Whatwapp<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021-Present</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="village.html"
+                          >Canals Village<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021-2023</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="library.html"
+                          >Whitches Library<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="solitaire.html"
+                          >Solitaire<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="ploppem2.html"
+                          >Ploppem 2<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="tunnel.html"
+                          >Tunnel<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="ploppem.html"
+                          >Ploppem<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2020-2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="nodib.html"
+                          >Nodib<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2020</span
+                          ></a
+                        >
+                      </li>
+                      <li class="uk-active">
+                        <a href="oath.html"
+                          >Oath<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2018-2019</span
+                          ></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div
+        class="uk-width-1-1 uk-width-3xlarge@s uk-margin-remove uk-position-relative"
+        style="z-index: 10"
+      >
+        <div
+          id="#sidebar"
+          class="uk-text-left uk-sidebar-right uk-visible@l"
+          style="width: 150px"
+        >
+          <div uk-sticky="offset: 50; width-element: #sidebar;">
+            <ul
+              uk-scrollspy-nav="closest: li; scroll: true; offset: 100; overflow: false"
+              class="uk-nav-default uk-nav"
+            >
+              <li>
+                <a href="#">
+                  <span
+                    uk-icon="chevron-up"
+                    class="uk-margin-small-right uk-icon"
+                  ></span>
+                  <span class="uk-text-middle">To top</span>
+                </a>
+              </li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#summary">Summary</a></li>
+              <li><a href="#production">Production</a></li>
+              <li class="uk-nav-divider"></li>
+              <li>
+                <a
+                  href="https://eventhorizonschool.itch.io/oath"
+                  target="_blank"
+                >
+                  <span
+                    uk-icon="itch-dot-io"
+                    class="uk-margin-small-right"
+                  ></span>
+                  <span class="uk-text-middle">Itch.io</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <main class="uk-position-relative uk-text-left" style="z-index: 1">
+        <section
+          class="uk-section uk-padding-remove-vertical uk-margin-medium-bottom"
+        >
+          <div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+            <h2 class="uk-text-center uk-text-uppercase">Oath</h2>
+            <img
+              class="project-image uk-margin-small-bottom"
+              data-src="../img/projects/oath/gameplay.jpg"
+              uk-img
+            />
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+            <h2
+              id="summary"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#summary">Summary</a>
+            </h2>
+            <p>
+              Oath is a single-player hack'n'slash isometric game I produced
+              during my second year on a Game Design course I attended between
+              2017-2020. It is the result of the combined efforts of more than
+              20 individuals from all the school departments: Concept Art, Game
+              Programming, Game Design and 3D Modelling
+            </p>
+            <p>
+              The task I had to perform was keeping an eye on all the online
+              platforms the teams were using, and trying to improve their
+              efficency by introducing new methodologies, templates, and
+              settings.
+            </p>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+            <h2
+              id="production"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#production">Production</a>
+            </h2>
+            <p>
+              My biggest challenge was learning all the different tools I was
+              assigned to manage.<br />We used Google Drive as central file
+              storage, Sourcetree and GitHub for the game code, but the daily
+              life of every worker revolved around the online task platform
+              named Trello.<br />Define rules to reduce the confusion and find
+              the best way to organize the work, was the biggest problem I had
+              to overcome during the game development.
+            </p>
+            <p>
+              The first solution that I found after various attempts, together
+              with the other departments' chiefs, was complex and hard to use,
+              but as I refined the templates and more people understood the pros
+              of an organized push, the development process becomes more fluid.
+            </p>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+            <p>
+              In the end, helping producing Oath teached me many things about
+              teamwork and how to hear and ask for feedback, so I'm happy to had
+              had that experience.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <div class="uk-width-1-1 uk-width-3xlarge@s">
+        <footer class="uk-margin-large-top uk-padding-small">
+          <div class="uk-text-central uk-child-width-1-1" uk-grid>
+            <div
+              class="uk-child-width-1-1 uk-flex-center uk-child-width-auto@s uk-grid-collapse uk-grid-medium@s"
+              uk-grid
+            >
+              <div>Email: <a href="">graizzaromatteo@gmail.com</a></div>
+              <div>Phone: <a href="">+39 3939684029</a></div>
+              <div>LinkedIn: <a href="">/in/matteo-graizzaro</a></div>
+            </div>
+            <div
+              class="uk-child-width-1-1 uk-child-width-1-2@s uk-grid-collapse uk-margin-small-top"
+              uk-grid
+            >
+              <div class="uk-text-left@s">
+                Icons by
+                <a href="https://simpleicons.org/" target="_blank"
+                  >Simple Icons</a
+                >
+                & <a href="https://neuicons.com/" target="_blank">Neu Icons</a>
+              </div>
+              <div class="uk-text-right@s">© 2021 by Graizzaro Matteo</div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,175 +1,377 @@
 ﻿<!DOCTYPE html>
 <html>
-	<head>
-		<title>Matteo Graizzaro Portfolio | Ploppem</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../css/uikit.min.css" />
-		<link rel="stylesheet" href="../css/styles.css" />
-        <script src="../js/uikit.min.js"></script>
-        <script src="../js/uikit-icons.min.js"></script>
-	</head>
-	<body>
-		<div class="uk-position-relative" align="center">		
-			<div class="uk-padding-small-top uk-section-muted uk-margin-medium-bottom">
-				<div class="uk-width-1-1 uk-width-2xlarge@s" style="padding: 0 15px;">
-					<header class="uk-padding-small-top uk-grid-small uk-grid-collapse@m uk-child-width-1-1" uk-grid>
-						<h1>Matteo Graizzaro</h1>
-						<h3 class="uk-text-large uk-text-light">Game Programmer</h3>
-					</header>
-					
-					<hr class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom">
-				</div>
-				
-				<nav class="uk-navbar-container" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;" uk-navbar>
-					<div class="uk-navbar-center">
-						<ul class="uk-navbar-nav uk-child-width-1-2">
-							<li class="uk-padding-small"><a href="../">Home</a></li>
-							<li class="uk-padding-small">
-								<a>Projects</a>
-								<div class="uk-navbar-dropdown uk-text-left" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify; offset: 0">
-									<div class="uk-navbar-dropdown-grid uk-child-width-expand uk-margin-remove-left" uk-grid>
-										<ul class="uk-subnav uk-subnav-pill uk-flex-center uk-text-center" uk-margin>
-											<li><a href="whatwapp.html">Whatwapp<br><span class="uk-text-italic uk-text-capitalize">2021-Present</span></a></li>
-									   		<li><a href="village.html">Canals Village<br><span class="uk-text-italic uk-text-capitalize">2021-2023</span></a></li>
-											<li><a href="library.html">Whitches Library<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
-											<li><a href="solitaire.html">Solitaire<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
-											<li><a href="ploppem2.html">Ploppem 2<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li> 
-											<li><a href="tunnel.html">Tunnel<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
-											<li class="uk-active"><a href="ploppem.html">Ploppem<br><span class="uk-text-italic uk-text-capitalize">2020-2021</span></a></li>
-											<li><a href="nodib.html">Nodib<br><span class="uk-text-italic uk-text-capitalize">2020</span></a></li>
-											<li><a href="oath.html">Oath<br><span class="uk-text-italic uk-text-capitalize">2018-2019</span></a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-			
-			<div class="uk-width-1-1 uk-width-3xlarge@s uk-margin-remove uk-position-relative" style="z-index: 10;">
-				<div id="#sidebar" class="uk-text-left uk-sidebar-right uk-visible@l" style="width: 150px;">
-					<div uk-sticky="offset: 50; width-element: #sidebar;">
-						<ul uk-scrollspy-nav="closest: li; scroll: true; offset: 100; overflow: false" class="uk-nav-default uk-nav">
-							<li>
-								<a href="#">
-									<span uk-icon="chevron-up" class="uk-margin-small-right uk-icon"></span>
-									<span class="uk-text-middle">To top</span>
-								</a>
-							</li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="#summary">Summary</a></li>
-							<li><a href="#gameplay">Gameplay</a></li>
-							<li><a href="#game-systems">Game Systems</a></li>
-							<li><a href="#customization">Customization</a></li>
-							<li class="uk-nav-divider"></li>
-							<li>
-								<a href="https://play.google.com/store/apps/details?id=com.vacui.ploppem" target="_blank">
-									<span uk-icon="google-play" class="uk-margin-small-right"></span>
-									<span class="uk-text-middle">Google Play</span>
-								</a>
-							</li>
-							<li>
-								<a href="https://github.com/Vacui/Ploppem" target="_blank">
-									<span uk-icon="github" class="uk-margin-small-right"></span>
-									<span class="uk-text-middle">GitHub</span>
-								</a>
-							</li>
-							<li>
-								<a href="https://matteo-graizzaro.itch.io/ploppem?password=ploppem" target="_blank">
-									<span uk-icon="itch-dot-io" class="uk-margin-small-right"></span>
-									<span class="uk-text-middle">Itch.io</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			
-			<main class="uk-position-relative uk-text-left" style="z-index: 1;">
-				<section class="uk-section uk-padding-remove-vertical uk-margin-medium-bottom">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 class="uk-text-center uk-text-uppercase">Ploppem</h2>
-					</div>
-				</section>		
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 id="summary" class="uk-text-center title-link uk-heading-divider"><a href="#summary">Summary</a></h2>
-						<p>Ploppem is a minimal endless runner I developed to strengthen my skills and improve my portfolio as a game programmer.</p>
-						<p>Initially, it would have included various game modes and a more cartoonish art style, but after encountering several difficulties on the road, I decided to focus my time on polishing what I had already realized, and therefore reducing the project scope.</p>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 id="gameplay" class="uk-text-center title-link uk-heading-divider"><a href="#gameplay">Gameplay</a></h2>
-						<div class="uk-grid-column-medium" uk-grid>
-							<div class="uk-width-auto">
-								<img src="../img/projects/ploppem/Gameplay.gif" width="200" height="356" alt="" class="project-image">
-							</div>
-							<div class="uk-width-expand">
-								<p>In its current state, the game offers an endless mode against enemies that are guided by a rough AI, that tells them to constantly move and change direction, while also trying to avoid collision with other entities.</p>
-								<p>A gradient-colored clock tells the player their individual lifetime, at the end of which they disappear adding an error to the top-right counter. Reached 5 errors the game is over.</p>
-								<p>The player's only interaction is by earning points as a result of touching over an enemy, an action that makes them also disappear.</p>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 id="game-systems" class="uk-text-center title-link uk-heading-divider"><a href="#game-systems">Game Systems</a></h2>
-						<div class="uk-grid-column-medium" uk-grid>
-							<div class="uk-width-expand">
-								<p>After some testing, I decided to increase the game difficulty using some animated curves that control the speed, lifetime, and other stats of the enemies, based on the player score.</p>
-								<p>The spawning process is controlled by the GameManager script, a class that manages almost every vital system, an exception is the User Interface. After an enemy is eliminated by the player, or by running out of time, the GameManager queue another spawn, and when the time comes it makes sure to find a clear spot to generate the new foe, or else enqueuing again the spawn.</p>
-							</div>
-							<div class="uk-width-auto">
-								<img src="../img/projects/ploppem/Screen3.jpg" width="200" height="356" alt="" class="project-image">
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<h2 id="customization" class="uk-text-center title-link uk-heading-divider"><a href="#customization">Customization</a></h2>
-						<div class="uk-grid-column-medium" uk-grid>
-							<div class="uk-flex-last uk-width-expand">
-								<p>To improve the player experience and gain something from the game life I designed a customization system that gives the player the opportunity to change the game background, enemies' gradient palette, and UI's color scheme.</p>
-								<p>In theory, some customizations would be free to use, and some others locked behind a paywall, but I wasn't able to polish the system enough to justify charge people to use it, and I decided to include it in the game completely free to use.</p>
-							</div>
-							<div class="uk-flex-first uk-width-auto" >
-								<img src="../img/projects/ploppem/Screen2.jpg" width="200" height="356" alt="" class="project-image">
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<p>In the end, developing Ploppem teach me a lot of things, and even with all the problems it has, I'm proud of the result.<br>
-						I hope you will give it a chance and enjoy playing it.</p>
-					</div>
-				</section>
-			</main>
-			
-			<div class="uk-width-1-1 uk-width-3xlarge@s">
-				<footer class="uk-margin-large-top uk-padding-small">
-					<div class="uk-text-central uk-child-width-1-1" uk-grid>
-						<div class="uk-child-width-1-1 uk-flex-center uk-child-width-auto@s uk-grid-collapse uk-grid-medium@s" uk-grid>
-							<div>Email: <a href="">graizzaromatteo@gmail.com</a></div>
-							<div>Phone: <a href="">+39 3939684029</a></div>
-							<div>LinkedIn: <a href="">/in/matteo-graizzaro</a></div>
-						</div>
-						<div class="uk-child-width-1-1 uk-child-width-1-2@s uk-grid-collapse uk-margin-small-top" uk-grid>
-							<div class="uk-text-left@s">
-								Icons by <a href="https://simpleicons.org/" target="_blank">Simple Icons</a> & <a href="https://neuicons.com/" target="_blank">Neu Icons</a>
-							</div>
-							<div class="uk-text-right@s">
-								© 2021 by Graizzaro Matteo
-							</div>
-						</div>
-					</div>
-				</footer>
-			</div>
-		</div>
-	</body>
+  <head>
+    <title>Matteo Graizzaro Portfolio | Ploppem</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/uikit.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <div class="uk-position-relative" align="center">
+      <div
+        class="uk-padding-small-top uk-section-muted uk-margin-medium-bottom"
+      >
+        <div class="uk-width-1-1 uk-width-2xlarge@s" style="padding: 0 15px">
+          <header
+            class="uk-padding-small-top uk-grid-small uk-grid-collapse@m uk-child-width-1-1"
+            uk-grid
+          >
+            <h1>Matteo Graizzaro</h1>
+            <h3 class="uk-text-large uk-text-light">Game Programmer</h3>
+          </header>
+
+          <hr
+            class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom"
+          />
+        </div>
+
+        <nav
+          class="uk-navbar-container"
+          uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;"
+          uk-navbar
+        >
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-child-width-1-2">
+              <li class="uk-padding-small"><a href="../">Home</a></li>
+              <li class="uk-padding-small">
+                <a>Projects</a>
+                <div
+                  class="uk-navbar-dropdown uk-text-left"
+                  uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify; offset: 0"
+                >
+                  <div
+                    class="uk-navbar-dropdown-grid uk-child-width-expand uk-margin-remove-left"
+                    uk-grid
+                  >
+                    <ul
+                      class="uk-subnav uk-subnav-pill uk-flex-center uk-text-center"
+                      uk-margin
+                    >
+                      <li>
+                        <a href="whatwapp.html"
+                          >Whatwapp<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021-Present</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="village.html"
+                          >Canals Village<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021-2023</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="library.html"
+                          >Whitches Library<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="solitaire.html"
+                          >Solitaire<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="ploppem2.html"
+                          >Ploppem 2<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="tunnel.html"
+                          >Tunnel<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li class="uk-active">
+                        <a href="ploppem.html"
+                          >Ploppem<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2020-2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="nodib.html"
+                          >Nodib<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2020</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="oath.html"
+                          >Oath<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2018-2019</span
+                          ></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div
+        class="uk-width-1-1 uk-width-3xlarge@s uk-margin-remove uk-position-relative"
+        style="z-index: 10"
+      >
+        <div
+          id="#sidebar"
+          class="uk-text-left uk-sidebar-right uk-visible@l"
+          style="width: 150px"
+        >
+          <div uk-sticky="offset: 50; width-element: #sidebar;">
+            <ul
+              uk-scrollspy-nav="closest: li; scroll: true; offset: 100; overflow: false"
+              class="uk-nav-default uk-nav"
+            >
+              <li>
+                <a href="#">
+                  <span
+                    uk-icon="chevron-up"
+                    class="uk-margin-small-right uk-icon"
+                  ></span>
+                  <span class="uk-text-middle">To top</span>
+                </a>
+              </li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#summary">Summary</a></li>
+              <li><a href="#gameplay">Gameplay</a></li>
+              <li><a href="#game-systems">Game Systems</a></li>
+              <li><a href="#customization">Customization</a></li>
+              <li class="uk-nav-divider"></li>
+              <li>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.vacui.ploppem"
+                  target="_blank"
+                >
+                  <span
+                    uk-icon="google-play"
+                    class="uk-margin-small-right"
+                  ></span>
+                  <span class="uk-text-middle">Google Play</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Vacui/Ploppem" target="_blank">
+                  <span uk-icon="github" class="uk-margin-small-right"></span>
+                  <span class="uk-text-middle">GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://matteo-graizzaro.itch.io/ploppem?password=ploppem"
+                  target="_blank"
+                >
+                  <span
+                    uk-icon="itch-dot-io"
+                    class="uk-margin-small-right"
+                  ></span>
+                  <span class="uk-text-middle">Itch.io</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <main class="uk-position-relative uk-text-left" style="z-index: 1">
+        <section
+          class="uk-section uk-padding-remove-vertical uk-margin-medium-bottom"
+        >
+          <div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+            <h2 class="uk-text-center uk-text-uppercase">Ploppem</h2>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+            <h2
+              id="summary"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#summary">Summary</a>
+            </h2>
+            <p>
+              Ploppem is a minimal endless runner I developed to strengthen my
+              skills and improve my portfolio as a game programmer.
+            </p>
+            <p>
+              Initially, it would have included various game modes and a more
+              cartoonish art style, but after encountering several difficulties
+              on the road, I decided to focus my time on polishing what I had
+              already realized, and therefore reducing the project scope.
+            </p>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+            <h2
+              id="gameplay"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#gameplay">Gameplay</a>
+            </h2>
+            <div class="uk-grid-column-medium" uk-grid>
+              <div class="uk-width-auto">
+                <img
+                  src="../img/projects/ploppem/Gameplay.gif"
+                  width="200"
+                  height="356"
+                  alt=""
+                  class="project-image"
+                />
+              </div>
+              <div class="uk-width-expand">
+                <p>
+                  In its current state, the game offers an endless mode against
+                  enemies that are guided by a rough AI, that tells them to
+                  constantly move and change direction, while also trying to
+                  avoid collision with other entities.
+                </p>
+                <p>
+                  A gradient-colored clock tells the player their individual
+                  lifetime, at the end of which they disappear adding an error
+                  to the top-right counter. Reached 5 errors the game is over.
+                </p>
+                <p>
+                  The player's only interaction is by earning points as a result
+                  of touching over an enemy, an action that makes them also
+                  disappear.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+            <h2
+              id="game-systems"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#game-systems">Game Systems</a>
+            </h2>
+            <div class="uk-grid-column-medium" uk-grid>
+              <div class="uk-width-expand">
+                <p>
+                  After some testing, I decided to increase the game difficulty
+                  using some animated curves that control the speed, lifetime,
+                  and other stats of the enemies, based on the player score.
+                </p>
+                <p>
+                  The spawning process is controlled by the GameManager script,
+                  a class that manages almost every vital system, an exception
+                  is the User Interface. After an enemy is eliminated by the
+                  player, or by running out of time, the GameManager queue
+                  another spawn, and when the time comes it makes sure to find a
+                  clear spot to generate the new foe, or else enqueuing again
+                  the spawn.
+                </p>
+              </div>
+              <div class="uk-width-auto">
+                <img
+                  src="../img/projects/ploppem/Screen3.jpg"
+                  width="200"
+                  height="356"
+                  alt=""
+                  class="project-image"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+            <h2
+              id="customization"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#customization">Customization</a>
+            </h2>
+            <div class="uk-grid-column-medium" uk-grid>
+              <div class="uk-flex-last uk-width-expand">
+                <p>
+                  To improve the player experience and gain something from the
+                  game life I designed a customization system that gives the
+                  player the opportunity to change the game background, enemies'
+                  gradient palette, and UI's color scheme.
+                </p>
+                <p>
+                  In theory, some customizations would be free to use, and some
+                  others locked behind a paywall, but I wasn't able to polish
+                  the system enough to justify charge people to use it, and I
+                  decided to include it in the game completely free to use.
+                </p>
+              </div>
+              <div class="uk-flex-first uk-width-auto">
+                <img
+                  src="../img/projects/ploppem/Screen2.jpg"
+                  width="200"
+                  height="356"
+                  alt=""
+                  class="project-image"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+            <p>
+              In the end, developing Ploppem teach me a lot of things, and even
+              with all the problems it has, I'm proud of the result.<br />
+              I hope you will give it a chance and enjoy playing it.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <div class="uk-width-1-1 uk-width-3xlarge@s">
+        <footer class="uk-margin-large-top uk-padding-small">
+          <div class="uk-text-central uk-child-width-1-1" uk-grid>
+            <div
+              class="uk-child-width-1-1 uk-flex-center uk-child-width-auto@s uk-grid-collapse uk-grid-medium@s"
+              uk-grid
+            >
+              <div>Email: <a href="">graizzaromatteo@gmail.com</a></div>
+              <div>Phone: <a href="">+39 3939684029</a></div>
+              <div>LinkedIn: <a href="">/in/matteo-graizzaro</a></div>
+            </div>
+            <div
+              class="uk-child-width-1-1 uk-child-width-1-2@s uk-grid-collapse uk-margin-small-top"
+              uk-grid
+            >
+              <div class="uk-text-left@s">
+                Icons by
+                <a href="https://simpleicons.org/" target="_blank"
+                  >Simple Icons</a
+                >
+                & <a href="https://neuicons.com/" target="_blank">Neu Icons</a>
+              </div>
+              <div class="uk-text-right@s">© 2021 by Graizzaro Matteo</div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>

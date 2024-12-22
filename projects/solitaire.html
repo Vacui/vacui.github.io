@@ -1,299 +1,626 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Matteo Graizzaro Portfolio | Solitaire</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../css/uikit.min.css" />
-		<link rel="stylesheet" href="../css/styles.css" />
-		<link rel="stylesheet" href="../css/slider.css" />
-        <script src="../js/uikit.min.js"></script>
-        <script src="../js/uikit-icons.min.js"></script>
-	</head>
-	<body>
-		<div class="uk-position-relative" align="center">		
-			<div class="uk-padding-small-top uk-section-muted uk-margin-medium-bottom">
-				<div class="uk-width-1-1 uk-width-3xlarge@s" style="padding: 0 15px;">
-					<header class="uk-padding-small-top uk-grid-small uk-grid-collapse@m uk-child-width-1-1" uk-grid>
-						<h1>Matteo Graizzaro</h1>
-						<h3 class="uk-text-large uk-text-light">Game Programmer</h3>
-					</header>
-					
-					<hr class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom">
-				</div>
-				
-				<nav class="uk-navbar-container" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;" uk-navbar>
-					<div class="uk-navbar-center">
-						<ul class="uk-navbar-nav uk-child-width-1-2">
-							<li class="uk-padding-small"><a href="../">Home</a></li>
-							<li class="uk-padding-small">
-								<a>Projects</a>
-								<div class="uk-navbar-dropdown uk-text-left" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify; offset: 0">
-									<div class="uk-navbar-dropdown-grid uk-child-width-expand uk-margin-remove-left" uk-grid>
-										<ul class="uk-subnav uk-subnav-pill uk-flex-center uk-text-center" uk-margin>
-											<li><a href="whatwapp.html">Whatwapp<br><span class="uk-text-italic uk-text-capitalize">2021-Present</span></a></li>
-									   		<li><a href="village.html">Canals Village<br><span class="uk-text-italic uk-text-capitalize">2021-2023</span></a></li>
-											<li><a href="library.html">Whitches Library<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
-											<li class="uk-active"><a href="solitaire.html">Solitaire<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
-											<li><a href="ploppem2.html">Ploppem 2<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li> 
-											<li><a href="tunnel.html">Tunnel<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
-											<li><a href="ploppem.html">Ploppem<br><span class="uk-text-italic uk-text-capitalize">2020-2021</span></a></li>
-											<li><a href="nodib.html">Nodib<br><span class="uk-text-italic uk-text-capitalize">2020</span></a></li>
-											<li><a href="oath.html">Oath<br><span class="uk-text-italic uk-text-capitalize">2018-2019</span></a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-			
-			<div class="uk-width-1-1 uk-width-3xlarge@s uk-margin-remove uk-position-relative" style="z-index: 10;">
-				<div id="#sidebar" class="uk-text-left uk-sidebar-right uk-visible@l" style="width: 150px;">
-					<div uk-sticky="offset: 50; width-element: #sidebar;">
-						<ul uk-scrollspy-nav="closest: li; scroll: true; offset: 80; overflow: false" class="uk-nav-default uk-nav">
-							<li>
-								<a href="#">
-									<span uk-icon="chevron-up" class="uk-margin-small-right uk-icon"></span>
-									<span class="uk-text-middle">To top</span>
-								</a>
-							</li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="#summary">Summary</a></li>
-							<li><a href="#card-generation">Card generation</a></li>
-							<li><a href="#game-logic">Game logic</a></li>
-							<li><a href="#undoing-actions">Undoing actions</a></li>
-							<li><a href="#closing-thoughts">Closing thoughts</a></li>
-							<li class="uk-nav-divider"></li>
-							<li>
-								<a href="https://github.com/Vacui/Solitaire" target="_blank">
-									<span uk-icon="github" class="uk-margin-small-right"></span>
-									<span class="uk-text-middle">GitHub</span>
-								</a>
-							</li>
-							<li>
-								<a href="https://matteo-graizzaro.itch.io/solitaire" target="_blank">
-									<span uk-icon="itch-dot-io" class="uk-margin-small-right"></span>
-									<span class="uk-text-middle">Itch.io</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			
-			<main class="uk-position-relative uk-text-left">
-				<section class="uk-section uk-padding-remove-vertical uk-margin-medium-bottom">
-					<div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
-						<div class="uk-background-cover uk-height-medium" style="background-image: url(../img/projects/solitaire/logo-small.jpg);"></div>
-					</div>
-				</section>
-				<section class="uk-hidden@l">
-					<div class="uk-padding-small-right uk-padding-small-left uk-flex-center uk-grid-column-small uk-margin-medium-top uk-grid-divider" style="font-size: 1.2rem;"uk-grid>
-						<div>
-							<a href="https://github.com/Vacui/Solitaire" target="_blank" class="uk-link uk-link-heading">
-								<span uk-icon="icon: github; ratio: 1.5" class="uk-margin-small-right"></span>
-								<span class="uk-text-middle">GitHub</span>
-							</a>
-						</div>
-						<div>
-							<a href="https://matteo-graizzaro.itch.io/solitaire" target="_blank" class="uk-link uk-link-heading">
-								<span uk-icon="icon: itch-dot-io; ratio: 1.5" class="uk-margin-small-right"></span>
-								<span class="uk-text-middle">Itch.io</span>
-							</a>
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
-						<h2 id="summary" class="uk-text-center title-link uk-heading-divider"><a href="#summary">Summary</a></h2>
-						<div class="uk-child-width-1-1 uk-child-width-1-2@m" uk-grid="masonry: true;" style="margin-top: 30px;">
-							<div>
-								<p>This project is the polished version of a prototype I developed in 4 days during a tech test for an application.<br>
-								It was originally a mobile game but I repurposed it to the PC market to increase the amout of games of that type in my portfolio.</p>
-							</div>
-							<div class="uk-child-width-1-1">
-								<h3 class="uk-heading-bullet uk-width-1-1"><span>Specifications</span></h3>
-								<ul class="uk-list uk-list-circle">
-									<li>4 days prototype + 7 days of polishing</li>
-									<li>Developed in Unity</li>
-									<li>Klondike solitaire</li>
-									<li>UI icons from <a href="https://materialdesignicons.com/">Material Design Icons</a></li>
-									<li>
-										Asset packs: <a href="https://mreliptik.itch.io/playing-cards-packs-52-cards">52 playing cards</a><br>
-										Plugins used:
-											<a href="https://unitycodemonkey.com/utils.php">CodeMonkey Utils</a>, 
-											<a href="https://www.febucci.com/2020/10/custom-hierarchy-for-unity/">Custom Hierarchy</a>,
-											<a href="https://github.com/arimger/Unity-Editor-Toolbox">Editor Toolbox</a>, 
-											<a href="https://assetstore.unity.com/packages/tools/animation/leantween-3595">LeanTween</a>, 
-											<a href="https://github.com/Dysman/bgTools-playerPrefsEditor">PlayerPrefsEditor</a>, 
-											TextMesh Pro and 
-											<a href="https://assetstore.unity.com/packages/tools/gui/ultevents-111307">Ult Events</a>
-									</li>
-								</ul>
-							</div>
-							<div class="uk-child-width-1-1">
-								<h3 class="uk-heading-bullet uk-width-1-1"><span>Project goals</span></h3>
-								<ul class="uk-list uk-list-circle">
-									<li>Polishing the prototype I made as a tech test for an application</li>
-									<li>Increasing my portfolio of PC games</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-secondary uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
-						<h2 id="card-generation" class="uk-text-center title-link uk-heading-divider"><a href="#card-generation">Card generation</a></h2>
-						<div>
-							<p>
-								One of the first challenges I had to face while prototyping the game, was how to build the card sprites.
-								Why? Because the company provided me only sprites depicting the figures (heart, diamond, club, spade), and the numbers.<br>
-								I had two possibilities in front of me:
-							</p>
-							<div class="uk-margin-medium uk-child-width-expand uk-text-center uk-flex-middle uk-grid-match uk-grid-small" uk-grid>
-								<div class="uk-position-relative">
-									<h3>Atlas</h3>
-									<p class="uk-text-italic">Use external software to combine sprites and form an atlas with all the necessary variations</p>
-								</div>
-								<div class="uk-width-auto">
-									<div class="uk-background-default uk-border-circle uk-flex uk-flex-center uk-flex-middle" style="width:60px; height:60px;">
-										<span class="uk-text-lead" style="color: #333!important;">VS</span>
-									</div>
-								</div>
-								<div>
-									<h3>Combination</h3>
-									<p class="uk-text-italic">Generate the card sprites in real time by combining the different parts as needed</p>
-								</div>
-							</div>
-							<p>
-								The first had the advantage of simplicity of implementation, with a dictionary and just some parameters for card size, at the cost of build size.<br>
-								The latter was unexplored territory and therefore a risk, but had the big advantage of flexibility. For example, I wouldn't have struggled much replacing sprites when adding the project to my portfolio, as I had to get rid of all proprietary material. 
-							</p>
-						</div>
-						<div class="uk-margin-medium-top">
-							<div class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-remove-adjacent uk-align-left uk-width-1-2 uk-width-1-3@s" uk-lightbox>
-								<a class="uk-link-reset" href="../img/projects/solitaire/card-design.jpg" data-caption="How a card is formed">
-									<div class="uk-inline uk-background-default">
-										<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/solitaire/card-design.jpg" alt="">
-									</div>
-								</a>
-								<div class="uk-margin-small-top uk-text-center uk-text-italic">How a card is formed</div>
-							</div>
-							<p>Sprite generation, I discovered, was simpler than I thought, expecially thanks to <a href="https://www.youtube.com/playlist?list=PL5KbKbJ6Gf9-1VAsllNBn175nF4fqnBCF">this</a> tutorial playlist.</p>
-							<ul class="uk-list uk-list-decimal uk-flex uk-flex-column">
-								<li>I start by creating a blank <code>texture</code> of the size of a card</li>
-								<li>I add the first <code>layer</code> depicting the front or back of the card, based on the card visibility
-								<li>If the card is visible I move on to adding its number, and the two suits
-							</ul>
-							<p>Everything is made using a method called <code>CreateLayer</code>, that adds a texture to a list of layers, that is later processed to define the final aspect of the card, by multiplying each layer pixel colour with those of the other layers in the same position.<br>
-							The result is converted into a sprite which is then assigned to a <code>SpriteRendeder</code> to be displayed to the player.</p>
-							<p>The main problem with this approach is how much it is dependant on the source sprites. Each position is specified by coordinates expressed in pixels, and therefore each change to the sprites will change the card appearance too.
-							<p>You can explore in more detail all the processes by reading the game code itself <a href="https://github.com/Vacui/Solitaire/blob/main/Assets/Scripts/Gameplay/CardManager.cs">here</a>.</p>
+  <head>
+    <title>Matteo Graizzaro Portfolio | Solitaire</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/uikit.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/slider.css" />
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <div class="uk-position-relative" align="center">
+      <div
+        class="uk-padding-small-top uk-section-muted uk-margin-medium-bottom"
+      >
+        <div class="uk-width-1-1 uk-width-3xlarge@s" style="padding: 0 15px">
+          <header
+            class="uk-padding-small-top uk-grid-small uk-grid-collapse@m uk-child-width-1-1"
+            uk-grid
+          >
+            <h1>Matteo Graizzaro</h1>
+            <h3 class="uk-text-large uk-text-light">Game Programmer</h3>
+          </header>
 
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
-						<h2 id="game-logic" class="uk-text-center title-link uk-heading-divider"><a href="#game-logic">Game logic</a></h2>
-						<div class="uk-child-width-1-1 uk-margin-medium-top" uk-grid>
-							<div class="uk-position-relative uk-visible-toggle" uk-lightbox>
-								<a class="uk-link-reset" href="../img/projects/solitaire/klondike.jpg" data-caption="Klondike Solitaire">
-									<div class="uk-inline uk-background-default">
-										<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/solitaire/klondike.jpg" alt="">
-									</div>
-								</a>
-								<div class="uk-margin-small-top uk-text-center uk-text-italic">Klondike Solitaire</div>
-							</div>
-							<div>
-								<p>
-									It's Klondike Solitaire with the classic rules, that you can find <a href="https://en.wikipedia.org/wiki/Klondike_(solitaire)">here</a>.<br>
-									From a game logic perspective there are 3 types of what in the came are coded as <code>card containers</code>, each with its own little quirk:
-								</p>
-								<div uk-alert>
-									Some terms to better understand the following list:
-									<ul>
-										<li><span class="uk-text-emphasis">Unlocked/Locked</span>: the player can/can't interact with the card</li>
-										<li><span class="uk-text-emphasis">Visible/Hidden</span>: the value of the card is/is not revealed to the player</li>
-									</ul>
-								</div>
-								<div class="uk-child-width-expand uk-margin" uk-grid>
-									<div>
-										<h4 class="uk-text-center">Pile</h4>
-										<p>Random hidden cards followed by visible ones, that are ordered from higher to lower. When empty it can only accept a group of cards starting with a King.</p>
-									</div>
-									<div>
-										<h4 class="uk-text-center">Foundation</h4>
-										<p>Cards ordered but lower to higher. All the cards below the last are locked. When all the <i>foundations</i> are full, the player wins.</p>
-									</div>
-									<div>
-										<h4 class="uk-text-center">Stack</h4>
-										<p>Random cards the player can draw. The drawn cards are moved to a temporary different list (Waste Pile), and all but the last one are locked. If the stack is empty, all the drawn cards are recycled into it.</p>
-									</div>
-								</div>
-								<p>
-									A big part of the game development was building strong controls to avoid wrong behaviours, and dedicate a special class to each of these card containers types helped to keep the code organized.<br>
-									One flaw with my approach that later feedback revealed, was the interdependency of the card position with the gameplay logic, making me impossible to check the validity of some moves without changing the visuals, therefore making it difficult to implement a hint system.
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
-						<h2 id="undoing-actions" class="uk-text-center title-link uk-heading-divider"><a href="#undoing-actions">Undoing actions</a></h2>
-						<div class="uk-margin-medium-top">
-							<div class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-remove-adjacent uk-align-right uk-width-1-2@s uk-width-1-3@m" uk-lightbox>
-								<a class="uk-link-reset" href="../img/projects/solitaire/interactions.gif" data-caption="Gameplay section">
-									<div class="uk-inline uk-background-default">
-										<img uk-toggle="cls: project-image-hover; mode: hover;" src="../img/projects/solitaire/interactions.gif" alt="">
-									</div>
-								</a>
-								<div class="uk-margin-small-top uk-text-center uk-text-italic">Gameplay section</div>
-							</div>
-							<div>
-								<p>...</p>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="uk-section uk-section-small">
-					<div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
-						<h2 id="closing-thoughts" class="uk-text-center title-link uk-heading-divider"><a href="#closing-thoughts">Closing thoughts</a></h2>
-						<div>
-							<p>...<br>
-							However, if I could go back in time I would:</p>
-							<ul class="uk-list uk-list-circle">
-								<li>...</li>
-								<li>...</li>
-								<li>...</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-			</main>
-			
-			<div class="uk-width-1-1 uk-width-3xlarge@s">
-				<footer class="uk-margin-large-top uk-padding-small">
-					<div class="uk-text-central uk-child-width-1-1" uk-grid>
-						<div class="uk-child-width-1-1 uk-flex-center uk-child-width-auto@s uk-grid-collapse uk-grid-medium@s" uk-grid>
-							<div>Email: <a href="">graizzaromatteo@gmail.com</a></div>
-							<div>Phone: <a href="">+39 3939684029</a></div>
-							<div>LinkedIn: <a href="">/in/matteo-graizzaro</a></div>
-						</div>
-						<div class="uk-child-width-1-1 uk-child-width-1-2@s uk-grid-collapse uk-margin-small-top" uk-grid>
-							<div class="uk-text-left@s">
-								Icons by <a href="https://simpleicons.org/" target="_blank">Simple Icons</a> & <a href="https://neuicons.com/" target="_blank">Neu Icons</a>
-							</div>
-							<div class="uk-text-right@s">
-								© 2021 by Graizzaro Matteo
-							</div>
-						</div>
-					</div>
-				</footer>
-			</div>
-			
-		</div>
-	</body>
+          <hr
+            class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom"
+          />
+        </div>
+
+        <nav
+          class="uk-navbar-container"
+          uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;"
+          uk-navbar
+        >
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-child-width-1-2">
+              <li class="uk-padding-small"><a href="../">Home</a></li>
+              <li class="uk-padding-small">
+                <a>Projects</a>
+                <div
+                  class="uk-navbar-dropdown uk-text-left"
+                  uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify; offset: 0"
+                >
+                  <div
+                    class="uk-navbar-dropdown-grid uk-child-width-expand uk-margin-remove-left"
+                    uk-grid
+                  >
+                    <ul
+                      class="uk-subnav uk-subnav-pill uk-flex-center uk-text-center"
+                      uk-margin
+                    >
+                      <li>
+                        <a href="whatwapp.html"
+                          >Whatwapp<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021-Present</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="village.html"
+                          >Canals Village<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021-2023</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="library.html"
+                          >Whitches Library<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li class="uk-active">
+                        <a href="solitaire.html"
+                          >Solitaire<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="ploppem2.html"
+                          >Ploppem 2<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="tunnel.html"
+                          >Tunnel<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="ploppem.html"
+                          >Ploppem<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2020-2021</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="nodib.html"
+                          >Nodib<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2020</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="oath.html"
+                          >Oath<br /><span
+                            class="uk-text-italic uk-text-capitalize"
+                            >2018-2019</span
+                          ></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div
+        class="uk-width-1-1 uk-width-3xlarge@s uk-margin-remove uk-position-relative"
+        style="z-index: 10"
+      >
+        <div
+          id="#sidebar"
+          class="uk-text-left uk-sidebar-right uk-visible@l"
+          style="width: 150px"
+        >
+          <div uk-sticky="offset: 50; width-element: #sidebar;">
+            <ul
+              uk-scrollspy-nav="closest: li; scroll: true; offset: 80; overflow: false"
+              class="uk-nav-default uk-nav"
+            >
+              <li>
+                <a href="#">
+                  <span
+                    uk-icon="chevron-up"
+                    class="uk-margin-small-right uk-icon"
+                  ></span>
+                  <span class="uk-text-middle">To top</span>
+                </a>
+              </li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#summary">Summary</a></li>
+              <li><a href="#card-generation">Card generation</a></li>
+              <li><a href="#game-logic">Game logic</a></li>
+              <li><a href="#undoing-actions">Undoing actions</a></li>
+              <li><a href="#closing-thoughts">Closing thoughts</a></li>
+              <li class="uk-nav-divider"></li>
+              <li>
+                <a href="https://github.com/Vacui/Solitaire" target="_blank">
+                  <span uk-icon="github" class="uk-margin-small-right"></span>
+                  <span class="uk-text-middle">GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://matteo-graizzaro.itch.io/solitaire"
+                  target="_blank"
+                >
+                  <span
+                    uk-icon="itch-dot-io"
+                    class="uk-margin-small-right"
+                  ></span>
+                  <span class="uk-text-middle">Itch.io</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <main class="uk-position-relative uk-text-left">
+        <section
+          class="uk-section uk-padding-remove-vertical uk-margin-medium-bottom"
+        >
+          <div class="uk-container uk-width-1-1 uk-width-2xlarge@s">
+            <div
+              class="uk-background-cover uk-height-medium"
+              style="
+                background-image: url(../img/projects/solitaire/logo-small.jpg);
+              "
+            ></div>
+          </div>
+        </section>
+        <section class="uk-hidden@l">
+          <div
+            class="uk-padding-small-right uk-padding-small-left uk-flex-center uk-grid-column-small uk-margin-medium-top uk-grid-divider"
+            style="font-size: 1.2rem"
+            uk-grid
+          >
+            <div>
+              <a
+                href="https://github.com/Vacui/Solitaire"
+                target="_blank"
+                class="uk-link uk-link-heading"
+              >
+                <span
+                  uk-icon="icon: github; ratio: 1.5"
+                  class="uk-margin-small-right"
+                ></span>
+                <span class="uk-text-middle">GitHub</span>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://matteo-graizzaro.itch.io/solitaire"
+                target="_blank"
+                class="uk-link uk-link-heading"
+              >
+                <span
+                  uk-icon="icon: itch-dot-io; ratio: 1.5"
+                  class="uk-margin-small-right"
+                ></span>
+                <span class="uk-text-middle">Itch.io</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+            <h2
+              id="summary"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#summary">Summary</a>
+            </h2>
+            <div
+              class="uk-child-width-1-1 uk-child-width-1-2@m"
+              uk-grid="masonry: true;"
+              style="margin-top: 30px"
+            >
+              <div>
+                <p>
+                  This project is the polished version of a prototype I
+                  developed in 4 days during a tech test for an application.<br />
+                  It was originally a mobile game but I repurposed it to the PC
+                  market to increase the amout of games of that type in my
+                  portfolio.
+                </p>
+              </div>
+              <div class="uk-child-width-1-1">
+                <h3 class="uk-heading-bullet uk-width-1-1">
+                  <span>Specifications</span>
+                </h3>
+                <ul class="uk-list uk-list-circle">
+                  <li>4 days prototype + 7 days of polishing</li>
+                  <li>Developed in Unity</li>
+                  <li>Klondike solitaire</li>
+                  <li>
+                    UI icons from
+                    <a href="https://materialdesignicons.com/"
+                      >Material Design Icons</a
+                    >
+                  </li>
+                  <li>
+                    Asset packs:
+                    <a
+                      href="https://mreliptik.itch.io/playing-cards-packs-52-cards"
+                      >52 playing cards</a
+                    ><br />
+                    Plugins used:
+                    <a href="https://unitycodemonkey.com/utils.php"
+                      >CodeMonkey Utils</a
+                    >,
+                    <a
+                      href="https://www.febucci.com/2020/10/custom-hierarchy-for-unity/"
+                      >Custom Hierarchy</a
+                    >,
+                    <a href="https://github.com/arimger/Unity-Editor-Toolbox"
+                      >Editor Toolbox</a
+                    >,
+                    <a
+                      href="https://assetstore.unity.com/packages/tools/animation/leantween-3595"
+                      >LeanTween</a
+                    >,
+                    <a
+                      href="https://github.com/Dysman/bgTools-playerPrefsEditor"
+                      >PlayerPrefsEditor</a
+                    >, TextMesh Pro and
+                    <a
+                      href="https://assetstore.unity.com/packages/tools/gui/ultevents-111307"
+                      >Ult Events</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="uk-child-width-1-1">
+                <h3 class="uk-heading-bullet uk-width-1-1">
+                  <span>Project goals</span>
+                </h3>
+                <ul class="uk-list uk-list-circle">
+                  <li>
+                    Polishing the prototype I made as a tech test for an
+                    application
+                  </li>
+                  <li>Increasing my portfolio of PC games</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-secondary uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+            <h2
+              id="card-generation"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#card-generation">Card generation</a>
+            </h2>
+            <div>
+              <p>
+                One of the first challenges I had to face while prototyping the
+                game, was how to build the card sprites. Why? Because the
+                company provided me only sprites depicting the figures (heart,
+                diamond, club, spade), and the numbers.<br />
+                I had two possibilities in front of me:
+              </p>
+              <div
+                class="uk-margin-medium uk-child-width-expand uk-text-center uk-flex-middle uk-grid-match uk-grid-small"
+                uk-grid
+              >
+                <div class="uk-position-relative">
+                  <h3>Atlas</h3>
+                  <p class="uk-text-italic">
+                    Use external software to combine sprites and form an atlas
+                    with all the necessary variations
+                  </p>
+                </div>
+                <div class="uk-width-auto">
+                  <div
+                    class="uk-background-default uk-border-circle uk-flex uk-flex-center uk-flex-middle"
+                    style="width: 60px; height: 60px"
+                  >
+                    <span class="uk-text-lead" style="color: #333 !important"
+                      >VS</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <h3>Combination</h3>
+                  <p class="uk-text-italic">
+                    Generate the card sprites in real time by combining the
+                    different parts as needed
+                  </p>
+                </div>
+              </div>
+              <p>
+                The first had the advantage of simplicity of implementation,
+                with a dictionary and just some parameters for card size, at the
+                cost of build size.<br />
+                The latter was unexplored territory and therefore a risk, but
+                had the big advantage of flexibility. For example, I wouldn't
+                have struggled much replacing sprites when adding the project to
+                my portfolio, as I had to get rid of all proprietary material.
+              </p>
+            </div>
+            <div class="uk-margin-medium-top">
+              <div
+                class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-remove-adjacent uk-align-left uk-width-1-2 uk-width-1-3@s"
+                uk-lightbox
+              >
+                <a
+                  class="uk-link-reset"
+                  href="../img/projects/solitaire/card-design.jpg"
+                  data-caption="How a card is formed"
+                >
+                  <div class="uk-inline uk-background-default">
+                    <img
+                      uk-toggle="cls: project-image-hover; mode: hover;"
+                      src="../img/projects/solitaire/card-design.jpg"
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="uk-margin-small-top uk-text-center uk-text-italic">
+                  How a card is formed
+                </div>
+              </div>
+              <p>
+                Sprite generation, I discovered, was simpler than I thought,
+                expecially thanks to
+                <a
+                  href="https://www.youtube.com/playlist?list=PL5KbKbJ6Gf9-1VAsllNBn175nF4fqnBCF"
+                  >this</a
+                >
+                tutorial playlist.
+              </p>
+              <ul class="uk-list uk-list-decimal uk-flex uk-flex-column">
+                <li>
+                  I start by creating a blank <code>texture</code> of the size
+                  of a card
+                </li>
+                <li>
+                  I add the first <code>layer</code> depicting the front or back
+                  of the card, based on the card visibility
+                </li>
+                <li>
+                  If the card is visible I move on to adding its number, and the
+                  two suits
+                </li>
+              </ul>
+
+              <p>
+                Everything is made using a method called
+                <code>CreateLayer</code>, that adds a texture to a list of
+                layers, that is later processed to define the final aspect of
+                the card, by multiplying each layer pixel colour with those of
+                the other layers in the same position.<br />
+                The result is converted into a sprite which is then assigned to
+                a <code>SpriteRendeder</code> to be displayed to the player.
+              </p>
+              <p>
+                The main problem with this approach is how much it is dependant
+                on the source sprites. Each position is specified by coordinates
+                expressed in pixels, and therefore each change to the sprites
+                will change the card appearance too.
+              </p>
+              <p>
+                You can explore in more detail all the processes by reading the
+                game code itself
+                <a
+                  href="https://github.com/Vacui/Solitaire/blob/main/Assets/Scripts/Gameplay/CardManager.cs"
+                  >here</a
+                >.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+            <h2
+              id="game-logic"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#game-logic">Game logic</a>
+            </h2>
+            <div class="uk-child-width-1-1 uk-margin-medium-top" uk-grid>
+              <div class="uk-position-relative uk-visible-toggle" uk-lightbox>
+                <a
+                  class="uk-link-reset"
+                  href="../img/projects/solitaire/klondike.jpg"
+                  data-caption="Klondike Solitaire"
+                >
+                  <div class="uk-inline uk-background-default">
+                    <img
+                      uk-toggle="cls: project-image-hover; mode: hover;"
+                      src="../img/projects/solitaire/klondike.jpg"
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="uk-margin-small-top uk-text-center uk-text-italic">
+                  Klondike Solitaire
+                </div>
+              </div>
+              <div>
+                <p>
+                  It's Klondike Solitaire with the classic rules, that you can
+                  find
+                  <a href="https://en.wikipedia.org/wiki/Klondike_(solitaire)"
+                    >here</a
+                  >.<br />
+                  From a game logic perspective there are 3 types of what in the
+                  came are coded as <code>card containers</code>, each with its
+                  own little quirk:
+                </p>
+                <div uk-alert>
+                  Some terms to better understand the following list:
+                  <ul>
+                    <li>
+                      <span class="uk-text-emphasis">Unlocked/Locked</span>: the
+                      player can/can't interact with the card
+                    </li>
+                    <li>
+                      <span class="uk-text-emphasis">Visible/Hidden</span>: the
+                      value of the card is/is not revealed to the player
+                    </li>
+                  </ul>
+                </div>
+                <div class="uk-child-width-expand uk-margin" uk-grid>
+                  <div>
+                    <h4 class="uk-text-center">Pile</h4>
+                    <p>
+                      Random hidden cards followed by visible ones, that are
+                      ordered from higher to lower. When empty it can only
+                      accept a group of cards starting with a King.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 class="uk-text-center">Foundation</h4>
+                    <p>
+                      Cards ordered but lower to higher. All the cards below the
+                      last are locked. When all the <i>foundations</i> are full,
+                      the player wins.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 class="uk-text-center">Stack</h4>
+                    <p>
+                      Random cards the player can draw. The drawn cards are
+                      moved to a temporary different list (Waste Pile), and all
+                      but the last one are locked. If the stack is empty, all
+                      the drawn cards are recycled into it.
+                    </p>
+                  </div>
+                </div>
+                <p>
+                  A big part of the game development was building strong
+                  controls to avoid wrong behaviours, and dedicate a special
+                  class to each of these card containers types helped to keep
+                  the code organized.<br />
+                  One flaw with my approach that later feedback revealed, was
+                  the interdependency of the card position with the gameplay
+                  logic, making me impossible to check the validity of some
+                  moves without changing the visuals, therefore making it
+                  difficult to implement a hint system.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+            <h2
+              id="undoing-actions"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#undoing-actions">Undoing actions</a>
+            </h2>
+            <div class="uk-margin-medium-top">
+              <div
+                class="uk-position-relative uk-visible-toggle uk-child-width-1-1 uk-margin-remove-adjacent uk-align-right uk-width-1-2@s uk-width-1-3@m"
+                uk-lightbox
+              >
+                <a
+                  class="uk-link-reset"
+                  href="../img/projects/solitaire/interactions.gif"
+                  data-caption="Gameplay section"
+                >
+                  <div class="uk-inline uk-background-default">
+                    <img
+                      uk-toggle="cls: project-image-hover; mode: hover;"
+                      src="../img/projects/solitaire/interactions.gif"
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="uk-margin-small-top uk-text-center uk-text-italic">
+                  Gameplay section
+                </div>
+              </div>
+              <div>
+                <p>...</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-small">
+          <div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+            <h2
+              id="closing-thoughts"
+              class="uk-text-center title-link uk-heading-divider"
+            >
+              <a href="#closing-thoughts">Closing thoughts</a>
+            </h2>
+            <div>
+              <p>
+                ...<br />
+                However, if I could go back in time I would:
+              </p>
+              <ul class="uk-list uk-list-circle">
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div class="uk-width-1-1 uk-width-3xlarge@s">
+        <footer class="uk-margin-large-top uk-padding-small">
+          <div class="uk-text-central uk-child-width-1-1" uk-grid>
+            <div
+              class="uk-child-width-1-1 uk-flex-center uk-child-width-auto@s uk-grid-collapse uk-grid-medium@s"
+              uk-grid
+            >
+              <div>Email: <a href="">graizzaromatteo@gmail.com</a></div>
+              <div>Phone: <a href="">+39 3939684029</a></div>
+              <div>LinkedIn: <a href="">/in/matteo-graizzaro</a></div>
+            </div>
+            <div
+              class="uk-child-width-1-1 uk-child-width-1-2@s uk-grid-collapse uk-margin-small-top"
+              uk-grid
+            >
+              <div class="uk-text-left@s">
+                Icons by
+                <a href="https://simpleicons.org/" target="_blank"
+                  >Simple Icons</a
+                >
+                & <a href="https://neuicons.com/" target="_blank">Neu Icons</a>
+              </div>
+              <div class="uk-text-right@s">© 2021 by Graizzaro Matteo</div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
