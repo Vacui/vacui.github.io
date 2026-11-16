@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Matteo Graizzaro Portfolio | Whatwapp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/uikit.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/slider.css" />
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <div class="uk-position-relative" align="center">    
+      <div class="uk-padding-small-top uk-section-muted uk-margin-medium-bottom">
+        <div class="uk-width-1-1 uk-width-3xlarge@s" style="padding: 0 15px;">
+          <header class="uk-padding-small-top uk-grid-small uk-grid-collapse@m uk-child-width-1-1" uk-grid>
+            <h1>Matteo Graizzaro</h1>
+            <h3 class="uk-text-large uk-text-light">Game Programmer</h3>
+          </header>
+          
+          <hr class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom">
+        </div>
+        
+        <nav class="uk-navbar-container" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;" uk-navbar>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-child-width-1-2">
+              <li class="uk-padding-small"><a href="../">Home</a></li>
+              <li class="uk-padding-small">
+                <a>Projects</a>
+                <div class="uk-navbar-dropdown uk-text-left" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify; offset: 0">
+                  <div class="uk-navbar-dropdown-grid uk-child-width-expand uk-margin-remove-left" uk-grid>
+                    <ul class="uk-subnav uk-subnav-pill uk-flex-center uk-text-center" uk-margin>
+                      <li><a href="whatwapp.html">Whatwapp<br><span class="uk-text-italic uk-text-capitalize">2021-2026</span></a></li>
+                      <li><a href="village.html">Canals Village<br><span class="uk-text-italic uk-text-capitalize">2021-2023</span></a></li>
+                      <li><a href="library.html">Whitches Library<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
+                      <li><a href="solitaire.html">Solitaire<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
+                      <li><a href="ploppem2.html">Ploppem 2<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li> 
+                      <li><a href="tunnel.html">Tunnel<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
+                      <li><a href="ploppem.html">Ploppem<br><span class="uk-text-italic uk-text-capitalize">2020-2021</span></a></li>
+                      <li><a href="nodib.html">Nodib<br><span class="uk-text-italic uk-text-capitalize">2020</span></a></li>
+                      <li><a href="oath.html">Oath<br><span class="uk-text-italic uk-text-capitalize">2018-2019</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="uk-padding-small">
+                <a>Publications</a>
+                <div class="uk-navbar-dropdown uk-text-left" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify; offset: 0">
+                  <div class="uk-navbar-dropdown-grid uk-child-width-expand uk-margin-remove-left" uk-grid>
+                    <ul class="uk-subnav uk-subnav-pill uk-flex-center uk-text-center" uk-margin>
+                      <li class="uk-active"><a href="ploppemPost.html">Ploppem Postmortem: My unknown game<br><span class="uk-text-italic uk-text-capitalize">Jan 2021</span></a></li>
+                      <li><a href="steam2023.html">What Steam will look like in 3 years<br><span class="uk-text-italic uk-text-capitalize">Dec 2020</span></a></li>
+                      <li><a href="steamReviews.html">Ploppem Postmortem: My unknown game<br><span class="uk-text-italic uk-text-capitalize">Jun 2020</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      
+      <div class="uk-width-1-1 uk-width-3xlarge@s uk-margin-remove uk-position-relative" style="z-index: 10;">
+        <div id="#sidebar" class="uk-text-left uk-sidebar-right uk-visible@l" style="width: 150px;">
+          <div uk-sticky="offset: 50; width-element: #sidebar;">
+            <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 80; overflow: false" class="uk-nav-default uk-nav">
+              <li>
+                <a href="#">
+                  <span uk-icon="chevron-up" class="uk-margin-small-right uk-icon"></span>
+                  <span class="uk-text-middle">To top</span>
+                </a>
+              </li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#intro">Ploppem Postmortem: My unknown game</a></li>
+              <li><a href="#right">What went right</a></li>
+              <li><a href="#wrong">What went wrong</a></li>
+              <li><a href="#conclusion">Conclusion</a></li>
+              <li class="uk-nav-divider"></li>
+              <li>
+                <a href="https://web.archive.org/web/20210825065117/https://www.gamasutra.com/blogs/MatteoGraizzaro/20210105/375768/Ploppem_Postmortem_My_unknown_game.php" target="_blank">
+                  <span uk-icon="gamasutra" class="uk-margin-small-right"></span>
+                  <span class="uk-text-middle">Gamasutra</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.gamedeveloper.com/production/ploppem-postmortem-my-unknown-game" target="_blank">
+                  <span uk-icon="game-developer" class="uk-margin-small-right"></span>
+                  <span class="uk-text-middle">Game Developer</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://matteograizzaro.medium.com/ploppem-postmortem-my-unknown-game-6f3794f1e5f6" target="_blank">
+                  <span uk-icon="medium" class="uk-margin-small-right"></span>
+                  <span class="uk-text-middle">Medium</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <main class="uk-position-relative uk-text-left">
+        <section class="uk-hidden@l">
+          <div class="uk-padding-small-right uk-padding-small-left uk-flex-center uk-grid-column-small uk-margin-medium-top uk-grid-divider" style="font-size: 1.2rem;"uk-grid>
+            <div>
+              <a href="https://web.archive.org/web/20210825065117/https://www.gamasutra.com/blogs/MatteoGraizzaro/20210105/375768/Ploppem_Postmortem_My_unknown_game.php" target="_blank" class="uk-link uk-link-heading">
+                <span uk-icon="icon: gamasutra; ratio: 1.5" class="uk-margin-small-right"></span>
+                <span class="uk-text-middle">Gamasutra</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.gamedeveloper.com/production/ploppem-postmortem-my-unknown-game" target="_blank" class="uk-link uk-link-heading">
+                <span uk-icon="icon: game-developer; ratio: 1.5" class="uk-margin-small-right"></span>
+                <span class="uk-text-middle">Game Developer</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://matteograizzaro.medium.com/ploppem-postmortem-my-unknown-game-6f3794f1e5f6" target="_blank" class="uk-link uk-link-heading">
+                <span uk-icon="icon: medium; ratio: 1.5" class="uk-margin-small-right"></span>
+                <span class="uk-text-middle">Medium</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-xsmall">
+          <div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+            <h2 id="intro" class="title-link uk-heading-divider"><a href="#intro">Ploppem Postmortem: My unknown game</a></h2>
+            <div style="margin-top: 30px;">
+              <div>
+                <p>In this postmortem, I'll discuss the game project that I realized for my portfolio in the past months. It is called Ploppem and I developed it for the mobile market, it is currently free to play on both <a href="https://play.google.com/store/apps/details?id=com.vacui.ploppem">Google Play</a> and <a href="https://dar-vacui.itch.io/ploppem">Itch</a>.</p>
+              </div>
+              <div class="uk-width-auto@m uk-margin-medium-top">
+                <h3 id="right" class="uk-heading-bullet uk-width-1-1"><a href="#right" class="uk-link-reset">What went right</a></h3>
+                <h4>A solid core</h4>
+                <p>Even if, at first, I have considered the idea of exploding colored spheres too simple for a game, over time I realized that I was wrong. Whenever I tried to increase the depth of the game mechanics, I found myself returning to the starting point, to the core. It took me months to realize this, but, after that, it was easier to develop systems that didn't ruin the game loop and instead increased the fun.</p>
+                <p>I have started by replacing the gray background with geometric drawings that changed randomly with each match and then adding the ability to select your favorite. Following the same principle, I have allowed the player to customize the appearance of the enemies to a certain extent. These and other's additions were originally designed around the idea to add a 'Pay to unlock' system, which in theory would have created a small income from the game, but, ultimately, I have decided to remove these limitations.</p>
+                <p>I have improved enemy spawning and tested the game multiple times, aiming to find a balance between fun and difficulty while trying to protect the core of the game.</p>
+                <h4>Fast prototyping</h4>
+                <p>During the months of development, I have modified the game numerous times; doing so, I had to learn to prototype quickly, in order to find out, in the shortest possible time, if the modifications were valid.</p>
+                <div class="uk-position-relative uk-visible-toggle uk-margin-medium-bottom" uk-lightbox>
+                  <a
+                    class="uk-link-reset"
+                    href="../img/projects/ploppemPost/UIChange.png"
+                    data-caption="September 2020 → October 2020"
+                  >
+                    <div class="uk-inline uk-background-default">
+                      <img
+                        uk-toggle="cls: project-image-hover; mode: hover;"
+                        src="../img/projects/ploppemPost/UIChange.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <div class="uk-margin-small-top uk-text-center uk-text-italic">
+                    September 2020 → October 2020
+                  </div>
+                </div>
+                <h4>Choosing the right engine</h4>
+                <p>Ploppem was not my first game, before starting it I had already completed several personal projects with Unity, so the decision to continue using the engine was a natural one, which helped me avoid some big mistakes.</p>
+                <p>Sooner or later I will start learning another software, like Unreal, but for the moment I think I will try to improve what I already know.</p>
+                <h4>Time management</h4>
+                <p>The beginning was littered with errors and delays, but once I was able to define what I could and should do, I started planning the work every day, and, even if it didn't always go well, it still helped me enormously to complete the project.</p>
+                <div class="uk-position-relative uk-visible-toggle uk-margin-medium-bottom" uk-lightbox>
+                  <a
+                    class="uk-link-reset"
+                    href="../img/projects/ploppemPost/PloppemBoard.png"
+                    data-caption="Game Notion board."
+                  >
+                    <div class="uk-inline uk-background-default">
+                      <img
+                        uk-toggle="cls: project-image-hover; mode: hover;"
+                        src="../img/projects/ploppemPost/PloppemBoard.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <div class="uk-margin-small-top uk-text-center uk-text-italic">
+                    Game Notion board.
+                  </div>
+                </div>
+              </div>
+              <div class="uk-width-auto@m uk-margin-medium-top">
+                <h3 id="wrong" class="uk-heading-bullet uk-width-1-1"><a href="#wrong" class="uk-link-reset">What went wrong</a></h3>
+                <h4>Bad planning</h4>
+                <p>When I've started developing the game, my only goal was to make something polished enough to add to my portfolio. I had an old prototype ready and I decided to improve it, I thought it would take a month or so: it took me almost five.</p>
+                <p>In the last couple of months this has changed slightly, but I still suffered a lot from the loss of time caused by the lack of organization, which could have been spent better.</p>
+                <h4>Lack of skill</h4>
+                <p>I still have a lot to learn, and, as I developed Ploppem, I realized this over and over again. At first I thought that I would be able to make a good game using only free assets, but, as they were not enough, I thought about supplying them with the paid ones. In the end, I realized that the best thing was to make everything myself. Unfortunately, I'm not a good artist and it took me some time to learn the basics and do the necessary.</p>
+                <h4>Online exposition</h4>
+                <p>My most famous tweet about Ploppem got 14 likes, and it was about new game backgrounds, the release one got 4, one of the many signs that something went wrong during my marketing.</p>
+                <p>Well before Ploppem I had started using Twitter to interact with other developers and connect with players; I have tried my best to keep the same habit, but it didn't work very well. I have never been able to capture enough attention and therefore feedback, probably because I didn't put enough care into it.</p>
+                <div class="uk-position-relative uk-visible-toggle uk-margin-medium-bottom" uk-lightbox>
+                  <a
+                    class="uk-link-reset"
+                    href="../img/projects/ploppemPost/PloppemBackgroundsTweet.jpg"
+                    data-caption="The aforementioned tweet"
+                  >
+                    <div class="uk-inline uk-background-default">
+                      <img
+                        uk-toggle="cls: project-image-hover; mode: hover;"
+                        src="../img/projects/ploppemPost/PloppemBackgroundsTweet.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <div class="uk-margin-small-top uk-text-center uk-text-italic">
+                    The aforementioned tweet
+                  </div>
+                </div>
+                <p>I have understood that if you really want to use online platforms to advertise, you need to take them seriously and give them a great amount of time.</p>
+              </div>
+              <div class="uk-width-auto@m uk-margin-medium-top">
+                <h3 id="conclusion" class="uk-heading-bullet uk-width-1-1"><a href="#conclusion" class="uk-link-reset">Conclusion</a></h3>
+                <p>Releasing Ploppem has made me very happy and also free to move on, but if I will embark on another journey, I will first make sure I'm ready for it.</p>
+                <p>These are a few things I wll try to keep in mind:</p>
+                <ul class="uk-list uk-list-bullet">
+                  <li>A plan is mandatory if you want to succeed, it doesn't have to be too detailed, but, before you start developing a game, its core must already be established.</li>
+                  <li>No matter how, to increase efficiency you need to organize your days and define milestones.</li>
+                  <li>Do not overestimate your resources, whethever they are: time, monetary or skills.</li>
+                  <li>Keeping a detailed diary of what you do helps to stay organized, and will be very helpful in creating the postmortem.</li>
+                  <li>Never take social media lightly, time and effort are needed to use them effectively.</li>
+                </ul>
+                <p>I hope this article will help you avoid my mistakes,</p>
+                <p>Bye.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div class="uk-width-1-1 uk-width-3xlarge@s">
+        <footer class="uk-margin-large-top uk-padding-small">
+          <div class="uk-text-central uk-child-width-1-1" uk-grid>
+            <div
+            class="uk-child-width-1-1 uk-flex-center uk-child-width-auto@s uk-grid-collapse uk-grid-medium@s"
+            uk-grid
+            >
+              <div>Email: <a href="">graizzaromatteo@gmail.com</a></div>
+              <div>Phone: <a href="">+39 3939684029</a></div>
+              <div>LinkedIn: <a href="">/in/matteo-graizzaro</a></div>
+            </div>
+            <div
+            class="uk-child-width-1-1 uk-child-width-1-2@s uk-grid-collapse uk-margin-small-top"
+            uk-grid
+            >
+              <div class="uk-text-left@s">
+                Icons by
+                <a href="https://simpleicons.org/" target="_blank"
+                  >Simple Icons</a
+                >
+                & <a href="https://neuicons.com/" target="_blank">Neu Icons</a>
+              </div>
+              <div class="uk-text-right@s">© 2021 by Graizzaro Matteo</div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

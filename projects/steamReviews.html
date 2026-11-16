@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Matteo Graizzaro Portfolio | Whatwapp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/uikit.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/slider.css" />
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <div class="uk-position-relative" align="center">    
+      <div class="uk-padding-small-top uk-section-muted uk-margin-medium-bottom">
+        <div class="uk-width-1-1 uk-width-3xlarge@s" style="padding: 0 15px;">
+          <header class="uk-padding-small-top uk-grid-small uk-grid-collapse@m uk-child-width-1-1" uk-grid>
+            <h1>Matteo Graizzaro</h1>
+            <h3 class="uk-text-large uk-text-light">Game Programmer</h3>
+          </header>
+          
+          <hr class="uk-width-large uk-width-1-1@m uk-align-center uk-margin-remove-bottom">
+        </div>
+        
+        <nav class="uk-navbar-container" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-small; cls-inactive: uk-navbar-transparent;" uk-navbar>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav uk-child-width-1-2">
+              <li class="uk-padding-small"><a href="../">Home</a></li>
+              <li class="uk-padding-small">
+                <a>Projects</a>
+                <div class="uk-navbar-dropdown uk-text-left" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify; offset: 0">
+                  <div class="uk-navbar-dropdown-grid uk-child-width-expand uk-margin-remove-left" uk-grid>
+                    <ul class="uk-subnav uk-subnav-pill uk-flex-center uk-text-center" uk-margin>
+                      <li><a href="whatwapp.html">Whatwapp<br><span class="uk-text-italic uk-text-capitalize">2021-2026</span></a></li>
+                      <li><a href="village.html">Canals Village<br><span class="uk-text-italic uk-text-capitalize">2021-2023</span></a></li>
+                      <li><a href="library.html">Whitches Library<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
+                      <li><a href="solitaire.html">Solitaire<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
+                      <li><a href="ploppem2.html">Ploppem 2<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li> 
+                      <li><a href="tunnel.html">Tunnel<br><span class="uk-text-italic uk-text-capitalize">2021</span></a></li>
+                      <li><a href="ploppem.html">Ploppem<br><span class="uk-text-italic uk-text-capitalize">2020-2021</span></a></li>
+                      <li><a href="nodib.html">Nodib<br><span class="uk-text-italic uk-text-capitalize">2020</span></a></li>
+                      <li><a href="oath.html">Oath<br><span class="uk-text-italic uk-text-capitalize">2018-2019</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="uk-padding-small">
+                <a>Publications</a>
+                <div class="uk-navbar-dropdown uk-text-left" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify; offset: 0">
+                  <div class="uk-navbar-dropdown-grid uk-child-width-expand uk-margin-remove-left" uk-grid>
+                    <ul class="uk-subnav uk-subnav-pill uk-flex-center uk-text-center" uk-margin>
+                      <li><a href="ploppemPost.html">Ploppem Postmortem: My unknown game<br><span class="uk-text-italic uk-text-capitalize">Jan 2021</span></a></li>
+                      <li><a href="steam2023.html">What Steam will look like in 3 years<br><span class="uk-text-italic uk-text-capitalize">Dec 2020</span></a></li>
+                      <li class="uk-active"><a href="steamReviews.html">Going deep in the Steam reviews<br><span class="uk-text-italic uk-text-capitalize">Jun 2020</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      
+      <div class="uk-width-1-1 uk-width-3xlarge@s uk-margin-remove uk-position-relative" style="z-index: 10;">
+        <div id="#sidebar" class="uk-text-left uk-sidebar-right uk-visible@l" style="width: 150px;">
+          <div uk-sticky="offset: 50; width-element: #sidebar;">
+            <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 80; overflow: false" class="uk-nav-default uk-nav">
+              <li>
+                <a href="#">
+                  <span uk-icon="chevron-up" class="uk-margin-small-right uk-icon"></span>
+                  <span class="uk-text-middle">To top</span>
+                </a>
+              </li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#intro">Going deep in the Steam reviews</a></li>
+              <li><a href="#game">The game</a></li>
+              <li><a href="#playtime">Start from the playtime</a></li>
+              <li><a href="#player">The player variable</a></li>
+              <li><a href="#conclusion">Conclusion</a></li>
+              <li class="uk-nav-divider"></li>
+              <li>
+                <a href="https://web.archive.org/web/20210825065421/https://www.gamasutra.com/blogs/MatteoGraizzaro/20200629/365397/Going_deep_in_the_Steam_reviews.php" target="_blank">
+                  <span uk-icon="gamasutra" class="uk-margin-small-right"></span>
+                  <span class="uk-text-middle">Gamasutra</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.gamedeveloper.com/production/going-deep-in-the-steam-reviews" target="_blank">
+                  <span uk-icon="game-developer" class="uk-margin-small-right"></span>
+                  <span class="uk-text-middle">Game Developer</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://matteograizzaro.medium.com/going-deep-in-the-steam-reviews-2b663a152179" target="_blank">
+                  <span uk-icon="medium" class="uk-margin-small-right"></span>
+                  <span class="uk-text-middle">Medium</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <main class="uk-position-relative uk-text-left">
+        <section class="uk-hidden@l">
+          <div class="uk-padding-small-right uk-padding-small-left uk-flex-center uk-grid-column-small uk-margin-medium-top uk-grid-divider" style="font-size: 1.2rem;"uk-grid>
+            <div>
+              <a href="https://web.archive.org/web/20210825065421/https://www.gamasutra.com/blogs/MatteoGraizzaro/20200629/365397/Going_deep_in_the_Steam_reviews.php" target="_blank" class="uk-link uk-link-heading">
+                <span uk-icon="icon: gamasutra; ratio: 1.5" class="uk-margin-small-right"></span>
+                <span class="uk-text-middle">Gamasutra</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.gamedeveloper.com/production/going-deep-in-the-steam-reviews" target="_blank" class="uk-link uk-link-heading">
+                <span uk-icon="icon: game-developer; ratio: 1.5" class="uk-margin-small-right"></span>
+                <span class="uk-text-middle">Game Developer</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://matteograizzaro.medium.com/going-deep-in-the-steam-reviews-2b663a152179" target="_blank" class="uk-link uk-link-heading">
+                <span uk-icon="icon: medium; ratio: 1.5" class="uk-margin-small-right"></span>
+                <span class="uk-text-middle">Medium</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-xsmall">
+          <div class="uk-container uk-width-1-1 uk-width-3xlarge@s">
+            <h2 id="intro" class="title-link uk-heading-divider"><a href="#intro">Going deep in the Steam reviews</a></h2>
+            <div style="margin-top: 30px;">
+              <div>
+                <p>Some time ago I decided to investigate the considerable drop of the Robocraft user base, a game I played a lot in the past, my goal was to identify the causes. The result is, unfortunately, a little confusing, but I was surprised by the potential of the tools I used, and I also enjoyed the experience so I decided to share my conclusions and how I reached them.</p>
+              </div>
+              <div class="uk-width-auto@m uk-margin-medium-top">
+                <h3 id="game" class="uk-heading-bullet uk-width-1-1"><a href="#game" class="uk-link-reset">The game</a></h3>
+                <p>To better understand some part of the article I have to start from a short description of the game itself, and the best way to do it is by quotes its official steam page:</p>
+                <p></p>
+                <blockquote>
+                  <p>Build insane, fully customisable robot battle vehicles that drive, hover, walk and fly in the free-to-play action game Robocraft. Add weapons from the future and jump in the driving seat as you take your creation into battle against other players online!</p>
+                  <footer><cite>Robocraft</cite> official description</footer>
+                </blockquote>
+                <p>In practice, the player can use different weapons and parts to build vehicles to use against other players in 5v5 battles.</p>
+                <p>The game got through some big changes over the years, and this is the main reason why I am here writing this article. The first year the title was centralized about grinding your way to the top tiers, a lot of hours were needed to reach the maximum power and possibilities. After some changes, this is no more, now there are no limitations and everything that matters on the battlefield is the experience.</p>
+                <p>But better stop here, you got an idea about what is Robocraft, let's move on to the research.</p>
+              </div>
+              <div class="uk-width-auto@m uk-margin-medium-top">
+                <h3 id="playtime" class="uk-heading-bullet uk-width-1-1"><a href="#playtime" class="uk-link-reset">Start from the playtime</a></h3>
+                <p>I decided to start from the graph provided by the online site <a href="https://steamdb.info/app/301520/graphs/">SteamDB</a> and relate it with all the game updates in its first three years, gathered via the game's official steam news page.</p>
+                <div class="uk-position-relative uk-visible-toggle uk-margin-medium-bottom" uk-lightbox>
+                  <a
+                    class="uk-link-reset"
+                    href="../img/projects/steamReviews/updatesAll.jpg"
+                    data-caption="All Robocraft updates 2014-2016"
+                  >
+                    <div class="uk-inline uk-background-default">
+                      <img
+                        uk-toggle="cls: project-image-hover; mode: hover;"
+                        src="../img/projects/steamReviews/updatesAll.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <div class="uk-margin-small-top uk-text-center uk-text-italic">
+                    All Robocraft updates 2014-2016
+                  </div>
+                </div>
+                <p>Then, to be able to handle the data more easily, I focused my attention only on the most important ones.</p>
+                <div class="uk-position-relative uk-visible-toggle uk-margin-medium-bottom" uk-lightbox>
+                  <a
+                    class="uk-link-reset"
+                    href="../img/projects/steamReviews/updatesImportant.jpg"
+                    data-caption="Most important Robocraft updates 2014-2016"
+                  >
+                    <div class="uk-inline uk-background-default">
+                      <img
+                        uk-toggle="cls: project-image-hover; mode: hover;"
+                        src="../img/projects/steamReviews/updatesImportant.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <div class="uk-margin-small-top uk-text-center uk-text-italic">
+                    Most important Robocraft updates 2014-2016
+                  </div>
+                </div>
+                <p>From the resulting image I was able to draw the first conclusions:</p>
+                <ul class="uk-list uk-list-decimal">
+                  <li>The drop in users is mainly imputable to 2015, more precisely around July, and seems to have started with the "Team Orders" update. Which makes sense because it is the first in a series that brings important changes to the game, to make it more competitive by reducing the difference between older and newer players. Which understandably irritated a part of the audience.</li>
+                  <li>All subsequent updates have preserved the state of the game but failed to improve it.</li>
+                </ul>
+              </div>
+              <div class="uk-width-auto@m uk-margin-medium-top">
+                <h3 id="player" class="uk-heading-bullet uk-width-1-1"><a href="#player" class="uk-link-reset">The player variable</a></h3>
+                <p>At this point, I needed more data, so I turned again to Steam and downloading all user reviews at the time through the public APIs by using a PHP program made by myself, that was not too difficult to create, I just had some problems with the limits of 100 reviews at the time, but after some try and error I figured out a solution.</p>
+                <p>Apart from this little technical defiance, we are talking about players, analyze their opinions seemed the most logical thing to do.</p>
+                <p>After collecting the data I divided the players into 5 categories based on the amount of time spent in the game:</p>
+                <ul class="uk-list uk-list-decimal">
+                  <li>From 0 to 1 hour.</li>
+                  <li>1 to 10 hours.</li>
+                  <li>10 to 100 hours.</li>
+                  <li>100 to 1000 hours.</li>
+                  <li>1000+ hours.</li>
+                </ul>
+                <p>So I divided the reviews using these categories and created these charts.</p>
+                <div class="uk-position-relative uk-visible-toggle uk-margin-medium-bottom" uk-lightbox>
+                  <a
+                    class="uk-link-reset"
+                    href="../img/projects/steamReviews/reviews.png"
+                    data-caption="Steam Reviews divided by player playtime category, using the review update timestamp"
+                  >
+                    <div class="uk-inline uk-background-default">
+                      <img
+                        uk-toggle="cls: project-image-hover; mode: hover;"
+                        src="../img/projects/steamReviews/reviews.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <div class="uk-margin-small-top uk-text-center uk-text-italic">
+                    Steam Reviews divided by player playtime category, using the review update timestamp
+                  </div>
+                </div>
+                <p>Surprisingly, it seems that the largest demonstration of dissent cannot be identified in mid-2015 as previously hypothesized, although a significant number of negative reviews can still be noticed in that period, but instead in the middle of the following year. A moment characterized by another profound change, with the replacement of the currency-based economy, with a random one based on loot boxes. This negatively affected the most rooted users of the title, who therefore expressed their opinion through the reviews, most of which were negative.</p>
+                <p>Being able only to access the most updated version of a user's review, I cannot be sure that there was not a big wave of negativity also during 2015, but that of 2016 was sufficiently powerful to convince those who had possibly already negatively reviewed the game in the past, to update their opinion, thus changing the date.</p>
+              </div>
+              <div class="uk-width-auto@m uk-margin-medium-top">
+                <h3 id="conclusion" class="uk-heading-bullet uk-width-1-1"><a href="#conclusion" class="uk-link-reset">Conclusion</a></h3>
+                <p>The goal of this article is not to judge the work done by the Robocraft development team, but only to show the usefulness and information that can be drawn from using data such as Steam user reviews, if properly filtered and analyzed.</p>
+                <p>This is just the surface of what we can learn from studying Steam reviews. For example, by looking for combinations of words it is possible to try to catch the opinions of the players regarding a specific update, or a change in the game. Thanks to tools such as the public APIs, many things that were not previously possible are now at reach, not easily of course. But nothing comes for nothing.</p>
+                <p>An important thing, however, is to understand the value of time. In the previous chart, it can be seen that the biggest wave of negative reviews occurred in June 2016, although the update that I think was the cause of it, came out the previous month. Players must be given time to adjust to the changes and produce an opinion, which they will then express using one of the many tools that the Internet age has made available to us. In this article, I talked about the Steam reviews, but there are also forums, Twitter, Instagram, Facebook, etc ...</p>
+                <p>I discovered new tools that I had never used before, and that I didn't know could be so interesting to use, I will certainly treasure the experience for the future.</p>
+                <p>I hope the article has been useful if you want to repeat my steps in this <a href="https://drive.google.com/drive/folders/1fCrdpAl0YjXpSFKSlDt3RcLoDzkf-ZMn?usp=sharing">directory</a> you will find everything I used.</p>
+                <p>Until next, bye.</p>
+                <p>Matteo Graizzaro</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div class="uk-width-1-1 uk-width-3xlarge@s">
+        <footer class="uk-margin-large-top uk-padding-small">
+          <div class="uk-text-central uk-child-width-1-1" uk-grid>
+            <div
+            class="uk-child-width-1-1 uk-flex-center uk-child-width-auto@s uk-grid-collapse uk-grid-medium@s"
+            uk-grid
+            >
+              <div>Email: <a href="">graizzaromatteo@gmail.com</a></div>
+              <div>Phone: <a href="">+39 3939684029</a></div>
+              <div>LinkedIn: <a href="">/in/matteo-graizzaro</a></div>
+            </div>
+            <div
+            class="uk-child-width-1-1 uk-child-width-1-2@s uk-grid-collapse uk-margin-small-top"
+            uk-grid
+            >
+              <div class="uk-text-left@s">
+                Icons by
+                <a href="https://simpleicons.org/" target="_blank"
+                  >Simple Icons</a
+                >
+                & <a href="https://neuicons.com/" target="_blank">Neu Icons</a>
+              </div>
+              <div class="uk-text-right@s">© 2021 by Graizzaro Matteo</div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
